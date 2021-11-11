@@ -23,11 +23,18 @@
     }
     &__payment {
       width: 30%;
+      &--title {
+        text-align: right;
+      }
       &--body {
         display: block !important;
-      }
-      img {
-        width: auto !important;
+        img {
+          width: auto !important;
+          margin: 0 30% !important;
+        }
+        .img {
+          width: 100% !important;
+        }
       }
     }
     .fields {
@@ -44,48 +51,66 @@
   }
   .footer {
     &__wrapper {
-      width: 96% !important;
+      width: 90% !important;
+    }
+    &__payment {
+      &--title {
+        text-align: left;
+      }
+      &--body {
+        display: block !important;
+        img {
+          width: auto !important;
+          margin: 0 !important;
+        }
+        .img {
+          width: 100% !important;
+        }
+      }
     }
   }
 }
 @media (max-width: 375px) {
   .footer {
-      &__connect {
-          padding-bottom: 30px;
-          &--title {
-            justify-content: center;
-          }
+    &__connect {
+      padding-bottom: 30px;
+      &--title {
+        justify-content: center;
       }
-      &__connect--body {
-          .links {
-            padding: 10px 0;
-              li {
-            
-                justify-content: center;
-                display: flex;
-              }
-          }
+    }
+    &__connect--body {
+      .links {
+        padding: 10px 0;
+        li {
+          justify-content: center;
+          display: flex;
+        }
       }
-      button {
-        margin: 0 auto;
+    }
+    button {
+      margin: 0 auto;
+    }
+    &__about--title {
+      text-align: center;
+      padding-bottom: 10px;
+    }
+    &__about--body {
+      .links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 25px;
+        li {
+          padding: 0 15px;
+        }
       }
-      &__about--title  {
+      .other-links {
+        li {
+          padding: 10px 0 !important;
           text-align: center;
+        }
       }
-      &__about--body {
-          .links {
-            padding: 0 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-          }
-          .other-links {
-              li {
-                  padding: 10px 0 !important;
-                  text-align: center;
-              }
-          }
-      }
+    }
     &__wrapper {
       flex-direction: column-reverse;
       width: 90% !important;
@@ -93,7 +118,7 @@
     &__payment {
       width: 100%;
       &--title {
-          text-align: center;
+        text-align: center;
       }
       &--body {
         display: flex !important;
@@ -102,11 +127,11 @@
           width: 15% !important;
         }
         .img {
-            width: 20%;
-            flex-wrap: nowrap;
-            img {
-                width: 100% !important;
-            }
+          width: 20% !important;
+          flex-wrap: nowrap;
+          img {
+            width: 100% !important;
+          }
         }
       }
     }
