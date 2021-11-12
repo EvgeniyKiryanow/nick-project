@@ -1,0 +1,143 @@
+@media (max-width: 768px) {
+  .header {
+    &__languages {
+      display: none;
+    }
+    &__wrapper_logo {
+      margin-right: 5%;
+    }
+    &__menu {
+      button {
+        font-size: 0 !important;
+      }
+    }
+    &__consultation {
+      padding: 0 !important;
+    }
+  }
+  .footer {
+    &__wrapper {
+      display: flex;
+      flex-direction: row-reverse;
+      width: 80% !important;
+    }
+    &__payment {
+      width: 30%;
+      &--title {
+        text-align: right;
+      }
+      &--body {
+        display: block !important;
+        img {
+          width: auto !important;
+          margin: 0 30% !important;
+        }
+        .img {
+          width: 100% !important;
+        }
+      }
+    }
+    .fields {
+      width: 60%;
+    }
+    &__connect {
+      padding-top: 25px;
+    }
+  }
+}
+@media (max-width: 550px) {
+  html {
+    font-size: 6px !important;
+  }
+  .footer {
+    &__wrapper {
+      width: 90% !important;
+    }
+    &__payment {
+      &--title {
+        text-align: left;
+      }
+      &--body {
+        display: block !important;
+        img {
+          width: auto !important;
+          margin: 0 !important;
+        }
+        .img {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 375px) {
+  .footer {
+    &__connect {
+      padding-bottom: 30px;
+      &--title {
+        justify-content: center;
+      }
+    }
+    &__connect--body {
+      .links {
+        padding: 10px 0;
+        li {
+          justify-content: center;
+          display: flex;
+        }
+      }
+    }
+    button {
+      margin: 0 auto;
+    }
+    &__about--title {
+      text-align: center;
+      padding-bottom: 10px;
+    }
+    &__about--body {
+      .links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 25px;
+        li {
+          padding: 0 15px;
+        }
+      }
+      .other-links {
+        li {
+          padding: 10px 0 !important;
+          text-align: center;
+        }
+      }
+    }
+    &__wrapper {
+      flex-direction: column-reverse;
+      width: 90% !important;
+    }
+    &__payment {
+      width: 100%;
+      &--title {
+        text-align: center;
+      }
+      &--body {
+        display: flex !important;
+        max-width: 100% !important;
+        img {
+          width: 15% !important;
+        }
+        .img {
+          width: 20% !important;
+          flex-wrap: nowrap;
+          img {
+            width: 100% !important;
+          }
+        }
+      }
+    }
+    .fields {
+      width: 100%;
+    }
+  }
+}
+
