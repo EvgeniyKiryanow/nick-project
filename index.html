@@ -1,211 +1,284 @@
-<!DOCTYPE html>
-<html data-n-head-ssr lang="en">
-  <head>
-    <title>app</title>
-    <meta data-n-head="ssr" charset="utf-8" />
-    <meta
-      data-n-head="ssr"
-      name="viewport"
-      content="width=device-width,initial-scale=1"
-    />
-    <meta
-      data-n-head="ssr"
-      data-hid="description"
-      name="description"
-      content=""
-    />
-    <meta data-n-head="ssr" name="format-detection" content="telephone=no" />
-    <link
-      data-n-head="ssr"
-      rel="icon"
-      type="image/x-icon"
-      href="/favicon.ico"
-    />
-    <link
-      data-n-head="ssr"
-      href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@500;800&family=Montserrat:wght@600&family=Russo+One&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      data-n-head="ssr"
-      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:ital,wght@1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      data-n-head="ssr"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <script
-      data-n-head="ssr"
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="style.css" />
-  </head>
+<!doctype html>
+<html data-n-head-ssr lang="en" >
 
-  <body>
-    <div data-server-rendered="true" id="__nuxt">
-      <!---->
-      <div id="__layout">
-        <div>
-          <header class="header">
-            <div class="header__wrapper">
-              <div class="header__wrapper_logo">
-                <img src="assets/header/logo.png" alt="logo" loading="lazy" />
-                <div class="student">
-                  <p>Only</p>
-                  <p>Student</p>
-                </div>
+<head>
+  <title>app</title>
+  <meta data-n-head="ssr" charset="utf-8">
+  <meta data-n-head="ssr" name="viewport" content="width=device-width,initial-scale=1">
+  <meta data-n-head="ssr" data-hid="description" name="description" content="">
+  <meta data-n-head="ssr" name="format-detection" content="telephone=no">
+  <link data-n-head="ssr" rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link data-n-head="ssr"
+    href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@500;800&family=Montserrat:wght@600&family=Russo+One&display=swap"
+    rel="stylesheet">
+  <link data-n-head="ssr"
+    href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:ital,wght@1,900&display=swap"
+    rel="stylesheet">
+  <link data-n-head="ssr" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+    crossorigin="anonymous">
+  <script data-n-head="ssr" src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div data-server-rendered="true" id="__nuxt">
+    <!---->
+    <div id="__layout">
+      <div>
+        <header class="header">
+          <div class="header__wrapper">
+            <div class="header__wrapper_logo"><img src="assets/header/logo.png" alt="logo" loading="lazy">
+              <div class="student">
+                <p>Only</p>
+                <p>Student</p>
               </div>
-              <div class="header__consultation">
-                <button>
-                  <div>Получить консультацию</div>
-                  <div class="circle">
-                    <img
-                      src="assets/header/arrow.svg"
-                      alt="arrow"
-                      loading="lazy"
-                    />
-                  </div>
-                </button>
-              </div>
-              <div class="header__navigation">
-                <div class="header__languages">
-                  <div class="header__dropdown">
-                    <button
-                      type="button"
-                      id="dropdownMenuButton1"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                      class="btn btn-secondary dropdown-toggle"
-                    >
-                      <img src="assets/header/ru.png" alt="ru icon" /> ru
-                    </button>
-                    <ul
-                      aria-labelledby="dropdownMenuButton1"
-                      class="dropdown-menu"
-                    >
-                      <li>
-                        <a href="#" class="dropdown-item"
-                          ><img src="assets/header/en.png" alt="en icon" />en</a
-                        >
-                      </li>
-                      <li>
-                        <a href="#" class="dropdown-item"
-                          ><img src="assets/header/de.png" alt="de icon" />de</a
-                        >
-                      </li>
-                      <li>
-                        <a href="#" class="dropdown-item"
-                          ><img src="assets/header/ua.png" alt="ua icon" />ua</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="header__menu">
-                  <button
-                    type="button"
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal"
-                  >
-                    Mеню
-                    <div class="lines"></div>
+            </div>
+            <div class="header__consultation"><button>
+                <div>Получить консультацию</div>
+                <div class="circle"><img
+                  src="assets/header/arrow.svg"
+                    alt="arrow" loading="lazy"></div>
+              </button></div>
+            <div class="header__navigation">
+              <div class="header__languages">
+                <div class="header__dropdown"><button type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                    aria-expanded="false" class="btn btn-secondary dropdown-toggle"><img
+                    src="assets/header/ru.png"
+                      alt="ru icon"> ru
                   </button>
+                  <ul aria-labelledby="dropdownMenuButton1" class="dropdown-menu">
+                    <li><a href="#" class="dropdown-item"><img
+                      src="assets/header/en.png"
+                          alt="en icon">en</a></li>
+                    <li><a href="#" class="dropdown-item"><img
+                      src="assets/header/de.png"
+                          alt="de icon">de</a></li>
+                    <li><a href="#" class="dropdown-item"><img
+                      src="assets/header/ua.png"
+                          alt="ua icon">ua</a></li>
+                  </ul>
                 </div>
-                <div
-                  id="exampleModal"
-                  tabindex="-1"
-                  aria-labelledby="exampleModalLabel"
-                  aria-hidden="true"
-                  class="modal fade"
-                >
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 id="exampleModalLabel" class="modal-title">
-                          Modal title
-                        </h5>
-                        <button
-                          type="button"
-                          data-bs-dismiss="modal"
-                          aria-label="Close"
-                          class="btn-close"
-                        ></button>
-                      </div>
-                      <div class="modal-body">...</div>
+              </div>
+              <div class="header__menu"><button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Mеню
+                  <div class="lines"></div>
+                </button></div>
+              <div id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+                class="modal fade">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 id="exampleModalLabel" class="modal-title">Modal title</h5> <button type="button"
+                        data-bs-dismiss="modal" aria-label="Close" class="btn-close"></button>
+                    </div>
+                    <div class="modal-body">...</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="body">
+          <div class="articles">
+            <div class="articles__wrapper">
+              <h2 class="articles__title">Статьи</h2>
+              <div class="articles__body">
+                <div class="card">
+                  <div class="card-wrapper"><img src="/assets/articles/1.png" alt="logo1" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Диплом по уголовному праву</h5>
+                      <p class="card-text">
+                        Написать дипломную работу по юриспруденции, в частности по уголовному
+                        праву лучше всего доверить испо...<a href="#" class="card-link">Подробнее</a></p>
                     </div>
                   </div>
+                  <div class="card-data">08.09.2021</div>
+                </div>
+                <div class="card">
+                  <div class="card-wrapper"><img src="/assets/articles/2.png" alt="logo2" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Диплом по уголовному праву</h5>
+                      <p class="card-text">
+                        Написать дипломную работу по юриспруденции, в частности по уголовному
+                        праву лучше всего доверить испо...<a href="#" class="card-link">Подробнее</a></p>
+                    </div>
+                  </div>
+                  <div class="card-data">08.09.2021</div>
+                </div>
+                <div class="card">
+                  <div class="card-wrapper"><img src="/assets/articles/3.png" alt="logo3" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Диплом по уголовному праву</h5>
+                      <p class="card-text">
+                        Написать дипломную работу по юриспруденции, в частности по уголовному
+                        праву лучше всего доверить испо...<a href="#" class="card-link">Подробнее</a></p>
+                    </div>
+                  </div>
+                  <div class="card-data">08.09.2021</div>
+                </div>
+                <div class="card">
+                  <div class="card-wrapper"><img src="/assets/articles/4.png" alt="logo4" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Диплом по уголовному праву</h5>
+                      <p class="card-text">
+                        Написать дипломную работу по юриспруденции, в частности по уголовному
+                        праву лучше всего доверить испо...<a href="#" class="card-link">Подробнее</a></p>
+                    </div>
+                  </div>
+                  <div class="card-data">08.09.2021</div>
+                </div>
+                <div class="card">
+                  <div class="card-wrapper"><img src="/assets/articles/5.png" alt="logo5" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Диплом по уголовному праву</h5>
+                      <p class="card-text">
+                        Написать дипломную работу по юриспруденции, в частности по уголовному
+                        праву лучше всего доверить испо...<a href="#" class="card-link">Подробнее</a></p>
+                    </div>
+                  </div>
+                  <div class="card-data">08.09.2021</div>
+                </div>
+                <div class="card">
+                  <div class="card-wrapper"><img src="/assets/articles/6.png" alt="logo6" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Диплом по уголовному праву</h5>
+                      <p class="card-text">
+                        Написать дипломную работу по юриспруденции, в частности по уголовному
+                        праву лучше всего доверить испо...<a href="#" class="card-link">Подробнее</a></p>
+                    </div>
+                  </div>
+                  <div class="card-data">08.09.2021</div>
+                </div>
+                <div class="card">
+                  <div class="card-wrapper"><img src="/assets/articles/7.png" alt="logo7" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Диплом по уголовному праву</h5>
+                      <p class="card-text">
+                        Написать дипломную работу по юриспруденции, в частности по уголовному
+                        праву лучше всего доверить испо...<a href="#" class="card-link">Подробнее</a></p>
+                    </div>
+                  </div>
+                  <div class="card-data">08.09.2021</div>
+                </div>
+                <div class="card">
+                  <div class="card-wrapper"><img src="/assets/articles/8.png" alt="logo8" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Диплом по уголовному праву</h5>
+                      <p class="card-text">
+                        Написать дипломную работу по юриспруденции, в частности по уголовному
+                        праву лучше всего доверить испо...<a href="#" class="card-link">Подробнее</a></p>
+                    </div>
+                  </div>
+                  <div class="card-data">08.09.2021</div>
+                </div>
+                <div class="card">
+                  <div class="card-wrapper"><img src="/assets/articles/9.png" alt="logo9" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Диплом по уголовному праву</h5>
+                      <p class="card-text">
+                        Написать дипломную работу по юриспруденции, в частности по уголовному
+                        праву лучше всего доверить испо...<a href="#" class="card-link">Подробнее</a></p>
+                    </div>
+                  </div>
+                  <div class="card-data">08.09.2021</div>
+                </div>
+                <div class="card">
+                  <div class="card-wrapper"><img src="/assets/articles/10.png" alt="logo10" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Диплом по уголовному праву</h5>
+                      <p class="card-text">
+                        Написать дипломную работу по юриспруденции, в частности по уголовному
+                        праву лучше всего доверить испо...<a href="#" class="card-link">Подробнее</a></p>
+                    </div>
+                  </div>
+                  <div class="card-data">08.09.2021</div>
+                </div>
+                <div class="card">
+                  <div class="card-wrapper"><img src="/assets/articles/11.png" alt="logo11" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Диплом по уголовному праву</h5>
+                      <p class="card-text">
+                        Написать дипломную работу по юриспруденции, в частности по уголовному
+                        праву лучше всего доверить испо...<a href="#" class="card-link">Подробнее</a></p>
+                    </div>
+                  </div>
+                  <div class="card-data">08.09.2021</div>
+                </div>
+                <div class="card">
+                  <div class="card-wrapper"><img src="/assets/articles/12.png" alt="logo12" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Диплом по уголовному праву</h5>
+                      <p class="card-text">
+                        Написать дипломную работу по юриспруденции, в частности по уголовному
+                        праву лучше всего доверить испо...<a href="#" class="card-link">Подробнее</a></p>
+                    </div>
+                  </div>
+                  <div class="card-data">08.09.2021</div>
                 </div>
               </div>
+              <div class="articles__button"><button>
+                  <div>Больше</div>
+                </button></div>
             </div>
-          </header>
-          <div class="body"></div>
-          <footer class="footer">
-            <div class="footer__wrapper row">
-              <div class="footer__payment col-md-4">
-                <div class="footer__payment--title title">
-                  Принимаем к оплате
-                </div>
-                <div class="footer__payment--body">
-                  <img src="assets/footer/visa.png" alt="visa" />
-                  <img src="assets/footer/mastercard.png" alt="mastercard" />
-                  <img src="assets/footer/privat.png" alt="privat" />
-                  <div class="img wrapper">
-                    <img src="assets/footer/world.png" alt="world" />
-                    <img src="assets/footer/liqpay.png" alt="liqpay" />
-                  </div>
-                </div>
-              </div>
-              <div class="fields col-md-8 row">
-                <div class="footer__about col-md-6">
-                  <div class="footer__about--title title">О Нас</div>
-                  <div class="footer__about--body">
-                    <ul class="links">
-                      <li><a href="#">Статьи</a></li>
-                      <li><a href="#">Отзывы</a></li>
-                      <li><a href="#">Услуги</a></li>
-                    </ul>
-                    <ul class="other-links">
-                      <li><a href="#">Помощь с репетиторами</a></li>
-                      <li><a href="#">Помощь с учебными работами</a></li>
-                      <li><a href="#">Политика конфиденциальности</a></li>
-                      <li><a href="#">Договор публичной оферты</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="footer__connect col-md-6">
-                  <div class="footer__connect--title title">
-                    Связаться с нами
-                    <img src="assets/footer/chat.png" alt="chat" />
-                  </div>
-                  <div class="footer__connect--body">
-                    <ul class="links">
-                      <li>
-                        <a href="#"
-                          >support@only-student.com
-                          <img src="assets/footer/mail.png" alt="mail"
-                        /></a>
-                      </li>
-                      <li><a href="#">Исполнителям и Партнерам</a></li>
-                    </ul>
-                    <button>
-                      <div>Регистрация</div>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="footer__copyrighting row">
-              © 2017-2021 «only-student». Все права защищены.
-            </div>
-          </footer>
+          </div>
         </div>
+        <footer class="footer">
+          <div class="footer__wrapper row">
+            <div class="footer__payment col-md-4">
+              <div class="footer__payment--title title">Принимаем к оплате</div>
+              <div class="footer__payment--body"><img src="assets/footer/visa.png" alt="visa"> <img
+                  src="assets/footer/mastercard.png" alt="mastercard"> <img src="assets/footer/privat.png"
+                  alt="privat">
+                <div class="img wrapper"><img src="assets/footer/world.png" alt="world"> <img
+                    src="assets/footer/liqpay.png" alt="liqpay"></div>
+              </div>
+            </div>
+            <div class="fields col-md-8 row">
+              <div class="footer__about col-md-6">
+                <div class="footer__about--title title">О Нас</div>
+                <div class="footer__about--body">
+                  <ul class="links">
+                    <li><a href="#">Статьи</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Услуги</a></li>
+                  </ul>
+                  <ul class="other-links">
+                    <li><a href="#">Помощь с репетиторами</a></li>
+                    <li><a href="#">Помощь с учебными работами</a></li>
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                    <li><a href="#">Договор публичной оферты</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer__connect col-md-6">
+                <div class="footer__connect--title title">
+                  Связаться с нами
+                  <img src="assets/footer/chat.png" alt="mail">
+                </div>
+                <div class="footer__connect--body">
+                  <ul class="links">
+                    <li><a href="#">support@only-student.com
+                        <img
+                        src="assets/footer/mail.png"
+                          alt="mail"></a></li>
+                    <li><a href="#">Исполнителям и Партнерам</a></li>
+                  </ul> <button>
+                    <div>Регистрация</div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__copyrighting row">
+            © 2017-2021 «only-student». Все права защищены.
+          </div>
+        </footer>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
