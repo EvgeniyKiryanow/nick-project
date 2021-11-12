@@ -1,4 +1,10 @@
 {
+  "Articles": {
+    "description": "Auto imported from components/Articles.vue"
+  },
+  "ArticlesCard": {
+    "description": "Auto imported from components/ArticlesCard.vue"
+  },
   "Footer": {
     "description": "Auto imported from components/Footer.vue"
   },

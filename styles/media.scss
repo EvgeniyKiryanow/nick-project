@@ -44,6 +44,19 @@
       padding-top: 25px;
     }
   }
+  .articles {
+    &__title {
+      margin: 0 !important;
+      text-align: center;
+    }
+    &__body {
+      justify-content: center !important;
+    }
+    .card {
+      width: 40% !important; 
+    }
+
+  }
 }
 @media (max-width: 550px) {
   html {
@@ -138,6 +151,14 @@
     .fields {
       width: 100%;
     }
+  }
+  .articles {
+   
+    .card {
+      margin: 0 !important;
+      width: 80% !important; 
+    }
+
   }
 }
 

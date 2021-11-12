@@ -1,7 +1,9 @@
 <template>
   <div>
     <Header />
-    <div class="body"></div>
+    <div class="body">
+      <Articles />
+    </div>
     <Footer />
   </div>
 </template>
@@ -9,9 +11,10 @@
 <script>
 import Header from '../components/Header.vue'
 import Footer from '../components/Footer.vue'
+import Articles from '../components/Articles.vue'
 export default {
   name: 'TitlePage',
-  components: { Header, Footer },
+  components: { Header, Footer, Articles },
 }
 </script>
 <style lang="scss">
@@ -20,9 +23,6 @@ html {
 }
 body {
   background-color: #01000F;
-}
-.body {
-  height: 500px;
 }
 
 *,
