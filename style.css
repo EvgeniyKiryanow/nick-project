@@ -1641,11 +1641,94 @@
       .footer .fields {
         width: 100%
       }
+      .articles__body {
+        width: 90%;
+        margin: 0 auto;
+      }
+
+      .card-data {
+        bottom: unset;
+      }
 
       .articles .card {
-        margin: 0 !important;
-        width: 80% !important
+        margin: 0 10px !important;
+        width: 3.8% !important
       }
+      .slick-list {
+          height: 360px;
+      }
+      .slick-prev {
+        position: absolute;
+        bottom: 11.5%;
+        z-index: 9;
+        background: transparent;
+        border: unset;
+        font-size: 0;
+      }
+      .slick-prev::after {
+        position: absolute;
+        content: '';
+        background-image: url('assets/articles/arrow-left.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 20px;
+          height: 32px;
+    }
+      .slick-next {
+        position: absolute;
+        top: 88%;
+        right: 0%;
+        background: transparent;
+        border: unset;
+        font-size: 0;
+      }
+      .slick-next::after {
+          position: absolute;
+          content: '';
+          background-image: url('assets/articles/arrow-left.png');
+          transform: rotate(180deg);
+          background-size: cover;
+          background-repeat: no-repeat;
+          width: 20px;
+            height: 32px;
+      }
+      .slick-initialized .slick-slide {
+        background: transparent !important;
+      }
+      .slick-dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 20%;
+        top: 90%;
+      }
+      .slick-active {
+        background: rgba(255, 205, 238, 1) !important;
+        border-radius: 50%;
+        height: 15px !important;
+        width: 15px !important;
+      }
+      .slick-active button {
+        background: rgba(255, 205, 238, 1);
+        border: unset;
+        font-size: 0;
+        border-radius: 50%;
+      }
+        [role=presentation] {
+            margin-right: 5px;
+            width: 10px;
+            height: 10px;
+            background: #570899;
+            border-radius: 50%;
+      }
+      [role=tab] {
+        background: #570899;
+        border-radius: 50%;
+        border: unset;
+        font-size: 0;
+  }
+
     }
 
     *,
