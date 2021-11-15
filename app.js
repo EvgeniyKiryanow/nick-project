@@ -6,8 +6,10 @@
             slidesToShow: 1,
             slidesToScroll: 1,
             dots: true,
+            mobileFirst:true,
         });
     } else {
+        $('.slick').slick('unslick')
         $('.articles__body').removeClass("slick");
     }
     $(window).resize(function () {
@@ -17,8 +19,10 @@
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 dots: true,
+                mobileFirst:true,
             });
         } else {
+            $('.slick').slick('unslick')
             $('.articles__body').removeClass("slick");
         }
     });
