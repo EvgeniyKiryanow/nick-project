@@ -1,3 +1,7 @@
+.articles {
+  padding-top: 90px;
+}
+
 .articles__button {
   display: flex;
   justify-content: center;
@@ -196,7 +200,6 @@
   .articles .card {
     width: 100%;
     margin: 0 10px !important;
-    /* width: 312px !important; */
   }
   .slick-list {
     height: 360px;

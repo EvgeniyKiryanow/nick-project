@@ -309,10 +309,6 @@
     max-width: 100% !important;
   }
 
-  .footer__payment--body img {
-    /* width: 100% !important; */
-  }
-
   .footer__payment--body .img {
     width: 35% !important;
     flex-wrap: nowrap;
