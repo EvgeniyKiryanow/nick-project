@@ -1,33 +1,25 @@
-
-$('.articles__body').slick({
-   slidesToShow: 1,
-        slidesToScroll: 1,
-        dots: true,
-    responsive: [
-        {
-          breakpoint: 1024,
-          settings: "unslick"
-        },
-        {
-          breakpoint: 600,
-          settings: "unslick"
-        },
-        {
-            breakpoint: 376,
-            settings: "unslick"
-          },
-        {
-          breakpoint: 375,
-          settings: {
+  $(document).ready(function () {
+    if ($(window).width() < 376 ) {
+        $('.articles__body').addClass("slick");
+        // Boxes
+        $('.slick').slick({
             slidesToShow: 1,
-        slidesToScroll: 1,
-        dots: true,
-    // autoplay: true,
-    // autoplaySpeed: 2000,
-          }
+            slidesToScroll: 1,
+            dots: true,
+        });
+    } else {
+        $('.articles__body').removeClass("slick");
+    }
+    $(window).resize(function () {
+        if ($(window).width() < 376 ) {
+            $('.articles__body').addClass("slick");
+            $('.slick').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true,
+            });
+        } else {
+            $('.articles__body').removeClass("slick");
         }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-      ]
-  });
+    });
+});
