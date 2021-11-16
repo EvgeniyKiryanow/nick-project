@@ -22,6 +22,7 @@
     crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="assets/styles/global.css">
   <link rel="stylesheet" type="text/css" href="assets/styles/header.css">
+  <link rel="stylesheet" type="text/css" href="assets/styles/header-modal.css">
   <link rel="stylesheet" type="text/css" href="assets/styles/articles.css">
   <link rel="stylesheet" type="text/css" href="assets/styles/footer.css">
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
@@ -39,7 +40,7 @@
                 <p>Student</p>
               </div>
             </div>
-            <div class="header__consultation"><button>
+            <div class="header__consultation"><button data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                 <div>Получить консультацию</div>
                 <div class="circle"><img src="assets/img/header/arrow.webp" alt="arrow" loading="lazy"></div>
               </button></div>
@@ -52,8 +53,8 @@
                   </button>
                   <ul aria-labelledby="dropdownMenuButton1" class="dropdown-menu">
                     <li><a href="#" class="dropdown-item">
-                      <img src="assets/img/header/ua.webp" alt="ua">
-                      ua</a></li>
+                        <img src="assets/img/header/ua.webp" alt="ua">
+                        ua</a></li>
                     <li><a href="#" class="dropdown-item">
                         <img src="assets/img/header/en.webp" alt="en">
                         en</a></li>
@@ -67,7 +68,7 @@
                   Mеню
                   <div class="lines"></div>
                 </button></div>
-            
+
             </div>
           </div>
         </header>
@@ -78,7 +79,7 @@
               <div class="articles__body">
                 <div class="card">
                   <div class="card-wrapper">
-                      <img class="card-img-top" src="assets/img/articles/1.webp" alt="logo1">
+                    <img class="card-img-top" src="assets/img/articles/1.webp" alt="logo1">
                     <div class="card-body">
                       <h5 class="card-title">Диплом по уголовному праву</h5>
                       <p class="card-text">
@@ -90,7 +91,7 @@
                 </div>
                 <div class="card">
                   <div class="card-wrapper">
-                      <img class="card-img-top" src="assets/img/articles/2.webp" alt="logo2">
+                    <img class="card-img-top" src="assets/img/articles/2.webp" alt="logo2">
                     <div class="card-body">
                       <h5 class="card-title">Диплом по уголовному праву</h5>
                       <p class="card-text">
@@ -102,7 +103,7 @@
                 </div>
                 <div class="card">
                   <div class="card-wrapper">
-                      <img class="card-img-top" src="assets/img/articles/3.webp" alt="logo3">
+                    <img class="card-img-top" src="assets/img/articles/3.webp" alt="logo3">
                     <div class="card-body">
                       <h5 class="card-title">Диплом по уголовному праву</h5>
                       <p class="card-text">
@@ -114,7 +115,7 @@
                 </div>
                 <div class="card">
                   <div class="card-wrapper">
-                      <img class="card-img-top" src="assets/img/articles/4.webp" alt="logo4">
+                    <img class="card-img-top" src="assets/img/articles/4.webp" alt="logo4">
                     <div class="card-body">
                       <h5 class="card-title">Диплом по уголовному праву</h5>
                       <p class="card-text">
@@ -126,7 +127,7 @@
                 </div>
                 <div class="card">
                   <div class="card-wrapper">
-                      <img class="card-img-top" src="assets/img/articles/5.webp" alt="logo5">
+                    <img class="card-img-top" src="assets/img/articles/5.webp" alt="logo5">
                     <div class="card-body">
                       <h5 class="card-title">Диплом по уголовному праву</h5>
                       <p class="card-text">
@@ -138,7 +139,7 @@
                 </div>
                 <div class="card">
                   <div class="card-wrapper">
-                      <img class="card-img-top" src="assets/img/articles/6.webp" alt="logo6">
+                    <img class="card-img-top" src="assets/img/articles/6.webp" alt="logo6">
                     <div class="card-body">
                       <h5 class="card-title">Диплом по уголовному праву</h5>
                       <p class="card-text">
@@ -150,7 +151,7 @@
                 </div>
                 <div class="card">
                   <div class="card-wrapper">
-                      <img class="card-img-top" src="assets/img/articles/7.webp" alt="logo7">
+                    <img class="card-img-top" src="assets/img/articles/7.webp" alt="logo7">
                     <div class="card-body">
                       <h5 class="card-title">Диплом по уголовному праву</h5>
                       <p class="card-text">
@@ -162,7 +163,7 @@
                 </div>
                 <div class="card">
                   <div class="card-wrapper">
-                      <img class="card-img-top" src="assets/img/articles/8.webp" alt="logo8">
+                    <img class="card-img-top" src="assets/img/articles/8.webp" alt="logo8">
                     <div class="card-body">
                       <h5 class="card-title">Диплом по уголовному праву</h5>
                       <p class="card-text">
@@ -184,12 +185,12 @@
             <div class="footer__payment col-md-4">
               <div class="footer__payment--title title">Принимаем к оплате</div>
               <div class="footer__payment--body">
-                  <img src="assets/img/footer/visa.webp" alt="visa">
-                  <img src="assets/img/footer/mastercard.webp" alt="mastercard">
-                  <img src="assets/img/footer/privat.webp" alt="privat">
+                <img src="assets/img/footer/visa.webp" alt="visa">
+                <img src="assets/img/footer/mastercard.webp" alt="mastercard">
+                <img src="assets/img/footer/privat.webp" alt="privat">
                 <div class="img wrapper">
                   <img src="assets/img/footer/world.webp" alt="world">
-                    <img src="assets/img/footer/liqpay.webp" alt="liqpay">
+                  <img src="assets/img/footer/liqpay.webp" alt="liqpay">
                 </div>
               </div>
             </div>
@@ -213,7 +214,9 @@
               <div class="footer__connect col-md-6">
                 <div class="footer__connect--title title">
                   Связаться с нами
-                  <img src="assets/img/footer/chat.webp" alt="mail">
+                  <img class="chat-base" src="assets/img/footer/chat.webp" alt="chat"><img class="chat-hover"
+                    src="assets/img/header/chat-hover.webp" alt="chat"><img class="chat-click"
+                    src="assets/img/header/chat-click.webp" alt="chat">
                 </div>
                 <div class="footer__connect--body">
                   <ul class="links">
@@ -231,37 +234,75 @@
             © 2017-2021 «only-student». Все права защищены.
           </div>
         </footer>
-        <div id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
-                class="modal fade">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 id="exampleModalLabel" class="modal-title">MENU</h5> <button type="button"
-                        data-bs-dismiss="modal" aria-label="Close" class="btn-close"><img src="assets/img/header/close.webp" alt="close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <div class="modal-menu">
-                        <ul>
-                          <li class="enter"><img src="assets/img/header/menu-enter.webp" alt="enter icon"> <a href="#">Войти/Регистрация</a></li>
-                          <li><a href="#">Договор публичной оферты</a></li>
-                          <li><a href="#">Политика конфиденциальности</a></li>
-                          <li><a href="#">Отзывы</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="modal-footer">
-                      <h3>Связаться с нами</h3>
-                      <ul>
-                        <li><a href="#"><img src="assets/img/footer/mail.webp" alt="mail"> support@legko-v-uchebe.com</a></li>
-                        <li><a href="#"><img src="assets/img/header/telegram.webp" alt="telegram">  Консультация в Telegram</a></li>
-                        <li><a href="#"><img src="assets/img/header/viber.webp" alt="viber">  Консультация в Viber</a></li>
-                        <li><a href="#"><img src="assets/img/footer/chat.webp" alt="chat">  Online-ЧАТ</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  
+        <div id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" class="modal fade">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 id="exampleModalLabel" class="modal-title">MENU</h5> <button type="button" data-bs-dismiss="modal"
+                  aria-label="Close" class="btn-close"><img src="assets/img/header/close.webp" alt="close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="modal-menu">
+                  <ul>
+                    <li class="enter"><img src="assets/img/header/menu-enter.webp" alt="enter icon"> <a
+                        href="#">Войти/Регистрация</a></li>
+                    <li><a href="#">Договор публичной оферты</a></li>
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                  </ul>
                 </div>
+              </div>
+              <div class="modal-footer">
+                <h3>Связаться с нами</h3>
+                <ul>
+                  <li><a href="#"><img src="assets/img/footer/mail.webp" alt="mail"> support@legko-v-uchebe.com</a></li>
+                  <li><a href="#"><img src="assets/img/header/telegram.webp" alt="telegram"> Консультация в Telegram</a>
+                  </li>
+                  <li><a href="#"><img src="assets/img/header/viber.webp" alt="viber"> Консультация в Viber</a></li>
+                  <li><a href="#"><img class="chat-base" src="assets/img/footer/chat.webp" alt="chat"><img
+                        class="chat-hover" src="assets/img/header/chat-hover.webp" alt="chat"><img class="chat-click"
+                        src="assets/img/header/chat-click.webp" alt="chat"> Online-ЧАТ</a></li>
+                </ul>
+              </div>
+            </div>
+
           </div>
+        </div>
+        <div class="modal consultation fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog consultation">
+            <div class="modal-content consultation">
+              <div class="modal-header consultation">
+                <div class="modal-title consultation" id="staticBackdropLabel">У Вас уже есть аккаунт? Нажмите</h5>
+                <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                <button><div>Вход</div></button>
+              </div>
+              <div class="modal-body consultation">
+                <h3>Быстрое оформление заказа</h3>
+                <ul>
+                  <li>Step 1</li>
+                  <li>Step 2</li>
+                </ul>
+                <label for="name">Как к Вам обращаться?</label>
+                <input type="text" id="name">
+                <label for="email">Адрес электронной почты</label>
+                <input type="text" id="email">
+                <label for="tel">Номер телефона*</label>
+                <input type="nubmer" id="tel">
+                <label for="tel">*номер телефона является паролем</label>
+                <button>Далее</button>
+                <label>
+                  <input type='checkbox'>
+                  <span></span>
+                  <div class="check">«Ознакомлен с правилами <a href="#">политики конфиденциальности</a> и согласен об использовании файлов cookie»</div>
+                </label>
+              </div>
+              <div class="modal-footer consultation">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Understood</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

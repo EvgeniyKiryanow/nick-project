@@ -3,8 +3,8 @@
 }
 
 .footer__wrapper {
-  max-width: 1110px;
-  width: 100%;
+  max-width: 1440px;
+  width: 96%;
   margin: 0 auto;
 }
 
@@ -188,6 +188,26 @@
   color: #fff;
   padding: 25px 0;
 }
+
+
+.footer__connect--title:hover .chat-base{
+  display: none;
+  }
+  .footer__connect--title:hover .chat-hover{
+  display: block;
+  }
+  .footer__connect--title:hover .chat-click{
+  display: none;
+  }
+  .footer__connect--title:active .chat-base{
+  display: none;
+  }
+  .footer__connect--title:active .chat-hover{
+  display: none;
+  }
+  .footer__connect--title:active .chat-click{
+  display: block;
+  }
 
 /* Media */
 @media (max-width: 767px) {
