@@ -35,10 +35,10 @@
   height: 50px;
   position: relative;
   background: #010714;
-  border: 1px solid #f6e3ff;
-  box-shadow: -2px -2px 10px rgba(182, 27, 255, 0.6),
+  border: 2px solid #B61BFF;
+  /* box-shadow: -2px -2px 10px rgba(182, 27, 255, 0.6),
     2px 2px 10px rgba(182, 27, 255, 0.6), 2px -2px 10px rgba(182, 27, 255, 0.6),
-    -2px 2px 10px rgba(182, 27, 255, 0.6);
+    -2px 2px 10px rgba(182, 27, 255, 0.6); */
   border-radius: 40px;
 }
 
@@ -58,7 +58,7 @@
 .header__consultation button .circle img {
   position: absolute;
   top: 40%;
-  right: 40%;
+  right: 32%;
 }
 
 .header__consultation button:after {
@@ -195,6 +195,74 @@
 .header .student p:first-child {
   text-align: right;
 }
+
+.modal-farther {
+  margin: 15px auto 18px auto;
+}
+
+.modal-farther button {
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  position: relative;
+  background: #010714;
+  border: 1px solid #F6E3FF;
+  box-shadow: -2px 2px 10px rgba(0, 209, 255, 0.6),
+        2px -2px 10px rgba(0, 209, 255, 0.6),
+          -2px -2px 10px rgba(0, 209, 255, 0.6),
+          -2px 2px 10px rgba(0, 209, 255, 0.6);
+  border-radius: 40px;
+}
+
+.modal-farther button .circle {
+  position: relative;
+  right: -7px;
+  width: 64px;
+  height: 64px;
+  background: #00D1FF;
+  border-radius: 50%;
+  box-shadow: -2px 2px 10px rgba(0, 209, 255, 0.6),
+        2px -2px 10px rgba(0, 209, 255, 0.6),
+          -2px -2px 10px rgba(0, 209, 255, 0.6),
+          -2px 2px 10px rgba(0, 209, 255, 0.6);
+}
+
+.modal-farther button .circle img {
+  position: absolute;
+  top: 40%;
+  right: 32%;
+}
+
+.modal-farther button:after {
+  position: absolute;
+  right: 0;
+  width: 62px;
+  height: 62px;
+  background: #00D1FF;
+
+  box-shadow: -2px 2px 10px rgba(0, 209, 255, 0.6),
+        2px -2px 10px rgba(0, 209, 255, 0.6),
+          -2px -2px 10px rgba(0, 209, 255, 0.6),
+          -2px 2px 10px rgba(0, 209, 255, 0.6);
+}
+
+.modal-farther button:hover {
+  background: #572370;
+}
+
+.modal-farther button:active {
+  background: #39104d;
+}
+
+.modal-farther button div {
+  font-weight: 800;
+  font-size: 1.8em;
+  line-height: 124%;
+  color: #fff;
+  padding: 25px;
+}
+
 
 /* Media */
 @media (min-width:769px) {

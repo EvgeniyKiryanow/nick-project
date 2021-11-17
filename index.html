@@ -269,18 +269,22 @@
           </div>
         </div>
         <div class="modal consultation fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-title consultation" id="staticBackdropLabel">
+            <h2>У Вас уже есть аккаунт? Нажмите</h2>
+          <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+            <button>
+              <div>Вход</div>
+            </button>
+        </div>
           <div class="modal-dialog consultation">
             <div class="modal-content consultation">
               <div class="modal-header consultation">
-                <div class="modal-title consultation" id="staticBackdropLabel">У Вас уже есть аккаунт? Нажмите</h5>
-                <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
-                <button><div>Вход</div></button>
-              </div>
+              </div> -->
               <div class="modal-body consultation">
                 <h3>Быстрое оформление заказа</h3>
                 <ul>
-                  <li>Step 1</li>
-                  <li>Step 2</li>
+                  <li class="modal-first-step">Шаг 1 -</li>
+                  <li class="modal-second-step">Шаг 2</li>
                 </ul>
                 <label for="name">Как к Вам обращаться?</label>
                 <input type="text" id="name">
@@ -288,18 +292,23 @@
                 <input type="text" id="email">
                 <label for="tel">Номер телефона*</label>
                 <input type="nubmer" id="tel">
-                <label for="tel">*номер телефона является паролем</label>
-                <button>Далее</button>
+                <label class="modal-label-subtitle" for="tel">*номер телефона является паролем</label>
+                <div class="modal-farther">
+                  <button data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    <div>Далее</div>
+                    <div class="circle"><img src="assets/img/header/Vector 94.webp" alt="arrow" loading="lazy"></div>
+                  </button>
+                </div>
                 <label>
                   <input type='checkbox'>
                   <span></span>
                   <div class="check">«Ознакомлен с правилами <a href="#">политики конфиденциальности</a> и согласен об использовании файлов cookie»</div>
                 </label>
               </div>
-              <div class="modal-footer consultation">
+              <!-- <div class="modal-footer consultation">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 <button type="button" class="btn btn-primary">Understood</button>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>

@@ -55,12 +55,12 @@
   .modal-footer ul a {
     text-decoration: unset;
     font-family: 'Mplus 1p';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 112.4%;
-  color: white;
-  display: flex;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 112.4%;
+    color: white;
+    display: flex;
     align-items: center;
     justify-content: center;
   }
@@ -277,38 +277,48 @@
 
   /* Modal consultation */
   .modal-title.consultation {
-    display: flex;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 336px 205px;
+    grid-gap: 100px;
+
     font-family: 'Russo One';
-    font-style: normal;
-    font-weight: normal;
     font-size: 24px;
     line-height: 112.4%;
     /* or 27px */
-    text-align: center;
     letter-spacing: 0.13em;
     color: #45FA41;
     text-shadow: unset;
     text-transform: unset;
     -webkit-text-stroke: unset;
+    margin-top: 45px;    
   }
   .modal-title button {
     display: flex;
     align-items: center;
+    justify-self: space-between;
     height: 50px;
     position: relative;
     background: #010714;
     border: 1px solid #f6e3ff;
     border-radius: 40px;
-    padding: 20px;
+    padding: 23px 70px;
     height: 40px;
     box-shadow: -2px -2px 15px rgba(69, 250, 65, 0.5), 2px 2px 15px rgba(69, 250, 65, 0.5), 2px -2px 15px rgba(69, 250, 65, 0.5), -2px 2px 15px rgba(69, 250, 65, 0.5);
+  }
+  .modal-title h2 {
+    max-width: 270px;
+    font-size: 21px;
   }
   .modal-title button div {
     font-family: "M PLUS 1p", sans-serif;
     font-style: normal;
-    font-weight: 800;
+    font-weight: 500;
     color: #fff;
-    font-size: 18px;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .modal-content.consultation {
       background: unset;
@@ -324,7 +334,6 @@
       width: 75%;
   }
   .modal-body.consultation h3 {
-    padding-top: 15px;
     font-family: 'Russo One';
     font-style: normal;
     font-weight: normal;
@@ -337,15 +346,15 @@
   }
   .modal-body.consultation ul {
     display: flex;
-    justify-content: space-evenly;
-    padding: 15px 0;
-    margin: 0;
+    justify-content: center;
+    padding: 20px 0 0 0;
     list-style: none;
   }
+  .modal-first-step {
+    margin-right: 5px;
+  }
   .modal-body.consultation li {
-    font-family: 'Mplus 1p';
-    font-style: normal;
-    font-weight: 800;
+    font-family: "M PLUS 1p", sans-serif;
     font-size: 16px;
     line-height: 24px;
     text-align: center;
@@ -360,18 +369,26 @@
     background: white;
     max-width: 350px;
     width: 100%;
-    height: 40px;
+    height: 60px;
+    border: none;
   }
+  
   .modal-body.consultation label {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: 'Mplus 1p';
     font-style: normal;
-    font-weight: 500;
+    font-weight: 300;
     font-size: 18px;
     line-height: 27px;
     color: #FFFFFF;
+    margin-left: 20px;
+    margin-top: 10px;
+
+  }
+  .modal-body.consultation .modal-label-subtitle {
+    font-size: 16px;
+    margin-top: 0;
   }
   .modal-body.consultation input[type=checkbox]:checked {
       background: black !important;
@@ -380,7 +397,7 @@
     display: none; /* Hide the default checkbox */
   }
   .modal-body.consultation label span {
-      width: 5%;
+    width: 5%;
     height: 10px;
     width: 10px;
     border: 1px solid grey;
@@ -398,10 +415,7 @@
   }
 
   .modal-body.consultation .check  {
-      width: 90%;
-    font-family: 'Mplus 1p';
-    font-style: normal;
-    font-weight: 500;
+    width: 90%;
     font-size: 14px;
     line-height: 21px;
     color: #FFFFFF;
