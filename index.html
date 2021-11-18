@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-</html>
-
 <head>
     <title>app</title>
     <meta charset="utf-8">
@@ -18,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="assets/styles/header-modal.css">
     <link rel="stylesheet" type="text/css" href="assets/styles/articles.css">
     <link rel="stylesheet" type="text/css" href="assets/styles/footer.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
 </head>
 
 <body>
@@ -260,6 +258,7 @@
 
                     </div>
                 </div>
+                ]
                 <div class="modal consultation fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                     <div class="modal-title consultation" id="staticBackdropLabel">
                         <h2>У Вас уже есть аккаунт? Нажмите</h2>
@@ -276,10 +275,10 @@
                                 <h3>Быстрое оформление заказа</h3>
                                 <ul class="tabs__caption">
                                     <li class="modal-first-step">Шаг 1 -</li>
-                                    <li class="modal-second-step active">Шаг 2</li>
+                                    <li class="modal-second-step ">Шаг 2</li>
                                 </ul>
 
-                                <div class="tabs__content">
+                                <div class="tabs__content test1 active">
                                     <div class="modal-form-group">
                                         <label for="name">Как к Вам обращаться?</label>
                                         <input type="text" id="name">
@@ -305,7 +304,7 @@
                                     </div>
                                 </div>
 
-                                <div class="tabs__content active">
+                                <div class="tabs__content test2">
                                     <div class="order-select-group">
                                         <!-- <div class="arrow-group">
                                             <span class="arrow-left"></span>
@@ -331,7 +330,7 @@
                                     <form class="learning__form">
                                         <fieldset>
                                             <label for="topic">Напишите тему работы</label>
-                                            <textarea id="topic" name="story" disabled="disabled" placeholder="=;">
+                                            <textarea id="topic" name="story" disabled="disabled" placeholder="=;"></textarea>
                                         </fieldset>
                                     </form>
                                 </div>
@@ -351,9 +350,10 @@
         </div>
     </div>
 </body>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="assets/js//headerMenuToggle.js"></script>
-<script src="assets/js/articlesPageSlick.js"></script>
+<script type="text/javascript" src="assets/js/headerMenuToggle.js"></script>
+<script type="text/javascript" src="assets/js/articlesPageSlick.js"></script>
 
 </html>

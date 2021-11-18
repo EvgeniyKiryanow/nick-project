@@ -5,13 +5,18 @@ $('.modal-backdrop').click(function() {
     $('.lines').removeClass('active')
 })
 $('#exampleModal').click(function() {
-        $('.lines').removeClass('active')
-    })
-    (function($) {
-        $(function() {
-            $('ul.tabs__caption').on('click', 'li:not(.active)', function() {
-                $(this).addClass('active').siblings().removeClass('active')
-                    .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
-            })
-        })
-    })(jQuery)
+    $('.lines').removeClass('active')
+})
+$('.modal-first-step').click(function(){
+    $('.modal-first-step').addClass('active')
+    $('.test1').addClass('active')
+    $('.modal-second-step').removeClass('active')
+    $('.test2').removeClass('active')
+})
+$('.modal-second-step').click(function(){
+    $('.modal-second-step').addClass('active')
+    $('.test2').addClass('active')
+    $('.modal-first-step').removeClass('active')
+    $('.test1').removeClass('active')
+})
+
