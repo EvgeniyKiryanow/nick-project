@@ -2,11 +2,13 @@
 
 .modal-backdrop {
     top: 90px;
-  }
-  .modal {
+}
+
+.modal {
     top: 90px;
-  }
-  .modal-title {
+}
+
+.modal-title {
     text-align: center;
     font-family: "Russo One", sans-serif;
     font-style: normal;
@@ -18,41 +20,49 @@
     color: rgba(12, 83, 99, 0.65);
     -webkit-text-stroke: 3px#00d1ff;
     text-shadow: 3px 13px 31px rgb(0 209 255 / 50%), 6px 6px 16px rgb(0 209 255 / 50%), -2px -2px 7px rgb(0 209 255 / 50%), -2px 2px 7px rgb(0 209 255 / 50%);
-  }
-  .modal-backdrop.show {
+}
+
+.modal-backdrop.show {
     opacity: 0.9;
-  }
-  #exampleModal .modal-content {
-   background: unset;
+}
+
+#exampleModal .modal-content {
+    background: unset;
     /* width: 50%;
     /* margin: 0 auto;  */
-  }
-  #exampleModal .modal-dialog {
+}
+
+#exampleModal .modal-dialog {
     max-width: 100%;
     margin: 0;
     padding: 0;
-  }
-  .modal-body {
+}
+
+.modal-body {
     background: unset;
     width: 50%;
     margin: 0 auto;
-  }
-  #exampleModal .modal-footer {
+}
+
+#exampleModal .modal-footer {
     border: unset;
     flex-direction: column;
-  }
-  .modal-footer h3 {
+}
+
+.modal-footer h3 {
     font-family: 'Russo One';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 112.4%;
-  color: white;
-  }
-  .modal-footer ul {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 112.4%;
+    color: white;
+}
+
+.modal-footer ul {
     width: 90%;
-  }
-  .modal-footer ul a {
+}
+
+.modal-footer ul a {
     text-decoration: unset;
     font-family: 'Mplus 1p';
     font-style: normal;
@@ -63,79 +73,94 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  .modal-footer ul {
+}
+
+.modal-footer ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
     list-style: none;
     text-decoration: unset;
-  }
-  .chat-click {
+}
+
+.chat-click {
     display: none;
-  }
-  .chat-hover {
+}
+
+.chat-hover {
     display: none;
-  }
-  .modal-footer li:last-child:hover .chat-base{
-  display: none;
-  }
-  .modal-footer li:last-child:hover .chat-hover{
-  display: block;
-  }
-  .modal-footer li:last-child:hover .chat-click{
-  display: none;
-  }
-  .modal-footer li:last-child:active .chat-base{
-  display: none;
-  }
-  .modal-footer li:last-child:active .chat-hover{
-  display: none;
-  }
-  .modal-footer li:last-child:active .chat-click{
-  display: block;
-  }
-  
-  #exampleModal .modal-header {
+}
+
+.modal-footer li:last-child:hover .chat-base {
+    display: none;
+}
+
+.modal-footer li:last-child:hover .chat-hover {
+    display: block;
+}
+
+.modal-footer li:last-child:hover .chat-click {
+    display: none;
+}
+
+.modal-footer li:last-child:active .chat-base {
+    display: none;
+}
+
+.modal-footer li:last-child:active .chat-hover {
+    display: none;
+}
+
+.modal-footer li:last-child:active .chat-click {
+    display: block;
+}
+
+#exampleModal .modal-header {
     justify-content: center;
     border-bottom: unset;
     padding-left: 35px;
-  }
-  #exampleModal .btn-close {
-       background: unset;
-       border-radius: unset;
-       position: relative;
-       width: 30px;
-      padding: 0;
-      margin: 0;
-      top: -12px;
-      right: -5px;
-      outline: unset;
-  }
-  .btn-close:focus {
+}
+
+#exampleModal .btn-close {
+    background: unset;
+    border-radius: unset;
+    position: relative;
+    width: 30px;
+    padding: 0;
+    margin: 0;
+    top: -12px;
+    right: -5px;
+    outline: unset;
+}
+
+.btn-close:focus {
     box-shadow: unset;
-  }
-  .modal-menu ul {
+}
+
+.modal-menu ul {
     list-style: none;
-  }
-  .modal-menu li {
+}
+
+.modal-menu li {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 5px;
-  }
-  .modal-menu li:hover {
-    background:rgba(17, 99, 117, 1);
-  }
-  .modal-menu li:active {
+}
+
+.modal-menu li:hover {
+    background: rgba(17, 99, 117, 1);
+}
+
+.modal-menu li:active {
     background: #07353F;
-  }
-  
-  .modal-menu li:active a{
+}
+
+.modal-menu li:active a {
     opacity: 0.6;
-  }
-  
-  .modal-menu li a {
+}
+
+.modal-menu li a {
     font-family: "Mplus 1p";
     font-style: normal;
     font-weight: 500;
@@ -143,14 +168,17 @@
     line-height: 30px;
     color: white;
     margin: 0 auto;
-  
-  }
-  /* first li */
-  .modal-menu li:first-child {
+}
+
+
+/* first li */
+
+.modal-menu li:first-child {
     position: relative;
     border-top: 2px solid #00D1FF;
-  }
-  .modal-menu li:first-child:after {
+}
+
+.modal-menu li:first-child:after {
     content: '';
     position: absolute;
     width: 1px;
@@ -158,8 +186,9 @@
     right: 2px;
     transform: rotate(8deg);
     border-right: 2px solid #00D1FF;
-  }
-  .modal-menu li:first-child:before {
+}
+
+.modal-menu li:first-child:before {
     content: '';
     position: absolute;
     width: 1px;
@@ -167,18 +196,22 @@
     left: 2px;
     transform: rotate(-8deg);
     border-right: 2px solid #00D1FF;
-  }
-  /* first li */
-  
-  /* second li */
-  .modal-menu li:nth-child(2) {
+}
+
+
+/* first li */
+
+
+/* second li */
+
+.modal-menu li:nth-child(2) {
     border-top: 2px solid #00D1FF;
     width: 98%;
     margin: 0 auto;
     position: relative;
-  }
-  
-  .modal-menu li:nth-child(2):after {
+}
+
+.modal-menu li:nth-child(2):after {
     content: '';
     position: absolute;
     width: 1px;
@@ -186,8 +219,9 @@
     right: 1px;
     transform: rotate(4deg);
     border-right: 2px solid #00D1FF;
-  }
-  .modal-menu li:nth-child(2):before {
+}
+
+.modal-menu li:nth-child(2):before {
     content: '';
     position: absolute;
     width: 1px;
@@ -195,18 +229,22 @@
     left: 1px;
     transform: rotate(-4deg);
     border-right: 2px solid #00D1FF;
-  }
-  
-  /* second li */
-  
-  /* third li */
-  .modal-menu li:nth-child(3) {
+}
+
+
+/* second li */
+
+
+/* third li */
+
+.modal-menu li:nth-child(3) {
     border-top: 2px solid #00D1FF;
     width: 97%;
     margin: 0 auto;
     position: relative;
-  }
-  .modal-menu li:nth-child(3):after {
+}
+
+.modal-menu li:nth-child(3):after {
     content: '';
     position: absolute;
     width: 1px;
@@ -214,8 +252,9 @@
     right: -1px;
     transform: rotate(-3deg);
     border-right: 2px solid #00D1FF;
-  }
-  .modal-menu li:nth-child(3):before {
+}
+
+.modal-menu li:nth-child(3):before {
     content: '';
     position: absolute;
     width: 1px;
@@ -223,19 +262,23 @@
     left: -1px;
     transform: rotate(3deg);
     border-right: 2px solid #00D1FF;
-  }
-  /* third li */
-  
-  /* last li */
-  .modal-menu li:nth-child(4) {
+}
+
+
+/* third li */
+
+
+/* last li */
+
+.modal-menu li:nth-child(4) {
     width: 98%;
     border-top: 2px solid #00D1FF;
     border-bottom: 2px solid #00D1FF;
     margin: 0 auto;
     position: relative;
-  }
-  
-  .modal-menu li:nth-child(4):after {
+}
+
+.modal-menu li:nth-child(4):after {
     content: '';
     position: absolute;
     width: 1px;
@@ -243,8 +286,9 @@
     right: -1px;
     transform: rotate(-3deg);
     border-right: 2px solid #00D1FF;
-  }
-  .modal-menu li:nth-child(4):before {
+}
+
+.modal-menu li:nth-child(4):before {
     content: '';
     position: absolute;
     width: 1px;
@@ -252,37 +296,42 @@
     left: -1px;
     transform: rotate(3deg);
     border-right: 2px solid #00D1FF;
-  }
-  
-  /* last li */
-  .modal-menu .enter {
+}
+
+
+/* last li */
+
+.modal-menu .enter {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  .modal-menu .enter a {
-  font-family: "Russo One";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 2em;
-  line-height: 30px;
-  color: white;
-  text-decoration: unset;
-  margin: 0;
-  }
-  .modal-menu .enter img {
-    width: 25px;
-  }
-  /* Modal menu */
+}
 
-  /* Modal consultation */
-  .modal-title.consultation {
-    display: grid;
+.modal-menu .enter a {
+    font-family: "Russo One";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2em;
+    line-height: 30px;
+    color: white;
+    text-decoration: unset;
+    margin: 0;
+}
+
+.modal-menu .enter img {
+    width: 25px;
+}
+
+
+/* Modal menu */
+
+
+/* Modal consultation */
+
+.modal-title.consultation {
+    display: flex;
     align-items: center;
     justify-content: center;
-    grid-template-columns: 336px 205px;
-    grid-gap: 100px;
-
     font-family: 'Russo One';
     font-size: 24px;
     line-height: 112.4%;
@@ -292,9 +341,11 @@
     text-shadow: unset;
     text-transform: unset;
     -webkit-text-stroke: unset;
-    margin-top: 45px;    
-  }
-  .modal-title button {
+    margin-top: 45px;
+    margin-bottom: 28px;
+}
+
+.modal-title button {
     display: flex;
     align-items: center;
     justify-self: space-between;
@@ -305,13 +356,22 @@
     border-radius: 40px;
     padding: 23px 70px;
     height: 40px;
+    margin-right: 57px;
+}
+
+.modal-title button,
+.modal-title button:hover,
+.modal-title button:active {
     box-shadow: -2px -2px 15px rgba(69, 250, 65, 0.5), 2px 2px 15px rgba(69, 250, 65, 0.5), 2px -2px 15px rgba(69, 250, 65, 0.5), -2px 2px 15px rgba(69, 250, 65, 0.5);
-  }
-  .modal-title h2 {
+}
+
+.modal-title h2 {
     max-width: 270px;
     font-size: 21px;
-  }
-  .modal-title button div {
+    margin-right: 132px;
+}
+
+.modal-title button div {
     font-family: "M PLUS 1p", sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -319,21 +379,38 @@
     font-size: 16px;
     margin-left: auto;
     margin-right: auto;
-  }
-  .modal-content.consultation {
-      background: unset;
-      border: unset;
-  }
-  .modal-header.consultation {
-      display: block;
-      border: unset;
-  }
-  .modal-body.consultation {
-      display: flex;
-      flex-direction: column;
-      width: 75%;
-  }
-  .modal-body.consultation h3 {
+}
+
+.modal-title button:hover {
+    background: #042203;
+}
+
+.modal-title button:active {
+    background: #001100;
+}
+
+.modal-title button:active div {
+    color: #658664;
+}
+
+.modal-content.consultation {
+    background: unset;
+    border: unset;
+}
+
+.modal-header.consultation {
+    display: block;
+    border: unset;
+}
+
+.modal-body.consultation {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.modal-body.consultation h3 {
     font-family: 'Russo One';
     font-style: normal;
     font-weight: normal;
@@ -343,85 +420,131 @@
     letter-spacing: 0.13em;
     text-transform: uppercase;
     color: #FFFFFF;
-  }
-  .modal-body.consultation ul {
+    max-width: 350px;
+}
+
+.modal-body.consultation ul {
     display: flex;
     justify-content: center;
     padding: 20px 0 0 0;
     list-style: none;
-  }
-  .modal-first-step {
-    margin-right: 5px;
-  }
-  .modal-body.consultation li {
+}
+
+.modal-body.consultation li {
     font-family: "M PLUS 1p", sans-serif;
     font-size: 16px;
     line-height: 24px;
     text-align: center;
-    color: rgba(255, 255, 255, 0.6);;
-  }
-  .modal-body.consultation li:hover {
-      color: white;
-      cursor: pointer;
-  }
-  .modal-body.consultation input {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.modal-body.consultation li.modal-first-step {
+    margin-right: 5px;
+    color: #fff
+}
+
+.modal-body.consultation li:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.modal-body.consultation input {
     border-radius: 30px;
     background: white;
     max-width: 350px;
     width: 100%;
     height: 60px;
     border: none;
-  }
-  
-  .modal-body.consultation label {
+}
+
+.modal-body.consultation label {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
     line-height: 27px;
     color: #FFFFFF;
-    margin-left: 20px;
+    margin-left: 22px;
     margin-top: 10px;
+}
 
-  }
-  .modal-body.consultation .modal-label-subtitle {
+.modal-body.consultation .modal-label-subtitle {
     font-size: 16px;
     margin-top: 0;
-  }
-  .modal-body.consultation input[type=checkbox]:checked {
-      background: black !important;
-  }
-  .modal-body.consultation label input {
-    display: none; /* Hide the default checkbox */
-  }
-  .modal-body.consultation label span {
+}
+
+.modal-body.consultation input[type=checkbox]:checked {
+    background: black !important;
+}
+
+.modal-body.consultation label input {
+    display: none;
+    /* Hide the default checkbox */
+}
+
+.modal-body.consultation label span {
     width: 5%;
-    height: 10px;
-    width: 10px;
+    height: 13px;
+    width: 28px;
     border: 1px solid grey;
     background: white;
     display: inline-block;
     position: relative;
-  }
+    align-self: flex-start;
+    margin: 5px;
+}
 
-  .modal-body.consultation [type=checkbox]:checked + span:before {
+.modal-body.consultation [type=checkbox]:checked+span:before {
     content: '\2713';
     color: red;
     position: absolute;
     top: -10px;
     left: -1px;
-  }
+}
 
-  .modal-body.consultation .check  {
-    width: 90%;
+.modal-body.consultation .check {
     font-size: 14px;
     line-height: 21px;
     color: #FFFFFF;
-  }
-  .modal-body.consultation .check a {
-      color: white;
-      text-decoration: underline;
-      font-weight: 600;
-  }
+    margin-bottom: 100px;
+    min-width: 300px;
+}
+
+.modal-form-group {
+    width: 350px;
+}
+
+.modal-body.consultation .check a {
+    color: white;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .modal-header.consultation {
+        margin-bottom: 10px;
+    }
+    .modal-title button {
+        margin: 0;
+    }
+    .modal-title h2 {
+        margin-right: 62px;
+    }
+}
+
+@media (max-width: 375px) {
+    .modal-title.consultation {
+        display: block;
+    }
+    .modal-title h2 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .modal-title button {
+        margin: 18px auto 72px auto;
+    }
+    .modal-header.consultation {
+        padding: 0;
+    }
+}

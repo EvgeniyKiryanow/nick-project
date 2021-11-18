@@ -1,306 +1,303 @@
 .header {
-  position: fixed;
-  z-index: 10;
-  background-color: rgba(1, 7, 29, 0.73);
-  width: 100%;
+    position: fixed;
+    z-index: 10;
+    background-color: rgba(1, 7, 29, 0.73);
+    width: 100%;
 }
 
 .header__wrapper {
-  max-width: 1440px;
-  width: 96%;
-  height: 90px;
-  margin: 0 auto;
-  justify-content: space-between;
+    max-width: 1440px;
+    width: 96%;
+    height: 90px;
+    margin: 0 auto;
+    justify-content: space-between;
 }
 
 .header__navigation,
 .header__wrapper {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .header__nav {
-  display: none;
+    display: none;
 }
 
 .header__wrapper_logo {
-  position: relative;
-  width: 100px;
+    position: relative;
+    width: 100px;
 }
 
 .header__consultation button {
-  padding-left: 30px;
-  display: flex;
-  align-items: center;
-  height: 50px;
-  position: relative;
-  background: #010714;
-  border: 2px solid #B61BFF;
-  /* box-shadow: -2px -2px 10px rgba(182, 27, 255, 0.6),
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    position: relative;
+    background: #010714;
+    border: 2px solid #B61BFF;
+    /* box-shadow: -2px -2px 10px rgba(182, 27, 255, 0.6),
     2px 2px 10px rgba(182, 27, 255, 0.6), 2px -2px 10px rgba(182, 27, 255, 0.6),
     -2px 2px 10px rgba(182, 27, 255, 0.6); */
-  border-radius: 40px;
+    border-radius: 40px;
 }
 
 .header__consultation button .circle {
-  position: relative;
-  right: -7px;
-  width: 64px;
-  height: 64px;
-  background: #b61bff;
-  border-radius: 50%;
-  box-shadow: -2px 2px 10px rgba(182, 27, 255, 0.6),
-    2px -2px 10px rgba(182, 27, 255, 0.6),
-    -2px -2px 10px rgba(182, 27, 255, 0.6),
-    -2px 2px 10px rgba(182, 27, 255, 0.6);
+    position: relative;
+    right: -7px;
+    width: 64px;
+    height: 64px;
+    background: #b61bff;
+    border-radius: 50%;
+    box-shadow: -2px 2px 10px rgba(182, 27, 255, 0.6), 2px -2px 10px rgba(182, 27, 255, 0.6), -2px -2px 10px rgba(182, 27, 255, 0.6), -2px 2px 10px rgba(182, 27, 255, 0.6);
 }
 
 .header__consultation button .circle img {
-  position: absolute;
-  top: 40%;
-  right: 32%;
+    position: absolute;
+    top: 40%;
+    right: 32%;
 }
 
 .header__consultation button:after {
-  position: absolute;
-  right: 0;
-  width: 62px;
-  height: 62px;
-  background: #b61bff;
-  box-shadow: -2px 2px 10px rgba(182, 27, 255, 0.6),
-    2px -2px 10px rgba(182, 27, 255, 0.6),
-    -2px -2px 10px rgba(182, 27, 255, 0.6),
-    -2px 2px 10px rgba(182, 27, 255, 0.6);
+    position: absolute;
+    right: 0;
+    width: 62px;
+    height: 62px;
+    background: #b61bff;
+    box-shadow: -2px 2px 10px rgba(182, 27, 255, 0.6), 2px -2px 10px rgba(182, 27, 255, 0.6), -2px -2px 10px rgba(182, 27, 255, 0.6), -2px 2px 10px rgba(182, 27, 255, 0.6);
 }
 
 .header__consultation button:hover {
-  background: #572370;
+    background: #572370;
 }
 
 .header__consultation button:active {
-  background: #39104d;
+    background: #39104d;
 }
 
 .header__consultation button div {
-  font-weight: 800;
-  font-size: 1.8em;
-  line-height: 124%;
-  color: #fff;
+    font-weight: 800;
+    font-size: 1.8em;
+    line-height: 124%;
+    color: #fff;
 }
 
 .header__consultation button div,
 .header__menu button {
-  font-family: "M PLUS 1p", sans-serif;
-  font-style: normal;
-  display: flex;
-  align-items: center;
-  background: 0 0;
+    font-family: "M PLUS 1p", sans-serif;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    background: 0 0;
 }
 
 .header__menu button {
-  border: unset;
-  color: #ffebf8;
-  font-weight: 500;
-  text-transform: uppercase;
-  font-size: 3em;
+    border: unset;
+    color: #ffebf8;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 3em;
 }
 
 .header__menu button .lines {
-  position: relative;
-  margin-left: 10px;
-  border-bottom: 3px solid #fff;
-  width: 40px;
-  height: 30px;
-}
-.header__menu button .lines.active {
-  border-right: 3px solid #fff;
-  height: 40px;
-  border-bottom: unset;
+    position: relative;
+    margin-left: 10px;
+    border-bottom: 3px solid #fff;
+    width: 40px;
+    height: 30px;
 }
 
-.header__menu button .lines.active:after{
-  border-right: 3px solid #fff;
-  width: 1px;
-  top: 0;
-  left: 55%;
-  height: 100%;
+.header__menu button .lines.active {
+    border-right: 3px solid #fff;
+    height: 40px;
+    border-bottom: unset;
 }
+
+.header__menu button .lines.active:after {
+    border-right: 3px solid #fff;
+    width: 1px;
+    top: 0;
+    left: 55%;
+    height: 100%;
+}
+
 .header__menu button .lines.active:before {
-  border-right: 3px solid #fff;
-  width: 1px;
-  left: 10%;
-  top: 30%;
-  height: 70%;
+    border-right: 3px solid #fff;
+    width: 1px;
+    left: 10%;
+    top: 30%;
+    height: 70%;
 }
 
 .header__menu button .lines:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  left: 0;
-  border-top: 3px solid #fff;
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    border-top: 3px solid #fff;
 }
 
 .header__menu button .lines:before {
-  content: "";
-  position: absolute;
-  width: 70%;
-  top: 0;
-  left: 0;
-  border-top: 3px solid #fff;
+    content: "";
+    position: absolute;
+    width: 70%;
+    top: 0;
+    left: 0;
+    border-top: 3px solid #fff;
 }
 
 .header__dropdown ul {
-  background: 0 0;
+    background: 0 0;
 }
 
 .header__dropdown ul li:hover a {
-  color: #000;
+    color: #000;
 }
 
 .header #dropdownMenuButton1,
 .header__dropdown ul li a {
-  display: flex;
-  align-items: center;
-  color: #ffebf8;
-  font-family: "M PLUS 1p", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  text-transform: uppercase;
-  font-size: 1.8em;
+    display: flex;
+    align-items: center;
+    color: #ffebf8;
+    font-family: "M PLUS 1p", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 1.8em;
 }
 
 .header #dropdownMenuButton1 {
-  background: 0 0;
-  border: unset;
+    background: 0 0;
+    border: unset;
 }
 
 .header .student {
-  position: absolute;
-  top: 40%;
-  right: -10%;
+    position: absolute;
+    top: 40%;
+    right: -10%;
 }
 
 .header .student p {
-  font-family: 'Russo One';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.8em;
-  letter-spacing: 0.095em;
-  text-transform: uppercase;
-  -webkit-text-stroke: 1px #fff;
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8em;
+    letter-spacing: 0.095em;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px #fff;
 }
 
 .header .student p:first-child {
-  text-align: right;
+    text-align: right;
 }
 
 .modal-farther {
-  margin: 15px auto 18px auto;
+    margin: 15px auto 18px auto;
 }
 
 .modal-farther button {
-  padding-left: 30px;
-  display: flex;
-  align-items: center;
-  height: 50px;
-  position: relative;
-  background: #010714;
-  border: 1px solid #F6E3FF;
-  box-shadow: -2px 2px 10px rgba(0, 209, 255, 0.6),
-        2px -2px 10px rgba(0, 209, 255, 0.6),
-          -2px -2px 10px rgba(0, 209, 255, 0.6),
-          -2px 2px 10px rgba(0, 209, 255, 0.6);
-  border-radius: 40px;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    position: relative;
+    background: #010714;
+    border: 1px solid #F6E3FF;
+    box-shadow: -2px 2px 10px rgba(0, 209, 255, 0.6), 2px -2px 10px rgba(0, 209, 255, 0.6), -2px -2px 10px rgba(0, 209, 255, 0.6), -2px 2px 10px rgba(0, 209, 255, 0.6);
+    border-radius: 40px;
+    margin-left: 68px;
 }
 
 .modal-farther button .circle {
-  position: relative;
-  right: -7px;
-  width: 64px;
-  height: 64px;
-  background: #00D1FF;
-  border-radius: 50%;
-  box-shadow: -2px 2px 10px rgba(0, 209, 255, 0.6),
-        2px -2px 10px rgba(0, 209, 255, 0.6),
-          -2px -2px 10px rgba(0, 209, 255, 0.6),
-          -2px 2px 10px rgba(0, 209, 255, 0.6);
+    position: relative;
+    right: -7px;
+    width: 64px;
+    height: 64px;
+    background: #00D1FF;
+    border-radius: 50%;
+    box-shadow: -2px 2px 10px rgba(0, 209, 255, 0.6), 2px -2px 10px rgba(0, 209, 255, 0.6), -2px -2px 10px rgba(0, 209, 255, 0.6), -2px 2px 10px rgba(0, 209, 255, 0.6);
 }
 
 .modal-farther button .circle img {
-  position: absolute;
-  top: 40%;
-  right: 32%;
+    position: absolute;
+    top: 40%;
+    right: 32%;
 }
 
 .modal-farther button:after {
-  position: absolute;
-  right: 0;
-  width: 62px;
-  height: 62px;
-  background: #00D1FF;
-
-  box-shadow: -2px 2px 10px rgba(0, 209, 255, 0.6),
-        2px -2px 10px rgba(0, 209, 255, 0.6),
-          -2px -2px 10px rgba(0, 209, 255, 0.6),
-          -2px 2px 10px rgba(0, 209, 255, 0.6);
+    position: absolute;
+    right: 0;
+    width: 62px;
+    height: 62px;
+    background: #00D1FF;
+    box-shadow: -2px 2px 10px rgba(0, 209, 255, 0.6), 2px -2px 10px rgba(0, 209, 255, 0.6), -2px -2px 10px rgba(0, 209, 255, 0.6), -2px 2px 10px rgba(0, 209, 255, 0.6);
 }
 
 .modal-farther button:hover {
-  background: #572370;
+    background: #01576A;
+    border: 1px solid #F6E3FF;
+    box-shadow: -2px -2px 10px rgba(0, 209, 255, 0.8), 2px 2px 10px rgba(0, 209, 255, 0.8), 2px -2px 10px rgba(0, 209, 255, 0.8), -2px 2px 10px rgba(0, 209, 255, 0.8)
 }
 
 .modal-farther button:active {
-  background: #39104d;
+    background: #003945;
+}
+
+.modal-farther button:active div {
+    color: rgba(255, 255, 255, 0.58);
 }
 
 .modal-farther button div {
-  font-weight: 800;
-  font-size: 1.8em;
-  line-height: 124%;
-  color: #fff;
-  padding: 25px;
+    font-weight: 800;
+    font-size: 1.8em;
+    line-height: 124%;
+    color: #fff;
+    padding: 25px;
 }
 
 
 /* Media */
+
 @media (min-width:769px) {
-  .header__consultation {
-    margin-left: 15%;
-  }
+    .header__consultation {
+        margin-left: 15%;
+    }
 }
 
 @media (max-width: 768px) {
-  .header__languages {
-    display: none;
-  }
-
-  .header__wrapper_logo {
-    margin-right: 5%;
-  }
-
-  .header__menu button {
-    font-size: 0 !important;
-  }
-
-  .header__consultation {
-    padding: 0 !important;
-  }
-  .modal-footer ul {
-    flex-wrap: wrap;
-  }
-  .modal-footer li {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-    width: 100%;
-  }
-.modal-body {
+    .header__languages {
+        display: none;
+    }
+    .header__wrapper_logo {
+        margin-right: 5%;
+    }
+    .header__menu button {
+        font-size: 0 !important;
+    }
+    .header__consultation {
+        padding: 0 !important;
+    }
+    .modal-footer ul {
+        flex-wrap: wrap;
+    }
+    .modal-footer li {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+        width: 100%;
+    }
+    .modal-body {
         width: 90%;
-      }
+    }
 }
+
 @media (max-width: 550px) {
+    .modal-farther button div {
+        font-size: 2.3em;
+    }
 }
-@media (max-width: 375px) {
-}
+
+@media (max-width: 550px) {}
+
+@media (max-width: 375px) {}
