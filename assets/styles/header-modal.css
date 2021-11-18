@@ -521,6 +521,104 @@
     font-weight: 600;
 }
 
+.tabs__content {
+    display: none;
+}
+
+.tabs__content.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* .tabs__content.active {
+    display: block;
+} */
+
+
+/* Second part of modal */
+
+.order-select-group {
+    display: flex;
+    margin: 20px 0 20px 0;
+}
+
+.order-select-group select {
+    display: flex;
+    width: 375px;
+    height: 60px;
+    font-size: 2.25em;
+    font-weight: 500;
+    border: 2px solid #00D1FF;
+    padding-left: 30px;
+    /* appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    padding-right: 15px; */
+}
+
+span.arrow-left {
+    position: absolute;
+    height: 2px;
+    background-color: #fff;
+    width: 13px;
+    transform: rotate(40deg);
+    border-radius: 2px;
+}
+
+.arrow-right {
+    position: absolute;
+    height: 2px;
+    background-color: #fff;
+    width: 13px;
+    transform: rotate(-40deg);
+    margin-left: 8px;
+    border-radius: 2px;
+}
+
+.learning-order-select {
+    background: rgba(0, 209, 255, 0.52);
+    border: 2px solid #00D1FF;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.teachers-order-select {
+    color: #fff;
+    margin-left: 10px;
+    background-color: #000;
+}
+
+.tabs__content select {
+    box-sizing: border-box;
+    border-radius: 30px;
+    font-family: "M PLUS 1p", sans-serif;
+}
+
+.learning__subtitle {
+    color: #fff;
+    font-size: 2em;
+    font-weight: 800;
+    margin-left: 10px;
+}
+
+.learning__title {
+    font-weight: 800;
+    font-size: 2.5em;
+    text-align: center;
+    color: #FF00A8;
+    margin-top: 15px;
+}
+
+.learning__form textarea {
+    width: 994px;
+    height: 86px;
+    background: #FFFFFF;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
 @media (max-width: 768px) {
     .modal-header.consultation {
         margin-bottom: 10px;

@@ -265,53 +265,91 @@
                         <h2>У Вас уже есть аккаунт? Нажмите</h2>
                         <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
                         <button>
-              <div>Вход</div>
-            </button>
+                            <div>Вход</div>
+                        </button>
                     </div>
                     <div class="modal-dialog consultation">
                         <div class="modal-content consultation">
                             <div class="modal-header consultation">
                             </div>
-                            <div class="modal-body consultation">
+                            <div class="modal-body consultation tabs">
                                 <h3>Быстрое оформление заказа</h3>
-                                <ul>
+                                <ul class="tabs__caption">
                                     <li class="modal-first-step">Шаг 1 -</li>
-                                    <li class="modal-second-step">Шаг 2</li>
+                                    <li class="modal-second-step active">Шаг 2</li>
                                 </ul>
-                                <div class="modal-form-group">
-                                    <label for="name">Как к Вам обращаться?</label>
-                                    <input type="text" id="name">
-                                    <label for="email">Адрес электронной почты</label>
-                                    <input type="text" id="email">
-                                    <label for="tel">Номер телефона*</label>
-                                    <input type="nubmer" id="tel">
-                                    <label class="modal-label-subtitle" for="tel">*номер телефона является паролем</label>
 
-                                    <div class="modal-farther">
-                                        <button data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                                          <div>Далее</div>
+                                <div class="tabs__content">
+                                    <div class="modal-form-group">
+                                        <label for="name">Как к Вам обращаться?</label>
+                                        <input type="text" id="name">
+                                        <label for="email">Адрес электронной почты</label>
+                                        <input type="text" id="email">
+                                        <label for="tel">Номер телефона*</label>
+                                        <input type="nubmer" id="tel">
+                                        <label class="modal-label-subtitle" for="tel">*номер телефона является паролем</label>
+
+                                        <div class="modal-farther">
+                                            <button data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                            <div>Далее</div>
                                             <div class="circle">
                                               <img src="assets/img/header/Vector 94.webp" alt="arrow" loading="lazy">
                                             </div>
-                                        </button>
-                                    </div>
-                                    <label class="label-check">
+                                            </button>
+                                        </div>
+                                        <label class="label-check">
                                       <input type='checkbox'>
                                         <span></span>
                                         <div class="check">«Ознакомлен с правилами <a href="#">политики конфиденциальности<a> и согласен об использовании файлов cookie»</div>
                                     </label>
+                                    </div>
                                 </div>
-                                <!-- In my opinion it's unnecessary block, or no?) -->
-                                <!-- <div class="modal-footer consultation">
+
+                                <div class="tabs__content active">
+                                    <div class="order-select-group">
+                                        <!-- <div class="arrow-group">
+                                            <span class="arrow-left"></span>
+                                            <span class="arrow-right"></span>
+                                        </div> -->
+                                        <select class="learning-order-select" name="select">
+                                            <option value="value1">Значение 1</option>
+                                            <option value="value2" selected>Учеба/решение</option>
+                                            <option value="value3">Значение 3</option>
+                                        </select>
+                                        <select class="teachers-order-select" name="select">
+                                            <option value="value1">Значение 1</option>
+                                            <option value="value2" selected>Репетиторы/Преподаватели</option>
+                                            <option value="value3">Значение 3</option>
+                                        </select>
+                                    </div>
+                                    <div class="learning">
+                                        <span class="learning__subtitle">
+                                            <p class="new-line">В этой группе можно заказать: курсовую, дипломную, магистерскую, реферат, онлайн</p> помощь, решение задач, статьи и другие типы работ...
+                                        </span>
+                                        <p class="learning__title">Все поля обязательны для заполнения</p>
+                                    </div>
+                                    <form class="learning__form">
+                                        <fieldset>
+                                            <label for="topic">Напишите тему работы</label>
+                                            <textarea id="topic" name="story" disabled="disabled" placeholder="=;">
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- <label for="description">Напишите описание работы
+                                            <textarea id="description" name="description" disabled> -->
+                            <!-- In my opinion it's unnecessary block, or not?) -->
+                            <!-- <div class="modal-footer consultation">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 <button type="button" class="btn btn-primary">Understood</button>
               </div> -->
-                            </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
+    </div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
