@@ -924,6 +924,9 @@ select {
 }
 
 @media (max-width: 1100px) {
+    .modal-body.consultation label {
+        margin-right: auto;
+    }
     .modal-header.consultation {
         margin-bottom: 10px;
     }
@@ -1053,6 +1056,9 @@ select {
 }
 
 @media (max-width: 745px) {
+    .modal-body.consultation label {
+        margin-right: auto;
+    }
     .learning__subtitle.teacher {
         width: 289px;
         text-align: center;
@@ -1193,9 +1199,6 @@ select {
         margin-right: auto;
         margin-left: 50px;
     }
-    .second-part-of-modal label.form__label-teacher {
-        margin-left: 51px;
-    }
     .learning__form-group .date-of-lesson {
         width: 243px;
         display: flex;
@@ -1214,8 +1217,11 @@ select {
         line-height: 27px;
         color: #FFFFFF;
         margin-left: 10px;
-        margin-right: 10px;
+        margin-right: auto;
         margin-top: 10px;
+    }
+    .modal-body.consultation label.completion {
+        margin-left: 0;
     }
     .order-select-group {
         margin-bottom: 0;
@@ -1223,5 +1229,12 @@ select {
     .second-part-of-modal div.upload-file-desc {
         margin: 30px 0 0 0;
         font-size: inherit;
+    }
+    .learning__input-inner label.learning__label {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .first-part-of-modal .learning__input-inner {
+        margin: 0;
     }
 }
