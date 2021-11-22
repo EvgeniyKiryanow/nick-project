@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+</html>
+
 <head>
     <title>app</title>
     <meta charset="utf-8">
@@ -16,7 +18,7 @@
     <link rel="stylesheet" type="text/css" href="assets/styles/header-modal.css">
     <link rel="stylesheet" type="text/css" href="assets/styles/articles.css">
     <link rel="stylesheet" type="text/css" href="assets/styles/footer.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 </head>
 
 <body>
@@ -258,34 +260,31 @@
 
                     </div>
                 </div>
-                ]
                 <div class="modal consultation fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-title consultation" id="staticBackdropLabel">
-                        <h2>У Вас уже есть аккаунт? Нажмите</h2>
-                        <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
-                        <button>
-                            <div>Вход</div>
-                        </button>
-                    </div>
                     <div class="modal-dialog consultation">
                         <div class="modal-content consultation">
                             <div class="modal-header consultation">
                             </div>
-                            <div class="modal-body consultation tabs">
+                            <div class="modal-body consultation top">
                                 <h3>Быстрое оформление заказа</h3>
                                 <ul class="tabs__caption">
-                                    <li class="modal-first-step">Шаг 1 -</li>
-                                    <li class="modal-second-step ">Шаг 2</li>
+                                    <li class="modal-first-step active-tab">Шаг 1 -</li>
+                                    <li class="modal-second-step">Шаг 2</li>
                                 </ul>
-
                                 <div class="tabs__content test1 active">
+                                    <div class="modal-title consultation test1 active" id="staticBackdropLabel">
+                                        <h2>У Вас уже есть аккаунт? Нажмите</h2>
+                                        <button>
+                                            <div>Вход</div>
+                                        </button>
+                                    </div>
                                     <div class="modal-form-group">
                                         <label for="name">Как к Вам обращаться?</label>
-                                        <input type="text" id="name">
+                                        <input class="modal-form-input" type="text" id="name">
                                         <label for="email">Адрес электронной почты</label>
-                                        <input type="text" id="email">
+                                        <input class="modal-form-input" type="text" id="email">
                                         <label for="tel">Номер телефона*</label>
-                                        <input type="nubmer" id="tel">
+                                        <input class="modal-form-input" type="nubmer" id="tel">
                                         <label class="modal-label-subtitle" for="tel">*номер телефона является паролем</label>
 
                                         <div class="modal-farther">
@@ -306,54 +305,143 @@
 
                                 <div class="tabs__content test2">
                                     <div class="order-select-group">
-                                        <!-- <div class="arrow-group">
-                                            <span class="arrow-left"></span>
-                                            <span class="arrow-right"></span>
-                                        </div> -->
-                                        <select class="learning-order-select" name="select">
-                                            <option value="value1">Значение 1</option>
-                                            <option value="value2" selected>Учеба/решение</option>
-                                            <option value="value3">Значение 3</option>
-                                        </select>
-                                        <select class="teachers-order-select" name="select">
-                                            <option value="value1">Значение 1</option>
-                                            <option value="value2" selected>Репетиторы/Преподаватели</option>
-                                            <option value="value3">Значение 3</option>
-                                        </select>
+                                        <button class="learning-order-select active-btn">
+                                            Учеба/решение
+                                        </button>
+                                        <button class="teachers-order-select">
+                                           Репетиторы/Преподаватели
+                                        </button>
                                     </div>
                                     <div class="learning">
-                                        <span class="learning__subtitle">
-                                            <p class="new-line">В этой группе можно заказать: курсовую, дипломную, магистерскую, реферат, онлайн</p> помощь, решение задач, статьи и другие типы работ...
-                                        </span>
-                                        <p class="learning__title">Все поля обязательны для заполнения</p>
+                                        <div class="tabs__content first-part-of-modal active">
+                                            <span class="learning__subtitle">
+                                                <p class="new-line">В этой группе можно заказать: курсовую, дипломную, магистерскую, реферат, онлайн</p> помощь, решение задач, статьи и другие типы работ...
+                                            </span>
+                                            <pre class="learning__subtitle-formated">
+                                            В этой группе можно заказать: курсовую, дипломную,
+                                                магистерскую, реферат, онлайн помощь, решение
+                                                            задач, статьи и другие типы работ...
+                                            </pre>
+                                            <pre class="learning__subtitle-formated-s">
+                                                В этой группе можно заказать:
+                                          курсовую, дипломную, магистерскую,
+                                            реферат, онлайн помощь, решение
+                                          задач, статьи и другие типы работ...
+                                        </pre>
+                                            <p class="learning__title">Все поля обязательны для заполнения</p>
+                                        </div>
+                                        <div class="tabs__content first-part-of-modal active">
+                                            <form class="learning__form">
+                                                <div class="form-border"></div>
+                                                <fieldset>
+                                                    <label class="label-topic" for="topic">Напишите тему работы</label>
+                                                    <textarea id="topic" style="padding-left: 12px;" name="topic" rows="5" placeholder="Максимально напишите что знаете, Например: Процесс национального строительства: сущность и характер...(МАКСИМАЛЬНО 250 символов)&#10;Осталось 250 символов"></textarea>
+                                                    <label class="label-description" for="description">Напишите описание работы</label>
+                                                    <textarea class="description" style="padding-left: 12px;" id="description" name="description" placeholder="Максимально напишите что знаете, Например: Предмет: Этнополитология, план где-то 4-5 пунктов, шрифт стандартный - Times New Roman 14. уникальность 70-80% на каком плагиате будет проверка если знаете, по стандарту делаем на ЕТХТ... (МАКСИМАЛЬНО 1000 символов&#10;&#10;&#10;&#10;Осталось 1000 символов"></textarea>
+                                                    <div class="learning__input-price">
+                                                        <label for="price">На какую стоимость рассчитываете?</label>
+                                                        <input class="learning__input" style="text-align: center;" type="text" name="price" placeholder="Например: сумма которую Вы готовы потратить">
+                                                    </div>
+                                                    <div class="learning__form-group">
+                                                        <select class="learning__select" name="work" id="work">
+                                                        <option selected autocomplete="off" value="typeofwork">Выберите тип работы</option>
+                                                        <option value="smthelse">...</option>
+                                                        <option value="smthelse2">...</option>
+                                                    </select>
+
+                                                        <select class="learning__select" name="subject" id="subject">
+                                                        <option selected value="Выберите предмет работы">Выберите предмет работы</option>
+                                                    </select>
+
+                                                        <div class="workload-block">
+                                                            <label class="mt-0" for="workload">Введите объём работы</label>
+                                                            <input class="learning__input" style="padding-left: 10px;" type="text" name="workload" placeholder="Например: 10-12 страниц">
+                                                        </div>
+
+                                                        <div class="completion-block">
+                                                            <label class="mt-0" for="dateofcompletion">Дата выполнения работы</label>
+                                                            <input class="learning__input" style="text-align: center; padding-right: 50px;" type="text" placeholder="Выберите дату на когда должна быть готова работа">
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
+                                                <div class="additional-info">
+                                                    <select class="learning__select" name="plagiat" style='padding: 17px;' id="plagiat" aria-placeholder="knknkn">
+                                                    <option selected value="plagiat">
+                                                       Выберите нужный плагиат, если не
+                                                        знаете, выберите ”Не знаю какой”
+                                                    </option>
+                                                </select>
+                                                    <div class="learning__input-wrapper mr-2">
+                                                        <span class="input-wrapper-title">Нужно утверждать план?</span>
+                                                        <div class="learning__input-inner">
+                                                            <label class="learning__label mt-2">
+                                                        <input type="radio" name="radio-button" value="yes" />
+                                                        <p class="approve-agreement" style="color: #000;">Да</p>
+                                                    </label>
+                                                            <label class="learning__label mt-0">
+                                                        <input checked type="radio" name="radio-button" value="no" />
+                                                        <p class="approve-agreement" style="color: #000;">Нет</p>
+                                                    </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="upload-file-desc">
+                                                    <span>Методичку, План, Фото, Аудиозапись...</span>
+                                                    <a class="upload-file-link" href="#">Загрузить файлы</a>
+                                                </div>
+                                                <button class="create-order-btn">Создать заказ</button>
+                                            </form>
+                                        </div>
+                                        <div class="tabs__content second-part-of-modal">
+                                            <span class="learning__subtitle teacher">
+                                                В этой группе можно выбрать репетитора по многим предметам: английский, украинский, иностранные языки, подготовка к ЗНО, математика, история и другие предметы 
+                                            </span>
+                                            <p class="learning__title">Все поля обязательны для заполнения</p>
+                                            <form class="learning__form">
+                                                <div class="form-border teacher"></div>
+                                                <fieldset class="fieldset-teacher">
+                                                    <label class="form__label-teacher" for="topic">Напишите тему работы</label>
+                                                    <textarea class="description teacher" id="description" name="description" data-myholder="dewdwedw\dwe" placeholder="Максимально напишите что знаете, Например: Предмет: Этнополитология, план где-то 4-5 пунктов, шрифт стандартный - Times New Roman 14. уникальность 70-80% на каком плагиате будет проверка если знаете, по стандарту делаем на ЕТХТ... (МАКСИМАЛЬНО 1000 символов&#10;&#10;&#10;&#10;Осталось 1000 символов"></textarea>
+                                                    <div class="learning__form-group teacher">
+                                                        <select class="learning__select" name="work" id="work">
+                                                            <option selected value="type-of-work">Выберите предмет</option>
+                                                        </select>
+                                                        <select class="learning__select" name="subject" id="subject">
+                                                            <option selected value="level">Выберите уровень подготовки</option>
+                                                        </select>
+
+                                                        <div>
+                                                            <label class="learning__label workload" for="workload">На какую стоимость рассчитываете?</label>
+                                                            <input class="learning__input" type="text" name="workload" placeholder="Например: сумма которую Вы готовы тратить за 1 час">
+                                                        </div>
+
+                                                        <div class="date-of-lesson">
+                                                            <label class="learning__label" for="dateofcompletion">Дата, время на когда Вам удобно заниматься?</label>
+                                                            <input class="learning__input" type="text" placeholder="Выберите дату на когда должен быть Онлайн урок">
+                                                        </div>
+                                                    </div>
+
+                                                </fieldset>
+                                                <div class="upload-file-desc">
+                                                    <span>Задание, фото, требования...</span>
+                                                    <a class="upload-file-link" href="#">Загрузить файлы</a>
+                                                </div>
+                                                <button class="create-order-btn">Создать заказ</button>
+                                            </form>
+                                        </div>
                                     </div>
-                                    <form class="learning__form">
-                                        <fieldset>
-                                            <label for="topic">Напишите тему работы</label>
-                                            <textarea id="topic" name="story" disabled="disabled" placeholder="=;"></textarea>
-                                        </fieldset>
-                                    </form>
                                 </div>
                             </div>
-                            <!-- <label for="description">Напишите описание работы
-                                            <textarea id="description" name="description" disabled> -->
-                            <!-- In my opinion it's unnecessary block, or not?) -->
-                            <!-- <div class="modal-footer consultation">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Understood</button>
-              </div> -->
                         </div>
                     </div>
-                </div>
 
+                </div>
             </div>
         </div>
-    </div>
 </body>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script type="text/javascript" src="assets/js/headerMenuToggle.js"></script>
-<script type="text/javascript" src="assets/js/articlesPageSlick.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+<script type="text/javascript " src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js "></script>
+<script src="assets/js//headerMenuToggle.js "></script>
+<script src="assets/js/articlesPageSlick.js "></script>
 
 </html>
