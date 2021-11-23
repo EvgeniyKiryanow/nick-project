@@ -4,7 +4,7 @@ function supportsWebp() {
     if (!self.createImageBitmap) return false;
 
     const webpData = 'data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=';
-    const blob = fetch(webpData).then(function (r) { return r.blob() });Q
+    const blob = fetch(webpData).then(function (r) { return r.blob() });
     return createImageBitmap(blob).then(function () { return true }, function () { return false });
 }
 
