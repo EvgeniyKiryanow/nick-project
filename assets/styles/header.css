@@ -169,7 +169,7 @@
 
 .header #dropdownMenuButton1 {
     background: 0 0;
-    border: unset;
+    border: none;
 }
 
 .header .student {
@@ -186,8 +186,9 @@
     letter-spacing: 0.095em;
     text-transform: uppercase;
     -webkit-text-stroke: 1px #fff;
+    
 }
-
+/*color: rgba(36, 244, 255, 1);*/
 .header .student p:first-child {
     text-align: right;
 }

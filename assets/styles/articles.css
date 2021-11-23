@@ -215,7 +215,7 @@
   .slick-prev::after {
     position: absolute;
     content: "";
-    background-image: url("../img/articles/arrow-left.webp");
+    background-image: url("../img/articles/arrow-left.png");
     background-size: cover;
     background-repeat: no-repeat;
     width: 20px;
@@ -232,7 +232,7 @@
   .slick-next::after {
     position: absolute;
     content: "";
-    background-image: url("../img/articles/arrow-left.webp");
+    background-image: url("../img/articles/arrow-left.png");
     transform: rotate(180deg);
     background-size: cover;
     background-repeat: no-repeat;

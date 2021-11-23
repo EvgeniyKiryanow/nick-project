@@ -19,6 +19,7 @@
     <link rel="stylesheet" type="text/css" href="assets/styles/articles.css">
     <link rel="stylesheet" type="text/css" href="assets/styles/footer.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
 </head>
 
 <body>
@@ -29,20 +30,20 @@
                     <div class="header__wrapper">
                         <div class="header__wrapper_logo"><img src="assets/img/header/logo.webp" alt="logo" loading="lazy">
                             <div class="student">
-                                <p>Only</p>
+                                <p style="-webkit-text-stroke: 1px #fff; font-family: 'Russo One';">Only</p>
                                 <p>Student</p>
                             </div>
                         </div>
                         <div class="header__consultation"><button data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                 <div>Получить консультацию</div>
                 <div class="circle"><img src="assets/img/header/arrow.webp" alt="arrow" loading="lazy"></div>
-              </button></div>
+                </button></div>
                         <div class="header__navigation">
                             <div class="header__languages">
                                 <div class="header__dropdown"><button type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" class="btn btn-secondary dropdown-toggle">
                     <img src="assets/img/header/ru.webp" alt="ru">
                     ru
-                  </button>
+                    </button>
                                     <ul aria-labelledby="dropdownMenuButton1" class="dropdown-menu">
                                         <li>
                                             <a href="#" class="dropdown-item">
@@ -62,11 +63,12 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="header__menu"><button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                  Mеню
-                  <div class="lines"></div>
-                </button></div>
-
+                            <div class="header__menu">
+                                <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" style="border: none;">
+                                        Mеню
+                                <div class="lines"></div>
+                                </button>
+                                </div>
                         </div>
                     </div>
                 </header>
@@ -165,7 +167,7 @@
                                 </div>
                             </div>
                             <div class="articles__button"><button>
-                  <div>Больше</div>
+                    <div>Больше</div>
                 </button></div>
                         </div>
                     </div>
@@ -209,11 +211,11 @@
                                 <div class="footer__connect--body">
                                     <ul class="links">
                                         <li><a href="#">support@only-student.com
-                                          <img src="assets/img/footer/mail.webp" alt="mail"></a></li>
+                                            <img src="assets/img/footer/mail.webp" alt="mail"></a></li>
                                         <li><a href="#">Исполнителям и Партнерам</a></li>
                                     </ul>
                                     <button>
-                                      <div>Регистрация</div>
+                                        <div>Регистрация</div>
                                     </button>
                                 </div>
                             </div>
@@ -257,7 +259,6 @@
                                 </ul>
                             </div>
                         </div>
-
                     </div>
                 </div>
                 <div class="modal consultation fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -286,30 +287,28 @@
                                         <label for="tel">Номер телефона*</label>
                                         <input class="modal-form-input" type="nubmer" id="tel">
                                         <label class="modal-label-subtitle" for="tel">*номер телефона является паролем</label>
-
                                         <div class="modal-farther">
                                             <button data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                             <div>Далее</div>
                                             <div class="circle">
-                                              <img src="assets/img/header/Vector 94.webp" alt="arrow" loading="lazy">
+                                                <img src="assets/img/header/Vector 94.webp" alt="arrow" loading="lazy">
                                             </div>
                                             </button>
                                         </div>
                                         <label class="label-check">
-                                      <input type='checkbox'>
+                                        <input type='checkbox'>
                                         <span></span>
                                         <div class="check">«Ознакомлен с правилами <a href="#">политики конфиденциальности<a> и согласен об использовании файлов cookie»</div>
                                     </label>
                                     </div>
                                 </div>
-
                                 <div class="tabs__content test2">
                                     <div class="order-select-group">
                                         <button class="learning-order-select active-btn">
                                             Учеба/решение
                                         </button>
                                         <button class="teachers-order-select">
-                                           Репетиторы/Преподаватели
+                                            Репетиторы/Преподаватели
                                         </button>
                                     </div>
                                     <div class="learning">
@@ -324,9 +323,9 @@
                                             </pre>
                                             <pre class="learning__subtitle-formated-s">
                                                 В этой группе можно заказать:
-                                          курсовую, дипломную, магистерскую,
+                                            курсовую, дипломную, магистерскую,
                                             реферат, онлайн помощь, решение
-                                          задач, статьи и другие типы работ...
+                                            задач, статьи и другие типы работ...
                                         </pre>
                                             <p class="learning__title">Все поля обязательны для заполнения</p>
                                         </div>
@@ -348,16 +347,13 @@
                                                         <option value="smthelse">...</option>
                                                         <option value="smthelse2">...</option>
                                                     </select>
-
                                                         <select class="learning__select" name="subject" id="subject">
                                                         <option selected value="Выберите предмет работы">Выберите предмет работы</option>
                                                     </select>
-
                                                         <div class="workload-block">
                                                             <label class="mt-0" for="workload">Введите объём работы</label>
                                                             <input class="learning__input" style="padding-left: 10px;" type="text" name="workload" placeholder="Например: 10-12 страниц">
                                                         </div>
-
                                                         <div class="completion-block">
                                                             <label class="mt-0" for="dateofcompletion">Дата выполнения работы</label>
                                                             <input class="learning__input" style="text-align: center; padding-right: 50px;" type="text" placeholder="Выберите дату на когда должна быть готова работа">
@@ -367,7 +363,7 @@
                                                 <div class="additional-info">
                                                     <select class="learning__select" name="plagiat" style='padding: 17px;' id="plagiat" aria-placeholder="knknkn">
                                                     <option selected value="plagiat">
-                                                       Выберите нужный плагиат, если не
+                                                        Выберите нужный плагиат, если не
                                                         знаете, выберите ”Не знаю какой”
                                                     </option>
                                                 </select>
@@ -409,18 +405,15 @@
                                                         <select class="learning__select" name="subject" id="subject">
                                                             <option selected value="level">Выберите уровень подготовки</option>
                                                         </select>
-
                                                         <div>
                                                             <label class="learning__label workload" for="workload">На какую стоимость рассчитываете?</label>
                                                             <input class="learning__input" type="text" name="workload" placeholder="Например: сумма которую Вы готовы тратить за 1 час">
                                                         </div>
-
                                                         <div class="date-of-lesson">
                                                             <label class="learning__label completion" for="dateofcompletion">Дата, время на когда Вам удобно заниматься?</label>
                                                             <input class="learning__input" type="text" placeholder="Выберите дату на когда должен быть Онлайн урок">
                                                         </div>
                                                     </div>
-
                                                 </fieldset>
                                                 <div class="upload-file-desc">
                                                     <span>Задание, фото, требования...</span>
@@ -439,6 +432,7 @@
             </div>
         </div>
 </body>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
 <script type="text/javascript " src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js "></script>
 <script src="assets/js//headerMenuToggle.js "></script>
