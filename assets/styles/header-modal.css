@@ -250,7 +250,7 @@
     width: 1px;
     height: 100%;
     right: -1px;
-    transform: rotate(-3deg);
+    transform: rotate(-2deg);
     border-right: 2px solid #00D1FF;
 }
 
@@ -294,7 +294,7 @@
     width: 1px;
     height: 100%;
     left: -1px;
-    transform: rotate(3deg);
+    transform: rotate(4deg);
     border-right: 2px solid #00D1FF;
 }
 
@@ -1242,12 +1242,19 @@ select {
     .first-part-of-modal .learning__input-inner {
         margin: 0;
     }
-    form.learning__form {
+    .learning__form {
         margin-left: 30px;
     }
 }
 @media (max-width: 550px) {
     .learning__form fieldset {
         margin-right: 31px
+    }
+}
+@media (max-width: 403px) {
+    .modal-menu ul {
+        list-style: none;
+        width: 209px;
+        margin-left: -12px;
     }
 }

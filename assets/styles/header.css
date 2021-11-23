@@ -186,11 +186,13 @@
     letter-spacing: 0.095em;
     text-transform: uppercase;
     -webkit-text-stroke: 1px #fff;
-    
+    margin-right: 7px;
 }
 /*color: rgba(36, 244, 255, 1);*/
 .header .student p:first-child {
     text-align: right;
+    height: 18px;
+    margin-top: 14px;
 }
 
 .modal-farther {
