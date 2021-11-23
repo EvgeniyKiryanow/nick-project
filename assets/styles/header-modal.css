@@ -669,6 +669,7 @@ span.arrow-left {
     border-radius: 30px;
     resize: none;
     border: none;
+    overflow: hidden;
 }
 
 .learning__form-group {
