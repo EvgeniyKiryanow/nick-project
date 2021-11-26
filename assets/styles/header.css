@@ -275,9 +275,10 @@
     margin-left: 68px;
 }
 
-.modal-farther button .circle {
-    position: relative;
-    right: -7px;
+.modal-farther .circle {
+    position: absolute;
+    bottom: 182px;
+    right: 162px;
     width: 64px;
     height: 64px;
     background: #00D1FF;
@@ -285,7 +286,7 @@
     box-shadow: -2px 2px 10px rgba(0, 209, 255, 0.6), 2px -2px 10px rgba(0, 209, 255, 0.6), -2px -2px 10px rgba(0, 209, 255, 0.6), -2px 2px 10px rgba(0, 209, 255, 0.6);
 }
 
-.modal-farther button .circle img {
+.modal-farther .circle img {
     position: absolute;
     top: 40%;
     right: 32%;
@@ -310,16 +311,16 @@
     background: #003945;
 }
 
-.modal-farther button:active div {
+.modal-farther button:active {
     color: rgba(255, 255, 255, 0.58);
 }
 
-.modal-farther button div {
+.modal-farther button {
     font-weight: 800;
     font-size: 1.8em;
     line-height: 124%;
     color: #fff;
-    padding: 25px;
+    padding: 25px 79px 25px 59px;
 }
 
 

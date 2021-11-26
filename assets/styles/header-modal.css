@@ -462,6 +462,8 @@
     width: 100%;
     height: 60px;
     border: none;
+    font-size: 2em;
+    padding-left: 15px;
 }
 
 .modal-body.consultation label {
@@ -473,7 +475,7 @@
     line-height: 27px;
     color: #FFFFFF;
     margin-left: 22px;
-    margin-top: 10px;
+    /* margin-top: 10px; */
 }
 
 .modal-body.consultation .modal-label-subtitle {
@@ -620,6 +622,7 @@ span.arrow-left {
     box-sizing: border-box;
     border-radius: 30px;
     font-family: "M PLUS 1p", sans-serif;
+    color: #fff
 }
 
 .learning-order-select,
@@ -656,7 +659,7 @@ span.arrow-left {
     border: 3px solid #FFECEF;
     filter: drop-shadow(-2px 2px 7px rgba(255, 0, 168, 0.7)) drop-shadow(2px -2px 7px rgba(255, 0, 168, 0.7)) drop-shadow(-2px -2px 7px rgba(255, 0, 168, 0.7)) drop-shadow(-2px 2px 7px rgba(255, 0, 168, 0.7));
     position: absolute;
-    height: 652px;
+    height: 667px;
     width: 1091px;
     left: -296px;
     z-index: -1;
@@ -670,6 +673,7 @@ span.arrow-left {
     resize: none;
     border: none;
     overflow: hidden;
+    font-size: 16px;
 }
 
 .learning__form-group {
@@ -687,6 +691,7 @@ span.arrow-left {
     font-family: "M PLUS 1p", sans-serif;
     padding: 0 10px 10px 10px;
     text-align: left;
+    font-size: 16px;
 }
 
 .learning__form {
@@ -781,6 +786,7 @@ textarea#description {
 
 .learning__input-wrapper input {
     margin-right: 10px;
+    text-align: left;
 }
 
 .learning__input-wrapper label.learning__label {
@@ -965,7 +971,7 @@ select {
     }
     .form-border {
         width: 736px;
-        height: 956px;
+        height: 981px;
         left: -117px;
     }
     .learning__form label.label-topic,
@@ -1084,7 +1090,7 @@ select {
     }
     .form-border {
         width: 373px;
-        height: 1157px;
+        height: 1193px;
         left: auto;
         margin-left: -8px;
     }
@@ -1114,7 +1120,7 @@ select {
     }
     .learning__title {
         max-width: 250px;
-        font-size:20px;
+        font-size: 20px;
     }
     .learning__form textarea {
         width: 350px;
@@ -1131,6 +1137,9 @@ select {
     .learning__form-group select {
         font-size: 16px;
         padding: 18px 42px 18px 15px;
+    }
+    .learning__form-group select:nth-child(2) {
+        margin-top: 18px;
     }
     .learning__form-group input {
         padding: 18px 42px 18px 15px;
@@ -1194,7 +1203,7 @@ select {
     }
     .form-border.teacher {
         width: 375px;
-        height: 790px;
+        height: 803px;
         left: auto;
         margin-left: -13px;
     }
@@ -1247,11 +1256,13 @@ select {
         margin-left: 30px;
     }
 }
+
 @media (max-width: 550px) {
     .learning__form fieldset {
         margin-right: 31px
     }
 }
+
 @media (max-width: 403px) {
     .modal-menu ul {
         list-style: none;
