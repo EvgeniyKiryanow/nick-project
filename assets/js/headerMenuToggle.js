@@ -5,24 +5,29 @@ $('.modal-backdrop').click(function() {
     $('.lines').removeClass('active')
 })
 $('#exampleModal').click(function() {
-        $('.lines').removeClass('active')
-    })
-    // $('.modal-first-step-btn').click(function() {
-    //     $('.modal-first-step-btn').addClass('active-tab')
-    //     $('.test1').addClass('active')
-    //     $('.modal-second-step').removeClass('active-tab')
-    //     $('.test2').removeClass('active')
-    // })
-$('.modal-second-step').click(function() {
+    $('.lines').removeClass('active')
+})
+
+// $('.modal-first-step-btn').click(function() {
+//     $('.modal-first-step-btn').addClass('active-tab')
+//     $('.test1').addClass('active')
+//     $('.modal-second-step').removeClass('active-tab')
+//     $('.test2').removeClass('active')
+// })
+$('.modal-second-step').click(function(event) {
+    event.preventDefault();
+    $('.test2').addClass('active')
+
     // $('.modal-first-step-btn').removeClass('active-tab')
     $('.test1').removeClass('active')
-    $('.modal-second-step').addClass('active-tab')
-    $('.test2').addClass('active')
+
+    // $('.modal-second-step').addClass('active-tab')
+
 })
-$('.modal-second-step').click(function() {
+$('.modal-second-step').click(function(event) {
     $('.modal-body').removeClass('top')
 })
-$('.modal-first-step-btn').click(function() {
+$('.modal-first-step-btn').click(function(event) {
     $('.modal-body').addClass('top')
 })
 
@@ -76,8 +81,8 @@ $(document).ready(function() {
     limitChars(mySecObject, descMax, leftCharsDesc);
     limitChars(myThirdObject, descTeacherMax, leftCharsDescTeachet);
 });
-$('#staticBackdropBtn').attr('disabled', 'disabled');
 
+$('#staticBackdropBtn').attr('disabled', 'disabled');
 
 $(document).ready(function() {
     $('.field input').keyup(function() {
