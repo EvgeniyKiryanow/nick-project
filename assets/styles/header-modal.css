@@ -694,6 +694,10 @@ span.arrow-left {
     font-size: 16px;
 }
 
+.modal-tab-active-second {
+    margin-left: 5px;
+}
+
 .learning__form {
     font-family: "M PLUS 1p", sans-serif;
     padding-bottom: 100px;
@@ -705,6 +709,14 @@ span.arrow-left {
 
 .learning__form label {
     font-weight: 500;
+}
+
+.enter a:hover {
+    text-decoration: underline;
+}
+
+.field {
+    margin-bottom: 10px;
 }
 
 .learning__form select {
@@ -997,6 +1009,10 @@ select {
     .order-select-group {
         flex-direction: column;
         align-items: center;
+    }
+    .flex-column-reverse-custom {
+        display: flex;
+        flex-direction: column-reverse;
     }
     .order-select-group button {
         margin: 10px 0 12px 0;

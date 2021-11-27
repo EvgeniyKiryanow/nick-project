@@ -99,6 +99,7 @@
 }
 
 .card {
+    font-family: "M PLUS 1p", sans-serif;
     position: relative;
     width: 20%;
     margin: 2%;
@@ -136,6 +137,7 @@
     display: flex;
     align-items: center;
     padding-left: 5%;
+    padding-bottom: 5px;
 }
 
 .card-body {

@@ -8,31 +8,27 @@ $('#exampleModal').click(function() {
     $('.lines').removeClass('active')
 })
 
-// $('.modal-first-step-btn').click(function() {
-//     $('.modal-first-step-btn').addClass('active-tab')
-//     $('.test1').addClass('active')
-//     $('.modal-second-step').removeClass('active-tab')
-//     $('.test2').removeClass('active')
-// })
-$('.modal-second-step').click(function(event) {
-    event.preventDefault();
-    $('.test2').addClass('active')
+$('.modal-second-step').click(function() {
 
-    // $('.modal-first-step-btn').removeClass('active-tab')
     $('.test1').removeClass('active')
 
-    // $('.modal-second-step').addClass('active-tab')
+    $('.test2').addClass('active')
+
+    $('.modal-tab-active-first').removeClass('active-tab')
+
+    $('.modal-tab-active-second').addClass('active-tab')
 
 })
-$('.modal-second-step').click(function(event) {
+$('.modal-second-step').click(function() {
     $('.modal-body').removeClass('top')
 })
-$('.modal-first-step-btn').click(function(event) {
+$('.modal-first-step-btn').click(function() {
     $('.modal-body').addClass('top')
 })
 
 
 $('.learning-order-select').click(function() {
+    $('.order-select-group').addClass('flex-column-reverse-custom')
     $('.learning-order-select').addClass('active')
     $('.learning-order-select').addClass('active-btn')
     $('.first-part-of-modal').addClass('active')
@@ -41,6 +37,7 @@ $('.learning-order-select').click(function() {
     $('.second-part-of-modal').removeClass('active')
 })
 $('.teachers-order-select').click(function() {
+    $('.order-select-group').removeClass('flex-column-reverse-custom')
     $('.teachers-order-select').addClass('active active-btn')
     $('.teachers-order-select').addClass('active-btn')
     $('.second-part-of-modal').addClass('active')
