@@ -328,7 +328,7 @@
 
 @media (min-width:769px) {
     .header__consultation {
-        margin-left: 15%;
+        margin-left: 5%;
     }
 }
 
@@ -368,3 +368,4 @@
 @media (max-width: 550px) {}
 
 @media (max-width: 375px) {}
+
