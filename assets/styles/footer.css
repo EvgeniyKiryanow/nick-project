@@ -242,7 +242,9 @@
   .footer__payment--title {
     text-align: right;
     margin-bottom: 20px;
-    margin-right: 70px;
+    width: 120px;
+    margin-left: 10px;
+    /*margin-right:50px;*/
   }
 
   .footer__payment--body {
@@ -272,7 +274,9 @@
   }
 
   .footer__payment--title {
-    text-align: left;
+    text-align: right;
+    margin-left: 20px;
+    width: 110px;
   }
 
   .footer__payment--body {
@@ -475,10 +479,9 @@
 	width: auto;
 	height: auto;
 }
-
-
-
-
+.footer-left {
+  width: 300px;
+}
 .payments-item-wr {
   display: flex;
   flex-wrap: wrap;
@@ -486,8 +489,12 @@
 @media all and (min-width: 376px) and (max-width: 768px) {
   .payments-item-wr {
       flex-direction: column;
-      align-items: flex-end;
+      align-items: center;
+      width: 62%;
   }
+  /*.footer-left {
+    width: 50%;
+  }*/
 }
 
 .payments-item-wr .payments-item {
@@ -506,6 +513,9 @@
   }
   .payments-item-wr .payments-item:last-child img:first-child {
       margin-bottom: 22px;
+  }
+  .footer__about--body {
+    font-size: 1.25em;
   }
   
   .mail-link {
@@ -531,15 +541,28 @@
   height: auto;
 }
 
-.footer-left {
-  width: 68%;
+@media all and (max-width: 768) {
+  
+  .footer__payment--title.title {
+    width: 156px;
+    margin: 0 0 0 41px;
+    text-align: right;
+  }
+}
+@media  (max-width: 768px) {
+  .footer-left {
+    width: 156%;
+  }
 }
 @media all and (max-width: 375px) {
   .footer-left {
     width: 106%;
   }
   .footer__payment--title.title {
-    margin: 0 0 20px 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 100%;
   }
   .footer__copyrighting {
     padding-top: 0;
