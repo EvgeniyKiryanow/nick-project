@@ -236,12 +236,13 @@
   }
 
   .footer__payment {
-    width: 30%;
+    width: 38%;
   }
 
   .footer__payment--title {
     text-align: right;
     margin-bottom: 20px;
+    margin-right: 70px;
   }
 
   .footer__payment--body {
@@ -486,14 +487,9 @@
   .payments-item-wr {
       flex-direction: column;
       align-items: flex-end;
- }
+  }
 }
-@media all and (max-width: 375px) {
-  .payments-item-wr {
-      max-width: 260px;
-      margin: 0 -12px;
- }
-}
+
 .payments-item-wr .payments-item {
   display: flex;
   flex-direction: column;
@@ -507,10 +503,17 @@
       max-width: 100%;
       margin: 0 0 22px;
       align-items: flex-end;
- }
+  }
   .payments-item-wr .payments-item:last-child img:first-child {
       margin-bottom: 22px;
- }
+  }
+  
+  .mail-link {
+    font-size: 2em;
+  }
+  .feedback-link {
+    font-size: 1.25em;
+  }
 }
 @media all and (max-width: 375px) {
   .payments-item-wr .payments-item {
@@ -518,10 +521,10 @@
       margin: 0 12px 30px;
       align-items: center;
       flex-direction: row;
- }
+  }
   .payments-item-wr .payments-item:last-child img:first-child {
       margin-right: 24px;
- }
+  }
 }
 .payments-item-wr .payments-item img {
   max-width: 100%;
@@ -530,4 +533,30 @@
 
 .footer-left {
   width: 68%;
+}
+@media all and (max-width: 375px) {
+  .footer-left {
+    width: 106%;
+  }
+  .footer__payment--title.title {
+    margin: 0 0 20px 0;
+  }
+  .footer__copyrighting {
+    padding-top: 0;
+  }
+  .footer__connect--body button {
+    margin-top: 10px;
+  }
+
+  .footer__connect--body button div {
+    font-size: 2.25em;
+    font-family: "M PLUS 1p", sans-serif;
+    font-weight: 300;
+  }
+  .footer__about--body {
+    font-size: 1.50em;
+  }
+  .mail-link {
+    font-size: 2.50em;
+  }
 }
