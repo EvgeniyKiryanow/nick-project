@@ -198,6 +198,10 @@
     .slick-list {
         height: 360px;
     }
+    ul.slick-dots {
+        margin-right: 31px;
+        bottom: -121px;
+    }
     .slick-prev {
         position: absolute;
         bottom: 11.5%;
@@ -212,8 +216,10 @@
         background-image: url("../img/articles/arrow-left.png");
         background-size: cover;
         background-repeat: no-repeat;
-        width: 20px;
-        height: 32px;
+        top: 60px;
+        width: 29px;
+        height: 63px;
+        left: 64px;
     }
     .slick-next {
         position: absolute;
@@ -230,8 +236,10 @@
         transform: rotate(180deg);
         background-size: cover;
         background-repeat: no-repeat;
-        width: 20px;
-        height: 32px;
+        width: 29px;
+        height: 63px;
+        right: 50px;
+        top: 59px;
     }
     .slick-initialized .slick-slide {
         background: transparent !important;
@@ -269,5 +277,7 @@
         border: unset;
         font-size: 0;
     }
+    .articles__button button {
+        display: none;
+    }
 }
-
