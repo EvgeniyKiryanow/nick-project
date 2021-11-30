@@ -7,6 +7,13 @@ $('.modal-backdrop').click(function() {
 $('#exampleModal').click(function() {
     $('.lines').removeClass('active')
 })
+$('.get-consultation').click(function() {
+    $('#staticBackdrop').addClass('show')
+})
+$('.header__menu').click(function() {
+    $('#exampleModal').toggleClass('show'); 
+})
+
 
 $('.modal-second-step').click(function() {
 
@@ -104,3 +111,10 @@ $(document).ready(function() {
         }
     });
 });
+
+//$('#staticBackdrop').click(function() {
+//    $('body').addClass('modal-open')
+//})
+//$('.modal-first-step-btn').click(function() {
+//    $('.modal-body').addClass('top')
+//})

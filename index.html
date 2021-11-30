@@ -55,7 +55,7 @@
 
                         </div>
                         <div class="header__consultation">
-                            <button data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            <button class="get-consultation" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                             <div>Получить консультацию</div>
                                 <div class="circle">
                                     <picture>
@@ -349,9 +349,9 @@
                     </div>
                 </footer>
                 <div id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" class="modal fade">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="side-panel">
+                    <div class="modal-dialog" style="background-color: black; height: 100%;">
+                        <div class="modal-content" style="border: none;">
+                            <div class="side-panel" style="background-color: black;">
                                 <div class="side-panel-inn">
                                     <div class="d-flex justify-content-center align-items-baseline header__languages-wrapper">
                                         <div class="header__languages">
@@ -398,7 +398,7 @@
                                             <h5 id="exampleModalLabel" class="modal-title">МEHЮ</h5> <button type="button" data-bs-dismiss="modal" aria-label="Close" class="btn-close"><img src="assets/img/header/close.webp" alt="close"></button>
                                         </div>
                                     </div>
-                                    <div class="panel-decor-wr">
+                                    <div class="panel-decor-wr" style="background-color: black;">
                                         <div class="reg-link-wr-out">
                                             <div class="reg-link-wr">
                                                 <a href="#" class="login">Войти</a>/<a href="#" class="registration">Регистрация</a>
@@ -412,7 +412,7 @@
                                     </div>
                                     <div class="burger-contact-wr">
                                         <div class="burger-modal-wp">
-                                            <div class="burger-contact-title">Связаться с нами</div>
+                                            <div class="burger-contact-title" style="margin: 40px auto 10 auto;">Связаться с нами</div>
                                             <div class="popup-modal">
                                                 <a href="#" class="feedback-social-link">
                                                     <picture>
@@ -467,9 +467,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="modal consultation fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal consultation fade" style="width: 100%; background-color: #01000F;" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                     <div class="modal-dialog consultation">
-                        <div class="modal-content consultation">
+                        <div class="modal-content consultation" style="background-color: transparent;">
                             <div class="modal-header consultation">
                             </div>
                             <div class="modal-body consultation top">
@@ -479,9 +479,9 @@
                                     <li class="modal-tab-active-second">Шаг 2</li>
                                 </ul>
                                 <div class="tabs__content test1 active">
-                                    <div class="modal-title consultation test1 active" id="staticBackdropLabel">
+                                    <div class="modal-title consultation test1 active" style="right: -70px;" id="staticBackdropLabel">
                                         <h2>У Вас уже есть аккаунт? Нажмите</h2>
-                                        <button>
+                                        <button style="padding: 0 104px 0 65px;">
                                             <div>Вход</div>
                                         </button>
                                     </div>
@@ -503,13 +503,13 @@
                                             <!--data-bs-toggle="modal"-->
                                             <button type="button" class="modal-second-step" disabled="disabled" id="staticBackdropBtn" data-bs-target="#staticBackdrop">
                                                 Далее
-                                            </button>
                                             <div class="circle">
                                                 <picture>
                                                     <source aria-disabled srcset="assets/img/header/Vector 94.webp" alt="arrow" loading="lazy" type="image/webp+xml">
                                                     <img aria-disabled src="assets/img/header/Vector 94.png" alt="arrow" loading="lazy">
                                                 </picture>
                                             </div>
+                                        </button>
                                         </div>
                                         <label class="label-check">
                                         <input class="label-check-inp" type='checkbox'>

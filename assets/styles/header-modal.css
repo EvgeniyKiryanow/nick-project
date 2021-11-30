@@ -410,7 +410,7 @@
 
 .modal-header.consultation {
     display: block;
-    border: unset;
+    border: none;
 }
 
 .modal-body.consultation {
@@ -1680,3 +1680,13 @@ button#dropdownMenuButton2:focus {
     outline: none;
     border: none;
 }
+
+.show {
+    display: block;
+}
+
+/*.side-panel {
+    background-color: #000;
+    height: 100vh;
+    overflow: auto;
+}*/
