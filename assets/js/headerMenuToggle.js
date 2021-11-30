@@ -14,6 +14,14 @@ $('.header__menu').click(function() {
     $('#exampleModal').toggleClass('show'); 
 })
 
+$('#dropdownMenuButton1').click(function() {
+    $('.dropdown-menu').toggleClass('show'); 
+})
+
+$('#dropdownMenuButton2').click(function() {
+    $('.dropdown-menu').toggleClass('show'); 
+})
+
 
 $('.modal-second-step').click(function() {
 

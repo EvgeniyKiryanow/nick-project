@@ -412,7 +412,7 @@
                                     </div>
                                     <div class="burger-contact-wr">
                                         <div class="burger-modal-wp">
-                                            <div class="burger-contact-title" style="margin: 40px auto 10 auto;">Связаться с нами</div>
+                                            <div class="burger-contact-title" style="margin: 40px auto 10px auto;">Связаться с нами</div>
                                             <div class="popup-modal">
                                                 <a href="#" class="feedback-social-link">
                                                     <picture>
@@ -479,9 +479,9 @@
                                     <li class="modal-tab-active-second">Шаг 2</li>
                                 </ul>
                                 <div class="tabs__content test1 active">
-                                    <div class="modal-title consultation test1 active" style="right: -70px;" id="staticBackdropLabel">
+                                    <div class="modal-title consultation test1 active" id="staticBackdropLabel">
                                         <h2>У Вас уже есть аккаунт? Нажмите</h2>
-                                        <button style="padding: 0 104px 0 65px;">
+                                        <button>
                                             <div>Вход</div>
                                         </button>
                                     </div>
@@ -549,46 +549,50 @@
                                             <form class="learning__form">
                                                 <div class="form-border"></div>
                                                 <fieldset>
-                                                    <label class="label-topic" style="margin-top: 10px;" for="topic">Напишите тему работы</label>
+                                                    <label class="label-topic"  for="topic" id="label-topic">Напишите тему работы</label>
                                                     <textarea id="topic" name="topic" rows="5" placeholder="Максимально напишите что знаете, Например: Процесс национального строительства: сущность и характер...(МАКСИМАЛЬНО 250 символов)&#10;Осталось 250 символов"></textarea>
-                                                    <p><span style="color: #fff; font-size: 13px; margin: 0 0 0 10px;" id="leftChars"></span></p>
+                                                    <!--<p><span style="color: #fff; font-size: 13px; margin: 0 0 0 10px;" id="leftChars"></span></p>-->
                                                     <label class="label-description" for="description">Напишите описание работы</label>
                                                     <textarea class="description" style="padding-left: 12px;" id="description" name="description" placeholder="Максимально напишите что знаете, Например: Предмет: Этнополитология, план где-то 4-5 пунктов, шрифт стандартный - Times New Roman 14. уникальность 70-80% на каком плагиате будет проверка если знаете, по стандарту делаем на ЕТХТ... (МАКСИМАЛЬНО 1000 символов&#10;&#10;&#10;&#10;Осталось 1000 символов"></textarea>
-                                                    <p><span style="color: #fff; font-size: 13px; margin: 0 0 0 10px;" id="leftCharsDesc"></span></p>
+                                                    <!--<p><span style="color: #fff; font-size: 13px; margin: 0 0 0 10px;" id="leftCharsDesc"></span></p>-->
                                                     <div class="learning__input-price">
                                                         <label for="price">На какую стоимость рассчитываете?</label>
                                                         <input class="learning__input" style="text-align: left; padding-left: 20px;" type="text" name="price" placeholder="Например: сумма которую Вы готовы потратить">
                                                     </div>
-                                                    <div class="learning__form-group">
-                                                        <select class="learning__select" name="work" id="work">
-                                                        <option selected autocomplete="off" value="typeofwork">Выберите тип работы</option>
-                                                        <option value="smthelse">...</option>
-                                                        <option value="smthelse2">...</option>
-                                                    </select>
-                                                        <select class="learning__select" name="subject" id="subject">
-                                                            <option  value="Выберите предмет работы">Не знаю какой</option>
-                                                            <option  value="Выберите предмет работы">Text.ru</option>
-                                                            <option  value="Выберите предмет работы">Advego Plagiatus</option>
-                                                            <option  value="Выберите предмет работы">Etxt Антиплагиат(AntiPlagiarism.NET)</option>
-                                                            <option  value="Выберите предмет работы">Unicheck</option>
-                                                            <option  value="Выберите предмет работы">Antiplagiat.ru</option>
-                                                            <option  value="Выберите предмет работы">Антиплагиат ВУЗ</option>
-                                                            <option  value="Выберите предмет работы">Plagiarisma</option>
-                                                            <option  value="Выберите предмет работы">Strikeplagiarism</option>
-                                                            <option selected value="Выберите предмет работы">Выберите предмет работы</option>
-                                                        </select>
-                                                        <div class="workload-block">
-                                                            <label class="mt-0" for="workload">Введите объём работы</label>
-                                                            <input class="learning__input" style=" padding-left: 20px;" type="text" name="workload" placeholder="Например: 10-12 страниц">
+                                                    <div class="learning__form-group d-flex">
+                                                        <div class="group-select-learning">
+                                                            <select class="learning__select s-teacher" name="work" id="work-learning">
+                                                                <option selected autocomplete="off" value="typeofwork">Выберите тип работы</option>
+                                                                <option value="smthelse">...</option>
+                                                                <option value="smthelse2">...</option>
+                                                            </select>
+                                                            <select class="learning__select" name="subject" id="subject">
+                                                                <option  value="Выберите предмет работы">Не знаю какой</option>
+                                                                <option  value="Выберите предмет работы">Text.ru</option>
+                                                                <option  value="Выберите предмет работы">Advego Plagiatus</option>
+                                                                <option  value="Выберите предмет работы">Etxt Антиплагиат(AntiPlagiarism.NET)</option>
+                                                                <option  value="Выберите предмет работы">Unicheck</option>
+                                                                <option  value="Выберите предмет работы">Antiplagiat.ru</option>
+                                                                <option  value="Выберите предмет работы">Антиплагиат ВУЗ</option>
+                                                                <option  value="Выберите предмет работы">Plagiarisma</option>
+                                                                <option  value="Выберите предмет работы">Strikeplagiarism</option>
+                                                                <option selected value="Выберите предмет работы">Выберите предмет работы</option>
+                                                            </select>
                                                         </div>
-                                                        <div class="completion-block">
-                                                            <label class="mt-0" for="dateofcompletion">Дата выполнения работы</label>
-                                                            <input class="learning__input" style="text-align: left; padding-right: 50px; padding-left: 20px;" type="text" placeholder="Выберите дату на когда должна быть готова работа">
+                                                        <div class="group-input-learning">
+                                                            <div class="workload-block" >
+                                                                <label class="mt-0" for="workload">Введите объём работы</label>
+                                                                <input class="learning__input" style=" padding-left: 20px;" type="text" name="workload" placeholder="Например: 10-12 страниц">
+                                                            </div>
+                                                            <div class="completion-block">
+                                                                <label class="mt-0" for="dateofcompletion">Дата выполнения работы</label>
+                                                                <input class="learning__input" style="text-align: left; padding-right: 50px; padding-left: 20px;" type="text" placeholder="Выберите дату на когда должна быть готова работа">
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </fieldset>
                                                 <div class="additional-info">
-                                                    <select class="learning__select" name="plagiat" style='padding: 17px;' id="plagiat" aria-placeholder="knknkn">
+                                                    <select class="learning__select" name="plagiat" style='padding: 19px; margin-top: 25px;' id="plagiat" aria-placeholder="knknkn">
                                                     <option selected value="plagiat">
                                                         Выберите нужный плагиат
                                                     </option>
@@ -625,20 +629,25 @@
                                                     <label class="form__label-teacher" for="descriptionlesson">Описание работы</label>
                                                     <textarea class="description teacher" id="description" name="description" placeholder="Максимально напишите что знаете, Например: Предмет: Этнополитология, план где-то 4-5 пунктов, шрифт стандартный - Times New Roman 14. уникальность 70-80% на каком плагиате будет проверка если знаете, по стандарту делаем на ЕТХТ... (МАКСИМАЛЬНО 1000 символов&#10;&#10;&#10;&#10;Осталось 1000 символов"></textarea>
                                                     <p style="color: #fff;"><span style="color: #fff; font-size: 13px; margin: 0 0 0 10px; " id="leftCharsTeach"></span></p>
-                                                    <div class="learning__form-group teacher ">
-                                                        <select class="learning__select" name="work" id="work ">
-                                                            <option selected value="type-of-work ">Выберите предмет</option>
-                                                        </select>
-                                                        <select class="learning__select" name="subject" id="subject">
-                                                            <option selected value="level ">Выберите уровень подготовки</option>
-                                                        </select>
-                                                        <div>
-                                                            <label class="learning__label workload " for="workload ">На какую стоимость рассчитываете?</label>
-                                                            <input class="learning__input " type="text " name="workload " placeholder="Например: сумма которую Вы готовы тратить за 1 час ">
+                                                    <div class="learning__form-group teacher d-flex">
+                                                        <div class="learning__form-select-wrap">
+                                                            <select class="learning__select" name="work" id="work">
+                                                                <option selected value="type-of-work ">Выберите предмет</option>
+                                                            </select>
+                                                            <select class="learning__select" name="subject" id="subject-teacher">
+                                                                <option selected value="level ">Выберите уровень подготовки</option>
+                                                            </select>
                                                         </div>
-                                                        <div class="date-of-lesson ">
-                                                            <label class="learning__label completion " for="dateofcompletion ">Дата, время на когда Вам удобно заниматься?</label>
-                                                            <input class="learning__input " type="text " placeholder="Выберите дату на когда должен быть Онлайн урок ">
+                                                        <div class="learning-inner-level-p d-flex align-items-center">
+                                                            <div class="price-expectation">
+                                                                <label class="learning__label workload " for="workload ">На какую стоимость рассчитываете?</label>
+                                                                <input class="learning__input " type="text " name="workload " placeholder="Например: сумма которую Вы готовы тратить за 1 час ">
+                                                            </div>
+                                                            
+                                                            <div class="date-of-lesson">
+                                                                <label class="learning__label completion " for="dateofcompletion ">Дата, время на когда Вам удобно заниматься?</label>
+                                                                <input class="learning__input " type="text " placeholder="Выберите дату на когда должен быть Онлайн урок ">
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </fieldset>

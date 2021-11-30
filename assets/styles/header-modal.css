@@ -301,6 +301,9 @@
     border-right: 2px solid #00D1FF;
 }
 
+body.windows.mozilla {
+    background-color: red;
+}
 
 /* last li */
 
@@ -662,7 +665,7 @@ span.arrow-left {
     border: 3px solid #FFECEF;
     filter: drop-shadow(-2px 2px 7px rgba(255, 0, 168, 0.7)) drop-shadow(2px -2px 7px rgba(255, 0, 168, 0.7)) drop-shadow(-2px -2px 7px rgba(255, 0, 168, 0.7)) drop-shadow(-2px 2px 7px rgba(255, 0, 168, 0.7));
     position: absolute;
-    height: 667px;
+    height: 670px;
     width: 1091px;
     left: -296px;
     z-index: -1;
@@ -763,7 +766,6 @@ textarea#description {
 .learning__select {
     background: #E5ADFF;
     height: max-content;
-    margin-right: 10px;
     font-size: 2.25em;
     padding: 17px 22px 16px;
 }
@@ -777,6 +779,7 @@ textarea#description {
     flex-direction: column;
     margin-left: 25%;
     margin-bottom: 18px;
+    margin-top: 8px;
 }
 
 .additional-info {
@@ -786,12 +789,16 @@ textarea#description {
     margin-top: 34px;
 }
 
+.label-topic {
+    margin-top: 23px;
+}
+
 .learning__input-wrapper {
     background-color: #fff;
     display: flex;
     justify-content: flex-end;
     padding: 15px;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .learning__input-inner {
@@ -896,7 +903,6 @@ select::-ms-expand {
 select {
     max-width: 100%;
     overflow: hidden;
-    /* white-space: normal; */
 }
 
 select {
@@ -909,10 +915,6 @@ select {
 
 .form-border.teacher {
     height: 497px;
-}
-
-.learning__form-group.teacher {
-    margin-top: 25px;
 }
 
 .second-part-of-modal label.form__label-teacher {
@@ -929,7 +931,7 @@ select {
 
 .modal-body.consultation label.label-topic,
 .modal-body.consultation label.label-description {
-    margin-left: 100px;
+    margin-left: 90px;
 }
 
 .learning pre.learning__subtitle-formated {
@@ -945,8 +947,93 @@ select {
 .order-select-group {
     margin-bottom: 30px;
 }
+.learning__form-group.teacher {
+    flex-direction: column;
+    align-items: center;
+}
+select#work {
+    margin-bottom: 18px;
+    margin-right: 10px;
+}
+.learning__form-select-wrap {
+    display: flex;
+    margin-top: 10px;
+}
+.learning-inner-level-p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.learning__select#subject-teacher {
+    margin-left: 10px;
+}
+.group-select-learning,
+.group-input-learning {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6px;
+}
+
+.learning__form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+select#work-learning {
+    margin-right: 10px;
+}
+.workload-block {
+    margin-right: 10px;
+}
+select#subject {
+    margin-left: 10px;
+}
+.completion-block {
+    margin-left: 10px;
+}
+.price-expectation {
+    margin-right: 10px;
+}
+.date-of-lesson {
+    margin-left: 10px;
+}
 
 @media (max-width: 1100px) {
+    select#work {
+        margin-bottom: 23px;
+        margin-right: 10px;
+    }
+    .learning__select#subject-teacher {
+        margin-left: 0;
+    }
+    .price-expectation {
+        margin-right: 0;
+    }
+    .date-of-lesson {
+        margin-left: 0;
+    }
+    .group-select-learning,
+    .group-input-learning {
+        display: flex;
+        flex-direction: column;
+    }
+    .date-of-lesson {
+        margin-top: 15px;
+    }
+    .learning__form-select-wrap {
+        flex-direction: column;
+        margin-left: 10px;
+    }
+    .learning__form-select-wrap {
+        flex-direction: column;
+    }
+    .learning-inner-level-p {
+        flex-direction: column;
+    }
+    div.completion-block {
+        margin-top: 25px;
+    }
     .modal-body.consultation label {
         margin-right: auto;
     }
@@ -967,21 +1054,20 @@ select {
     .learning__form textarea {
         width: 668px;
         height: 129px;
-        /*padding: 15px 11px 20px 19px;? */
     }
-    /*.learning__form textarea::placeholder {*/
-    /*padding: 12px; */
-    /*}*/
     .learning__form textarea#description {
         width: 668px;
         height: 212px;
     }
     .learning__form-group {
-        grid-template-columns: 1fr;
-        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .learning__form-group.teacher {
+        margin-top: 0;
     }
     .learning__form-group select#subject {
-        margin-top: 15px;
+        margin-top: 25px;
     }
     .learning__form-group select#work {
         margin-top: 5px;
@@ -994,7 +1080,10 @@ select {
         height: 981px;
         left: -117px;
     }
-    .learning__form label.label-topic,
+    .learning__form label.label-topic{
+        margin-top: 40px;
+    }
+    
     .learning__form label.label-description {
         margin-right: auto;
         margin-top: 20px;
@@ -1005,6 +1094,9 @@ select {
     }
     .learning__subtitle {
         display: none;
+    }
+    div.completion-block {
+        margin-top: 20px;
     }
     .learning pre.learning__subtitle-formated {
         display: block;
@@ -1049,7 +1141,7 @@ select {
     }
     .form-border.teacher {
         width: 736px;
-        height: 703px;
+        height: 713px;
     }
     .modal-body.consultation label.label-topic,
     .modal-body.consultation label.label-description {
@@ -1064,11 +1156,30 @@ select {
         margin-bottom: 30px;
     }
     .second-part-of-modal div.upload-file-desc {
-        margin: 60px 0 0 0;
+        margin: 85px 0 0 0;
         font-size: inherit;
     }
-}
+    .workload-block {
+        margin-right: 0;
+    }
+    
+    .completion-block {
+        margin-left: 0;
+    }
+    
+    select#work-learning, .workload-block {
+        margin-right: 0;
+    }
 
+    select#subject, .completion-block {
+        margin-left: 0;
+    }
+    .label#label-topic{     
+        margin-top: 50px;
+    }
+    
+    
+}
 @media (max-width: 586px) {
     .modal-title h2 {
         margin-right: 2px;
@@ -1091,6 +1202,23 @@ select {
 }
 
 @media (max-width: 745px) {
+    .get-consultation {
+        margin-right: 13px;
+    }
+    .modal-body.consultation label.label-topic,
+    .modal-body.consultation label.label-description {
+        margin-left: 28px;
+    }
+    .learning__select#subject-teacher {
+        margin-left: 0;
+    }
+    .date-of-lesson {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+    .learning__form-group select#subject {
+        margin-top: 25px;
+    }
     .modal-body.consultation label {
         margin-right: auto;
     }
@@ -1099,6 +1227,8 @@ select {
         text-align: center;
         font-size: 14px;
         margin-bottom: 28px;
+        display: flex;
+        flex-direction: column;
     }
     .modal-title.consultation {
         display: block;
@@ -1120,7 +1250,7 @@ select {
         width: 373px;
         height: 1193px;
         left: auto;
-        margin-left: -8px;
+        margin-left: 13px;
     }
     .order-select-group button {
         width: 350px;
@@ -1161,6 +1291,7 @@ select {
     .learning__form-group {
         justify-items: center;
         text-align: center;
+        flex-direction: column;
     }
     .learning__form-group select {
         font-size: 16px;
@@ -1203,10 +1334,6 @@ select {
         width: 350px;
         padding: 9px 10px 9px 48px;
         font-size: 14px;
-        margin-right: 25px;
-    }
-    .learning__form fieldset {
-        margin-right: 29px;
     }
     .learning__input-wrapper {
         width: 350px;
@@ -1231,12 +1358,12 @@ select {
     }
     .form-border.teacher {
         width: 375px;
-        height: 803px;
+        height: 814px;
         left: auto;
         margin-left: -13px;
     }
     .learning__form fieldset.fieldset-teacher {
-        margin-left: 0;
+        margin-left: -10px;
     }
     label.form__label-teacher {
         margin-right: auto;
@@ -1247,6 +1374,7 @@ select {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 12px;
     }
     label.learning__label.workload {
         margin-top: 0;
@@ -1261,7 +1389,6 @@ select {
         color: #FFFFFF;
         margin-left: 10px;
         margin-right: auto;
-        margin-top: 10px;
     }
     .modal-body.consultation label.completion {
         margin-left: 0;
@@ -1280,9 +1407,15 @@ select {
     .first-part-of-modal .learning__input-inner {
         margin: 0;
     }
-    .learning__form {
-        margin-left: 30px;
+    .price-expectation {
+        margin-right: 0;
     }
+}
+.learning__select#subject {
+    margin-left: 10px;
+}
+.learning__select select#work {
+    margin-right: 10px;
 }
 
 @media (max-width: 550px) {
@@ -1685,8 +1818,45 @@ button#dropdownMenuButton2:focus {
     display: block;
 }
 
-/*.side-panel {
-    background-color: #000;
-    height: 100vh;
-    overflow: auto;
-}*/
+.fieldset-teacher .learning__input {
+    padding-left: 20px;
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .modal-title button {
+        padding-right: 68px;
+    }
+    .modal-title.consultation {
+        width: 700px;
+    }
+    .date-of-lesson {
+        margin-top: 18px;
+    } 
+    .price-expectation {
+        margin-top: 18px;
+    }
+    .modal-title {
+        color:#00D1FF
+    }
+    .form-border {
+        border: 3px solid rgb(255, 154, 171);
+    }
+    .modal-title.consultation {
+        right: -95px;
+    }
+}
+
+.modal-dialog {
+    height: 140vh;
+}
+.modal-content {
+    margin-bottom: 88;
+}
+.modal-content {
+    margin-bottom: 100px;
+}
+.burger-contact-wr {
+    margin-bottom: 100px;
+}
+.side-panel-inn {
+    margin-bottom: 200px;
+}
