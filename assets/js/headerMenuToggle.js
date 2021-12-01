@@ -11,36 +11,34 @@ $('.get-consultation').click(function() {
     $('#staticBackdrop').addClass('show')
 })
 $('.header__menu').click(function() {
-    $('#exampleModal').toggleClass('show'); 
+    $('#exampleModal').toggleClass('show');
 })
 
 $('#dropdownMenuButton1').click(function() {
-    $('.dropdown-menu').toggleClass('show'); 
+    $('.dropdown-menu').toggleClass('show');
 })
 
 $('#dropdownMenuButton2').click(function() {
-    $('.dropdown-menu').toggleClass('show'); 
+    $('.dropdown-menu').toggleClass('show');
 })
-
 
 $('.modal-second-step').click(function() {
-
     $('.test1').removeClass('active')
-
-    $('.test2').addClass('active')
-
     $('.modal-tab-active-first').removeClass('active-tab')
-
-    $('.modal-tab-active-second').addClass('active-tab')
-
 })
+
+$("#staticBackdropBtn").click(function() {
+    $('.test2').addClass('active')
+    $('.modal-tab-active-second').addClass('active-tab')
+})
+
 $('.modal-second-step').click(function() {
     $('.modal-body').removeClass('top')
 })
+
 $('.modal-first-step-btn').click(function() {
     $('.modal-body').addClass('top')
 })
-
 
 $('.learning-order-select').click(function() {
     $('.order-select-group').addClass('flex-column-reverse-custom')
@@ -105,11 +103,6 @@ $(document).ready(function() {
                 $("#staticBackdropBtn").attr("disabled", false);
                 empty = true;
             }
-            if ($(".label-check-inp").click(function() {
-                    $("#staticBackdropBtn").attr("disabled", false);
-                })) {
-                empty = true;
-            }
         });
 
         if (empty) {
@@ -119,10 +112,3 @@ $(document).ready(function() {
         }
     });
 });
-
-//$('#staticBackdrop').click(function() {
-//    $('body').addClass('modal-open')
-//})
-//$('.modal-first-step-btn').click(function() {
-//    $('.modal-body').addClass('top')
-//})

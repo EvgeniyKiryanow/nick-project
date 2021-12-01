@@ -29,7 +29,7 @@
                 <header class="header">
                     <div class="header__wrapper">
                         <div class="header__wrapper_logo">
-                            <a href="index.html">
+                            <a href="index.html" class="header_logo-link">
                                 <picture>
                                     <source srcset="assets/img/header/logo.webp" type="image/webp+xml">
                                     <img src="assets/img/header/logo.png" alt="logo" loading="lazy">
@@ -256,26 +256,40 @@
                                         </div>
                                         <div class="payments-item">
                                             <picture>
-                                                <source srcset="assets/img/footer/mastercard.webp" type="image/webp+xml">
-                                                <img src="assets/img/footer/mastercard.png" alt="mastercard">
-                                            </picture>
-                                        </div>
-                                        <div class="payments-item">
-                                            <picture>
                                                 <source srcset="assets/img/footer/privat.png" type="image/webp+xml">
                                                 <img src="assets/img/footer/privat.png" alt="privat">
                                             </picture>
                                         </div>
                                         <div class="payments-item">
                                             <picture>
+                                                <source srcset="assets/img/footer/mastercard.webp" type="image/webp+xml">
+                                                <img src="assets/img/footer/mastercard.png" alt="mastercard">
+                                            </picture>
+                                        </div>
+                                        <div class="payments-item lg-footer-bank">
+                                            <picture>
                                                 <source srcset="assets/img/footer/world.webp" type="image/webp+xml">
                                                 <img src="assets/img/footer/world.png" alt="world">
                                             </picture>
                                             <picture>
                                                 <source srcset="assets/img/footer/liqpay.webp" type="image/webp+xml">
-                                                <img src="assets/img/footer/liqpay.png" alt="liqpay">
+                                                <img class="liqpay" src="assets/img/footer/liqpay.png" alt="liqpay">
                                             </picture>
                                         </div>
+                                        <div class="payments-item">
+                                            <picture class="sm-footer-bank">
+                                                <source srcset="assets/img/footer/world.webp" type="image/webp+xml">
+                                                <img class="world-b" src="assets/img/footer/world.png" alt="world">
+                                            </picture>
+                                        </div>
+                                        <div class="payments-item">
+
+                                            <picture class="sm-footer-bank">
+                                                <source srcset="assets/img/footer/liqpay.webp" type="image/webp+xml">
+                                                <img class="liqpay" src="assets/img/footer/liqpay.png" alt="liqpay">
+                                            </picture>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -512,7 +526,7 @@
                                         </button>
                                         </div>
                                         <label class="label-check">
-                                        <input class="label-check-inp" type='checkbox'>
+                                        <input class="label-check-inp" type='checkbox' checked>
                                         <span></span>
                                         <div class="check">«Ознакомлен с правилами <a href="#">политики конфиденциальности<a> и согласен об использовании файлов cookie»</div>
                                     </label>
@@ -549,53 +563,53 @@
                                             <form class="learning__form">
                                                 <div class="form-border"></div>
                                                 <fieldset>
-                                                    <label class="label-topic"  for="topic" id="label-topic">Напишите тему работы</label>
-                                                    <textarea id="topic" name="topic" rows="5" placeholder="Максимально напишите что знаете, Например: Процесс национального строительства: сущность и характер...(МАКСИМАЛЬНО 250 символов)&#10;Осталось 250 символов"></textarea>
+                                                    <label class="label-topic" for="topic" id="label-topic">Напишите тему работы</label>
+                                                    <textarea style="overflow-y: scroll;" id="topic" name="topic" rows="5" placeholder="Максимально напишите что знаете, Например: Процесс национального строительства: сущность и характер...(МАКСИМАЛЬНО 250 символов)&#10;Осталось 250 символов"></textarea>
                                                     <!--<p><span style="color: #fff; font-size: 13px; margin: 0 0 0 10px;" id="leftChars"></span></p>-->
                                                     <label class="label-description" for="description">Напишите описание работы</label>
-                                                    <textarea class="description" style="padding-left: 12px;" id="description" name="description" placeholder="Максимально напишите что знаете, Например: Предмет: Этнополитология, план где-то 4-5 пунктов, шрифт стандартный - Times New Roman 14. уникальность 70-80% на каком плагиате будет проверка если знаете, по стандарту делаем на ЕТХТ... (МАКСИМАЛЬНО 1000 символов&#10;&#10;&#10;&#10;Осталось 1000 символов"></textarea>
+                                                    <textarea style="overflow-y: scroll;" class="description" style="padding-left: 12px;" id="description" name="description" placeholder="Максимально напишите что знаете, Например: Предмет: Этнополитология, план где-то 4-5 пунктов, шрифт стандартный - Times New Roman 14. уникальность 70-80% на каком плагиате будет проверка если знаете, по стандарту делаем на ЕТХТ... (МАКСИМАЛЬНО 1000 символов&#10;&#10;&#10;&#10;Осталось 1000 символов"></textarea>
                                                     <!--<p><span style="color: #fff; font-size: 13px; margin: 0 0 0 10px;" id="leftCharsDesc"></span></p>-->
                                                     <div class="learning__input-price">
-                                                        <label for="price">На какую стоимость рассчитываете?</label>
-                                                        <input class="learning__input" style="text-align: left; padding-left: 20px;" type="text" name="price" placeholder="Например: сумма которую Вы готовы потратить">
+                                                        <label for="price">На какую стоимость рассчитываете?</label>\
+                                                        <textarea class="learning__textarea" name="price" id="" cols="2" placeholder="Например: сумма которую&#10;    Вы готовы потратить"></textarea>
+                                                        <!-- <input class="learning__input" style="text-align: left; padding-left: 20px;" type="text" name="price" style="white-space: normal; width:100px" placeholder="Например: сумма которую Вы готовы потратить"> -->
                                                     </div>
                                                     <div class="learning__form-group d-flex">
                                                         <div class="group-select-learning">
                                                             <select class="learning__select s-teacher" name="work" id="work-learning">
-                                                                <option selected autocomplete="off" value="typeofwork">Выберите тип работы</option>
+                                                                <option   value="typeofwork">Выберите тип работы</option>
                                                                 <option value="smthelse">...</option>
                                                                 <option value="smthelse2">...</option>
                                                             </select>
                                                             <select class="learning__select" name="subject" id="subject">
-                                                                <option  value="Выберите предмет работы">Не знаю какой</option>
-                                                                <option  value="Выберите предмет работы">Text.ru</option>
-                                                                <option  value="Выберите предмет работы">Advego Plagiatus</option>
-                                                                <option  value="Выберите предмет работы">Etxt Антиплагиат(AntiPlagiarism.NET)</option>
-                                                                <option  value="Выберите предмет работы">Unicheck</option>
-                                                                <option  value="Выберите предмет работы">Antiplagiat.ru</option>
-                                                                <option  value="Выберите предмет работы">Антиплагиат ВУЗ</option>
-                                                                <option  value="Выберите предмет работы">Plagiarisma</option>
-                                                                <option  value="Выберите предмет работы">Strikeplagiarism</option>
                                                                 <option selected value="Выберите предмет работы">Выберите предмет работы</option>
                                                             </select>
                                                         </div>
                                                         <div class="group-input-learning">
-                                                            <div class="workload-block" >
+                                                            <div class="workload-block">
                                                                 <label class="mt-0" for="workload">Введите объём работы</label>
-                                                                <input class="learning__input" style=" padding-left: 20px;" type="text" name="workload" placeholder="Например: 10-12 страниц">
+                                                                <input class="learning__input" style="padding-left: 20px;" type="text" name="workload" placeholder="Например: 10-12 страниц">
                                                             </div>
                                                             <div class="completion-block">
                                                                 <label class="mt-0" for="dateofcompletion">Дата выполнения работы</label>
-                                                                <input class="learning__input" style="text-align: left; padding-right: 50px; padding-left: 20px;" type="text" placeholder="Выберите дату на когда должна быть готова работа">
+                                                                <textarea class="learning__textarea" name="price" id="" cols="2" placeholder="   Выберите дату на когда &#10;должна быть готова работа"></textarea>
+                                                                <!-- <input class="learning__input" style="text-align: left; padding-right: 50px; padding-left: 20px;" type="text" placeholder="Выберите дату на когда должна быть готова работа"> -->
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </fieldset>
                                                 <div class="additional-info">
-                                                    <select class="learning__select" name="plagiat" style='padding: 19px; margin-top: 25px;' id="plagiat" aria-placeholder="knknkn">
-                                                    <option selected value="plagiat">
-                                                        Выберите нужный плагиат
-                                                    </option>
+                                                    <select class="learning__select" name="plagiat" style='margin-top: 25px;' id="plagiat">
+                                                    <option selected autocomplete="off" value="10085091" style="white-space: -wrap;">Выберите нужный плагиат, если не знаете, выберите ”Не знаю какой”</option>
+                                                    <option  value="Выберите предмет работы">Не знаю какой</option>
+                                                    <option  value="Выберите предмет работы">Text.ru</option>
+                                                    <option  value="Выберите предмет работы">Advego Plagiatus</option>
+                                                    <option  value="Выберите предмет работы">Etxt Антиплагиат(AntiPlagiarism.NET)</option>
+                                                    <option  value="Выберите предмет работы">Unicheck</option>
+                                                    <option  value="Выберите предмет работы">Antiplagiat.ru</option>
+                                                    <option  value="Выберите предмет работы">Антиплагиат ВУЗ</option>
+                                                    <option  value="Выберите предмет работы">Plagiarisma</option>
+                                                    <option  value="Выберите предмет работы">Strikeplagiarism</option>
                                                 </select>
                                                     <div class="learning__input-wrapper mr-2">
                                                         <span class="input-wrapper-title">Нужно утверждать план?</span>
@@ -623,11 +637,11 @@
                                                 В этой группе можно выбрать репетитора по многим предметам: английский, украинский, иностранные языки, подготовка к ЗНО, математика, история и другие предметы 
                                             </span>
                                             <p class="learning__title">Все поля обязательны для заполнения</p>
-                                            <form class="learning__form">
+                                            <form class="learning__form teacher">
                                                 <div class="form-border teacher"></div>
                                                 <fieldset class="fieldset-teacher">
                                                     <label class="form__label-teacher" for="descriptionlesson">Описание работы</label>
-                                                    <textarea class="description teacher" id="description" name="description" placeholder="Максимально напишите что знаете, Например: Предмет: Этнополитология, план где-то 4-5 пунктов, шрифт стандартный - Times New Roman 14. уникальность 70-80% на каком плагиате будет проверка если знаете, по стандарту делаем на ЕТХТ... (МАКСИМАЛЬНО 1000 символов&#10;&#10;&#10;&#10;Осталось 1000 символов"></textarea>
+                                                    <textarea style="overflow-y: scroll;" class="description teacher" id="description" name="description" placeholder="Максимально напишите что знаете, Например: Предмет: Этнополитология, план где-то 4-5 пунктов, шрифт стандартный - Times New Roman 14. уникальность 70-80% на каком плагиате будет проверка если знаете, по стандарту делаем на ЕТХТ... (МАКСИМАЛЬНО 1000 символов&#10;&#10;&#10;&#10;Осталось 1000 символов"></textarea>
                                                     <p style="color: #fff;"><span style="color: #fff; font-size: 13px; margin: 0 0 0 10px; " id="leftCharsTeach"></span></p>
                                                     <div class="learning__form-group teacher d-flex">
                                                         <div class="learning__form-select-wrap">
@@ -641,12 +655,16 @@
                                                         <div class="learning-inner-level-p d-flex align-items-center">
                                                             <div class="price-expectation">
                                                                 <label class="learning__label workload " for="workload ">На какую стоимость рассчитываете?</label>
-                                                                <input class="learning__input " type="text " name="workload " placeholder="Например: сумма которую Вы готовы тратить за 1 час ">
+                                                                <textarea class="learning__textarea" name="workload" id="" cols="2" placeholder=" Например: сумма которую&#10; Вы готовы тратить за 1 час "></textarea>
+
+                                                                <!-- <input class="learning__input " type="text " name="workload " placeholder="Например: сумма которую Вы готовы тратить за 1 час "> -->
                                                             </div>
-                                                            
+
                                                             <div class="date-of-lesson">
                                                                 <label class="learning__label completion " for="dateofcompletion ">Дата, время на когда Вам удобно заниматься?</label>
-                                                                <input class="learning__input " type="text " placeholder="Выберите дату на когда должен быть Онлайн урок ">
+                                                                <textarea class="learning__textarea" name="dateofcompletion" id="" cols="2" placeholder=" Выберите дату на когда&#10; должен быть Онлайн урок "></textarea>
+
+                                                                <!-- <input class="learning__input " type="text " placeholder="Выберите дату на когда должен быть Онлайн урок "> -->
                                                             </div>
                                                         </div>
                                                     </div>
