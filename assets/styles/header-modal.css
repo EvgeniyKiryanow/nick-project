@@ -667,10 +667,15 @@ span.arrow-left {
     border: 3px solid #FFECEF;
     filter: drop-shadow(-2px 2px 7px rgba(255, 0, 168, 0.7)) drop-shadow(2px -2px 7px rgba(255, 0, 168, 0.7)) drop-shadow(-2px -2px 7px rgba(255, 0, 168, 0.7)) drop-shadow(-2px 2px 7px rgba(255, 0, 168, 0.7));
     position: absolute;
-    height: 670px;
+    height: 722px;
     width: 1091px;
     left: -296px;
     z-index: -1;
+}
+
+.show-sm,
+.show-lg {
+    display: block;
 }
 
 .learning__form textarea {
@@ -683,7 +688,6 @@ span.arrow-left {
     overflow: hidden;
     font-size: 16px;
     padding: 8px 15px 0 15px;
-    /*padding: 20px;*/
 }
 
 .learning__form-group {
@@ -1114,7 +1118,7 @@ select#subject {
     }
     .form-border {
         width: 736px;
-        height: 988px;
+        height: 1040px;
         left: -117px;
     }
     .learning__form label.label-topic {
@@ -1295,7 +1299,7 @@ select#subject {
     }
     .form-border {
         width: 374px;
-        height: 1193px;
+        height: 1226px;
         left: auto;
         margin-left: 17px;
     }

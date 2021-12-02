@@ -1,25 +1,29 @@
 $('.header__menu').click(function() {
     $('.lines').toggleClass("active")
 })
+
 $('.modal-backdrop').click(function() {
     $('.lines').removeClass('active')
 })
+
 $('#exampleModal').click(function() {
     $('.lines').removeClass('active')
 })
+
 $('.get-consultation').click(function() {
     $('#staticBackdrop').addClass('show')
 })
+
 $('.header__menu').click(function() {
     $('#exampleModal').toggleClass('show');
 })
 
 $('#dropdownMenuButton1').click(function() {
-    $('.dropdown-menu').toggleClass('show');
+    $('.dropdown-menu').toggleClass('show-lg');
 })
 
 $('#dropdownMenuButton2').click(function() {
-    $('.dropdown-menu').toggleClass('show');
+    $('.dropdown-menu').toggleClass('show-sm');
 })
 
 $('.modal-second-step').click(function() {
@@ -49,6 +53,7 @@ $('.learning-order-select').click(function() {
     $('.teachers-order-select').removeClass('active-btn')
     $('.second-part-of-modal').removeClass('active')
 })
+
 $('.teachers-order-select').click(function() {
     $('.order-select-group').removeClass('flex-column-reverse-custom')
     $('.teachers-order-select').addClass('active active-btn')
