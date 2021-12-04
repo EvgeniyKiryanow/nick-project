@@ -22,6 +22,14 @@ $('#dropdownMenuButton1').click(function() {
     $('.dropdown-menu').toggleClass('show-lg');
 })
 
+$('#dropdownMenuButton1').click(function() {
+    $('.dropdown-menu').toggleClass('show-lg');
+})
+
+$('#dropdownMenuButton2').click(function() {
+    $('.dropdown-menu').toggleClass('show-sm');
+})
+
 $('#dropdownMenuButton2').click(function() {
     $('.dropdown-menu').toggleClass('show-sm');
 })
