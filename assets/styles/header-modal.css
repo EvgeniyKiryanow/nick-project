@@ -667,7 +667,7 @@ span.arrow-left {
     border: 3px solid #FFECEF;
     filter: drop-shadow(-2px 2px 7px rgba(255, 0, 168, 0.7)) drop-shadow(2px -2px 7px rgba(255, 0, 168, 0.7)) drop-shadow(-2px -2px 7px rgba(255, 0, 168, 0.7)) drop-shadow(-2px 2px 7px rgba(255, 0, 168, 0.7));
     position: absolute;
-    height: 722px;
+    height: 681px;
     width: 1091px;
     left: -296px;
     z-index: -1;
@@ -684,7 +684,7 @@ span.arrow-left {
     background: #FFFFFF;
     border-radius: 30px;
     resize: none;
-    border: none;
+    /* border: 1px solid transparent; */
     overflow: hidden;
     font-size: 16px;
     padding: 8px 15px 0 15px;
@@ -746,6 +746,11 @@ span.arrow-left {
 }
 
 textarea#description {
+    height: 180px;
+    /* border-bottom: 30px solid transparent; */
+}
+
+textarea#descriptionteacher {
     height: 180px;
 }
 
@@ -966,7 +971,7 @@ select#work {
 
 .learning__form-select-wrap {
     display: flex;
-    margin-top: 10px;
+    margin-top: 26px;
 }
 
 .learning-inner-level-p {
@@ -1016,6 +1021,28 @@ select#subject {
     margin-left: 10px;
 }
 
+#leftCharsDesc {
+    position: absolute;
+    top: 647px;
+    left: -216px;
+}
+
+span#leftCharsDesc {
+    color: #000;
+}
+
+#leftChars {
+    position: absolute;
+    top: 441px;
+    left: -216px;
+}
+
+#leftCharsTeach {
+    position: absolute;
+    top: 554px;
+    left: -216px;
+}
+
 @media (min-width: 746px) {
     .learning__form .learning__textarea {
         height: 60px;
@@ -1031,6 +1058,24 @@ select#subject {
 }
 
 @media (max-width: 1100px) {
+    textarea#descriptionteacher {
+        height: 212px;
+    }
+    #leftCharsDesc {
+        position: absolute;
+        top: 894px;
+        left: -71px;
+    }
+    #leftChars {
+        position: absolute;
+        top: 638px;
+        left: -70px;
+    }
+    #leftCharsTeach {
+        position: absolute;
+        top: 703px;
+        left: -67px;
+    }
     .learning__form-group select#subject {
         margin-left: 0;
     }
@@ -1118,7 +1163,7 @@ select#subject {
     }
     .form-border {
         width: 736px;
-        height: 1040px;
+        height: 1006px;
         left: -117px;
     }
     .learning__form label.label-topic {
@@ -1180,8 +1225,8 @@ select#subject {
         display: none;
     }
     .form-border.teacher {
-        width: 736px;
-        height: 713px;
+        width: 742px;
+        height: 692px;
     }
     .modal-body.consultation label.label-topic,
     .modal-body.consultation label.label-description {
@@ -1229,6 +1274,11 @@ select#subject {
     .modal-title button {
         margin-right: 32px;
     }
+    /* #leftCharsTeach {
+        position: absolute;
+        top: 829px;
+        left: 98px;
+    } */
 }
 
 @media (max-width: 550px) {
@@ -1237,6 +1287,11 @@ select#subject {
         padding: 18px 22px 18px;
         font-size: 16px;
     }
+    /* #leftCharsTeach {
+        position: absolute;
+        top: 829px;
+        left: 98px;
+    } */
 }
 
 .side-panel-inn .header__languages {
@@ -1244,6 +1299,21 @@ select#subject {
 }
 
 @media (max-width: 745px) {
+    #leftCharsDesc {
+        position: absolute;
+        top: 1159px;
+        left: 87px;
+    }
+    #leftChars {
+        position: absolute;
+        top: 815px;
+        left: 87px;
+    }
+    #leftCharsTeach {
+        position: absolute;
+        top: 829px;
+        left: 98px;
+    }
     .learning__input-wrapper {
         margin-left: 27px;
     }
@@ -1299,7 +1369,7 @@ select#subject {
     }
     .form-border {
         width: 374px;
-        height: 1226px;
+        height: 1197px;
         left: auto;
         margin-left: 17px;
     }
@@ -1330,6 +1400,9 @@ select#subject {
     .learning__title {
         max-width: 250px;
         font-size: 20px;
+    }
+    textarea#descriptionteacher {
+        height: 253px;
     }
     .learning__form textarea {
         width: 350px;
@@ -1419,7 +1492,7 @@ select#subject {
     }
     .form-border.teacher {
         width: 373px;
-        height: 814px;
+        height: 760px;
         left: auto;
         margin-left: -13px;
     }
@@ -1556,6 +1629,34 @@ select#subject {
         right: 91%;
         width: 31%;
         height: 174%;
+    }
+}
+
+@media (max-width: 566px) {
+    #leftCharsTeach,
+    #leftChars {
+        left: 135px;
+    }
+}
+
+@media (max-width: 575px) {
+    #leftCharsTeach,
+    #leftChars {
+        left: 128px;
+    }
+}
+
+@media (max-width: 573px) {
+    #leftCharsTeach,
+    #leftChars {
+        left: 110px;
+    }
+}
+
+@media (max-width: 488) {
+    #leftCharsTeach,
+    #leftChars {
+        left: 110px;
     }
 }
 
@@ -1938,4 +2039,20 @@ select.learning__select {
 .additional-info select.learning__select {
     white-space: pre-wrap;
     padding: 7px 10px 5px 100px
+}
+
+.textarea-border {
+    outline: 3px solid rgb(255, 0, 0);
+}
+
+.textarea-border-t-topic {
+    border-bottom: 20px solid transparent;
+}
+
+.textarea-border-t {
+    border-bottom: 30px solid transparent;
+}
+
+.textarea-border-t-teacher {
+    border-bottom: 30px solid transparent;
 }

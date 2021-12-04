@@ -82,7 +82,7 @@ function limitChars(myObject, max, leftChars) {
 $(document).ready(function() {
     var myObject = 'textarea#topic';
     var mySecObject = 'textarea#description'
-    var myThirdObject = 'textarea#description.description.teacher'
+    var myThirdObject = 'textarea#descriptionteacher'
 
     var max = 250;
     var descMax = 1000;
@@ -97,7 +97,11 @@ $(document).ready(function() {
     limitChars(myThirdObject, descTeacherMax, leftCharsDescTeachet);
 });
 
-$('#staticBackdropBtn').attr('disabled', 'disabled');
+$(function() {
+    $(".label-check-inp").click(function() {
+        $("#staticBackdropBtn").attr("disabled", !this.checked);
+    });
+});
 
 $(document).ready(function() {
     $('.field input').keyup(function() {
@@ -117,3 +121,33 @@ $(document).ready(function() {
         }
     });
 });
+
+
+$(function() {
+    $('textarea#description').keyup(function() {
+        $('textarea#description').addClass('textarea-border-t')
+        if ($('#leftCharsDesc').text() === 'Достигнут лимит символов') {
+            $('textarea#description').addClass('textarea-border')
+        } else {
+            $('textarea#description').removeClass('textarea-border')
+        }
+    })
+
+    $('textarea#topic').keyup(function() {
+        $('textarea#topic').addClass('textarea-border-t-topic')
+        if ($('#leftChars').text() === 'Достигнут лимит символов') {
+            $('textarea#topic').addClass('textarea-border')
+        } else {
+            $('textarea#topic').removeClass('textarea-border')
+        }
+    })
+
+    $('textarea#descriptionteacher').keyup(function() {
+        $('textarea#descriptionteacher').addClass('textarea-border-t-teacher')
+        if ($('#leftCharsTeach').text() === 'Достигнут лимит символов') {
+            $('#descriptionteacher').addClass('textarea-border')
+        } else {
+            $('textarea#descriptionteacher').removeClass('textarea-border')
+        }
+    })
+})

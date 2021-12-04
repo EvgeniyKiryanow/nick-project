@@ -19,7 +19,6 @@
                     }
                     
                     .footer__payment--body img {
-                        /* width: 100% !important; */
                         margin: 2%;
                         -o-object-fit: contain;
                         object-fit: contain;
@@ -375,7 +374,6 @@
                         position: absolute;
                         right: 227px;
                         top: calc(50% - 12px);
-                        /*background: url("../img/footer/mail.svg")50% no-repeat;*/
                     }
                     
                     .feedback-link:before {
@@ -398,7 +396,7 @@
                     .popup {
                         display: none;
                         position: absolute;
-                        bottom: 150%;
+                        bottom: 32px;
                         z-index: 22;
                         max-width: 280px;
                         width: 100%;
@@ -476,9 +474,6 @@
                             align-items: center;
                             width: 62%;
                         }
-                        /*.footer-left {
-    width: 50%;
-  }*/
                     }
                     
                     .payments-item-wr .payments-item {

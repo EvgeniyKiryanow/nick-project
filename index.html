@@ -34,25 +34,11 @@
                                     <source srcset="assets/img/header/logo.webp" type="image/webp+xml">
                                     <img src="assets/img/header/logo.png" alt="logo" loading="lazy">
                                 </picture>
-                                <div class="student">
-                                    <p style="-webkit-text-stroke: 1px #fff; font-family: 'Russo One';">
-                                        <span>O</span>
-                                        <span>n</span>
-                                        <span>l</span>
-                                        <span>y</span>
-                                    </p>
-                                    <p>
-                                        <span>S</span>
-                                        <span>t</span>
-                                        <span>u</span>
-                                        <span>d</span>
-                                        <span>e</span>
-                                        <span>n</span>
-                                        <span>t</span>
-                                    </p>
-                                </div>
+                                <picture class="header-logo-name">
+                                    <source srcset="assets/img/header/logoname.svg" type="image/svg+xml">
+                                    <img src="assets/img/header/logoname.png" alt="logo" loading="lazy">
+                                </picture>
                             </a>
-
                         </div>
                         <div class="header__consultation">
                             <button class="get-consultation" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
@@ -427,32 +413,9 @@
                                     <div class="burger-contact-wr">
                                         <div class="burger-modal-wp">
                                             <div class="burger-contact-title" style="margin: 40px auto 10px auto;">Связаться с нами</div>
-                                            <div class="popup-modal">
-                                                <a href="#" class="feedback-social-link">
-                                                    <picture>
-                                                        <source srcset="assets/img/footer/burger_tg.svg" type="image/svg+xml">
-                                                        <img src="assets/img/footer/Vector (9).png" alt="enter icon">
-                                                    </picture>
-                                                    <span class="text">Консультация в Telegram</span>
-                                                </a>
-                                                <a href="#" class="feedback-social-link">
-                                                    <picture>
-                                                        <source srcset="assets/img/footer/burger-vb.svg" alt="viber" type="image/svg+xml">
-                                                        <img src="assets/img/footer/vibersec.png" alt="enter icon">
-                                                    </picture>
-                                                    <span class="text">Online-ЧАТ</span>
-                                                </a>
-                                                <a href="#" class="feedback-social-link">
-                                                    <picture>
-                                                        <source srcset="assets/img/footer/иконка.png" alt="chat" type="image/svg+xml">
-                                                        <img src="assets/img/footer/иконка.svg" alt="enter icon">
-                                                    </picture>
-                                                    <span class="text">Консультация в Chat</span>
-                                                </a>
-                                            </div>
                                         </div>
                                         <div class="burger-social-link-wr">
-                                            <a href="mailto:support@legko-v-uchebe.com" class="burger-mail">support@studenta-v-uchebe.com</a>
+                                            <a href="mailto:support@legko-v-uchebe.com" class="burger-mail">support@only-student.com</a>
                                             <a href="#" class="burger-social-link">
                                                 <picture>
                                                     <source srcset="assets/img/footer/burger_tg.svg" type="image/svg+xml">
@@ -565,10 +528,12 @@
                                                 <fieldset>
                                                     <label class="label-topic" for="topic" id="label-topic">Напишите тему работы</label>
                                                     <textarea maxlength="250" style="overflow-y: scroll;" id="topic" name="topic" rows="5" placeholder="Максимально напишите что знаете, Например: Процесс национального строительства: сущность и характер...(МАКСИМАЛЬНО 250 символов)&#10;Осталось 250 символов"></textarea>
-                                                    <p><span style="color: #fff; font-size: 13px; margin: 0 0 0 10px;" id="leftChars"></span></p>
+
+                                                    <p><span style="font-size: 13px; margin: 0 0 0 10px;" id="leftChars"></span></p>
                                                     <label class="label-description" for="description">Напишите описание работы</label>
                                                     <textarea maxlength="1000" style="overflow-y: scroll;" class="description" style="padding-left: 12px;" id="description" name="description" placeholder="Максимально напишите что знаете, Например: Предмет: Этнополитология, план где-то 4-5 пунктов, шрифт стандартный - Times New Roman 14. уникальность 70-80% на каком плагиате будет проверка если знаете, по стандарту делаем на ЕТХТ... (МАКСИМАЛЬНО 1000 символов&#10;&#10;&#10;&#10;Осталось 1000 символов"></textarea>
-                                                    <p><span style="color: #fff; font-size: 13px; margin: 0 0 0 10px;" id="leftCharsDesc"></span></p>
+
+                                                    <p><span style="font-size: 13px; margin: 0 0 0 10px;" id="leftCharsDesc"></span></p>
                                                     <div class="learning__input-price">
                                                         <label for="price">На какую стоимость рассчитываете?</label>\
                                                         <textarea class="learning__textarea" name="price" id="" cols="2" placeholder="Например: сумма которую&#10;    Вы готовы потратить"></textarea>
@@ -638,9 +603,9 @@
                                             <form class="learning__form teacher">
                                                 <div class="form-border teacher"></div>
                                                 <fieldset class="fieldset-teacher">
-                                                    <label class="form__label-teacher" for="descriptionlesson">Описание работы</label>
-                                                    <textarea maxlength="1000" style="overflow-y: scroll;" class="description teacher" id="description" name="description" placeholder="Максимально напишите что знаете, Например: Предмет: Этнополитология, план где-то 4-5 пунктов, шрифт стандартный - Times New Roman 14. уникальность 70-80% на каком плагиате будет проверка если знаете, по стандарту делаем на ЕТХТ... (МАКСИМАЛЬНО 1000 символов&#10;&#10;&#10;&#10;Осталось 1000 символов"></textarea>
-                                                    <p style="color: #fff;"><span style="color: #fff; font-size: 13px; margin: 0 0 0 10px; " id="leftCharsTeach"></span></p>
+                                                    <label class="form__label-teacher" for="descriptionteacher">Описание работы</label>
+                                                    <textarea maxlength="1000" style="overflow-y: scroll;" class="description teacher" id="descriptionteacher" name="descriptionteacher" placeholder="Максимально напишите что знаете, Например: Предмет: Этнополитология, план где-то 4-5 пунктов, шрифт стандартный - Times New Roman 14. уникальность 70-80% на каком плагиате будет проверка если знаете, по стандарту делаем на ЕТХТ... (МАКСИМАЛЬНО 1000 символов&#10;&#10;&#10;&#10;Осталось 1000 символов"></textarea>
+                                                    <p><span style="font-size: 13px; margin: 0 0 0 10px; " id="leftCharsTeach"></span></p>
                                                     <div class="learning__form-group teacher d-flex">
                                                         <div class="learning__form-select-wrap">
                                                             <select class="learning__select" name="work" id="work">

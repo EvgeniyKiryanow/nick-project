@@ -275,6 +275,11 @@
     margin: 15px auto 18px auto;
 }
 
+.header-logo-name {
+    position: absolute;
+    bottom: 0;
+}
+
 .modal-farther button {
     padding-left: 30px;
     display: flex;
