@@ -678,8 +678,6 @@ span.arrow-left {
 }
 
 .form-border {
-    /* border: 3px solid #FFECEF; */
-    /* filter: drop-shadow(-2px 2px 7px rgba(255, 0, 168, 0.7)) drop-shadow(2px -2px 7px rgba(255, 0, 168, 0.7)) drop-shadow(-2px -2px 7px rgba(255, 0, 168, 0.7)) drop-shadow(-2px 2px 7px rgba(255, 0, 168, 0.7)); */
     position: absolute;
     height: 681px;
     width: 1091px;
@@ -694,14 +692,19 @@ span.arrow-left {
     z-index: 999999;
 }
 
+#label-teacher {
+    margin-right: 779px;
+    margin-top: 10px;
+}
+
 .learning__form textarea {
     width: 994px;
-    height: 86px;
+    height: 124px;
     background: #FFFFFF;
     border-radius: 30px;
     resize: none;
     /* border: 1px solid transparent; */
-    overflow-y: scroll;
+    /*overflow-y: scroll;*/
     font-size: 16px;
     padding: 8px 15px 0 15px;
 }
@@ -1105,9 +1108,10 @@ label.label-description.desc-title {
     textarea#descriptionteacher {
         height: 212px;
     }
-    /* label.label-description.desc-title {
+    #label-teacher {
+        margin-right: 479px;
         margin-top: 10px;
-    } */
+    }
     #leftCharsDesc {
         position: absolute;
         left: 15px;
@@ -1292,6 +1296,9 @@ label.label-description.desc-title {
     .learning__label {
         margin-top: 10px;
     }
+    textarea#topic {
+        height: 124px;
+    }
     .learning__subtitle.teacher {
         width: 524px;
         text-align: center;
@@ -1354,6 +1361,10 @@ label.label-description.desc-title {
 }
 
 @media (max-width: 745px) {
+    #label-teacher {
+        margin-right: 161px;
+        margin-top: 10px;
+    }
     #desc-title {
         margin-top: 10px;
     }
