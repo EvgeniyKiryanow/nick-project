@@ -710,6 +710,10 @@ span.arrow-left {
     font-size: 16px;
 }
 
+.textarea-wrapper {
+    position: relative;
+}
+
 textarea#topic::-webkit-scrollbar,
 textarea#description::-webkit-scrollbar,
 textarea#descriptionteacher::-webkit-scrollbar {
@@ -1044,8 +1048,8 @@ select#subject {
 
 #leftCharsDesc {
     position: absolute;
-    top: 647px;
-    left: -216px;
+    bottom: 9px;
+    left: 12px;
 }
 
 span#leftCharsDesc {
@@ -1054,14 +1058,14 @@ span#leftCharsDesc {
 
 #leftChars {
     position: absolute;
-    top: 441px;
-    left: -216px;
+    left: 15px;
+    bottom: 7px;
 }
 
 #leftCharsTeach {
     position: absolute;
-    top: 554px;
-    left: -216px;
+    bottom: 9px;
+    left: 19px;
 }
 
 @media (min-width: 746px) {
@@ -1084,18 +1088,18 @@ span#leftCharsDesc {
     }
     #leftCharsDesc {
         position: absolute;
-        top: 894px;
-        left: -71px;
+        left: 15px;
+        bottom: 9px;
     }
     #leftChars {
         position: absolute;
-        top: 638px;
-        left: -70px;
+        left: 15px;
+        bottom: 7px;
     }
     #leftCharsTeach {
         position: absolute;
-        top: 703px;
-        left: -67px;
+        bottom: 9px;
+        left: 14px;
     }
     .learning__form-group select#subject {
         margin-left: 0;
@@ -1301,11 +1305,6 @@ span#leftCharsDesc {
     .modal-title button {
         margin-right: 32px;
     }
-    /* #leftCharsTeach {
-        position: absolute;
-        top: 829px;
-        left: 98px;
-    } */
 }
 
 @media (max-width: 550px) {
@@ -1314,11 +1313,6 @@ span#leftCharsDesc {
         padding: 18px 22px 18px;
         font-size: 16px;
     }
-    /* #leftCharsTeach {
-        position: absolute;
-        top: 829px;
-        left: 98px;
-    } */
 }
 
 .side-panel-inn .header__languages {
@@ -1336,21 +1330,21 @@ span#leftCharsDesc {
 @media (max-width: 745px) {
     #leftCharsDesc {
         position: absolute;
-        top: 1159px;
-        left: 87px;
+        bottom: 9px;
+        left: 18px;
     }
     .modal {
         z-index: 11;
     }
     #leftChars {
         position: absolute;
-        top: 815px;
-        left: 87px;
+        bottom: 9px;
+        left: 21px;
     }
     #leftCharsTeach {
         position: absolute;
-        top: 829px;
-        left: 98px;
+        left: 13px;
+        bottom: 9px;
     }
     .learning__input-wrapper {
         margin-left: 27px;
@@ -1409,7 +1403,7 @@ span#leftCharsDesc {
         width: 374px;
         height: 1197px;
         left: auto;
-        margin-left: 17px;
+        margin-left: 16px;
     }
     .order-select-group button {
         width: 350px;
@@ -1532,7 +1526,7 @@ span#leftCharsDesc {
         width: 373px;
         height: 760px;
         left: auto;
-        margin-left: -13px;
+        margin-left: -11px;
     }
     .learning__form fieldset.fieldset-teacher {
         margin-left: -10px;
@@ -1676,7 +1670,8 @@ span#leftCharsDesc {
     }
 }
 
-@media (max-width: 566px) {
+
+/* @media (max-width: 566px) {
     #leftCharsTeach,
     #leftChars {
         left: 135px;
@@ -1693,7 +1688,7 @@ span#leftCharsDesc {
 @media (max-width: 573px) {
     #leftCharsTeach,
     #leftChars {
-        left: 110px;
+        left: 16px;
     }
 }
 
@@ -1702,7 +1697,7 @@ span#leftCharsDesc {
     #leftChars {
         left: 110px;
     }
-}
+} */
 
 .burger-menu-wr {
     display: flex;
