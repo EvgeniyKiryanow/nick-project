@@ -177,13 +177,13 @@ $('textarea#description').on('scroll', function() {
 
     if (this.scrollHeight <= (this.scrollTop + offsetDesc)) {
         $('textarea#description').addClass('border-rigth-top')
-        $('textarea#description').addClass('overflow-s')
-        $('textarea#description').removeClass('overflow-h')
+        $('textarea#descriptionteacher').addClass('overflow-s')
+        $('textarea#descriptionteacher').removeClass('overflow-h')
     }
     if (this.scrollHeight == 181) {
         $('textarea#description').removeClass('border-rigth-top')
-        $('textarea#description').addClass('overflow-h')
-        $('textarea#description').removeClass('overflow-s')
+        $('textarea#descriptionteacher').addClass('overflow-h')
+        $('textarea#descriptionteacher').removeClass('overflow-s')
     }
 });
 
