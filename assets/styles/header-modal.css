@@ -994,7 +994,7 @@ select {
 
 .learning__subtitle.teacher {
     display: block;
-    width: 700px;
+    width: 800px;
     font-family: "M PLUS 1p", sans-serif;
 }
 
@@ -1103,6 +1103,28 @@ span#leftCharsDesc {
 label.label-description.desc-title {
     margin-top: 10px;
 }
+
+
+/*textarea#topic {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+textarea#description {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+textarea#descriptionteacher {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}*/
 
 @media (max-width: 1100px) {
     textarea#descriptionteacher {
@@ -1297,7 +1319,8 @@ label.label-description.desc-title {
         margin-top: 10px;
     }
     textarea#topic {
-        height: 124px;
+        /* height: 124px; */
+        height: 113px;
     }
     .learning__subtitle.teacher {
         width: 524px;
@@ -2155,4 +2178,16 @@ select.learning__select {
 ul.dropdown-menu.show.show-lg {
     inset: -6px auto auto 0px;
     padding: 0;
+}
+
+textarea.border-rigth-top {
+    border-top-right-radius: 0;
+}
+
+.overflow-s {
+    overflow-y: scroll;
+}
+
+.overflow-h {
+    overflow-y: hidden;
 }
