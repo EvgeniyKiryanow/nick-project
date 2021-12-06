@@ -159,3 +159,33 @@ $(function() {
         }
     })
 })
+
+$('textarea#topic').on('scroll', function() {
+    var offset = 300;
+    if (this.scrollHeight <= (this.scrollTop+offset)) {
+        $('textarea#topic').addClass('border-rigth-top')
+    } if (this.scrollHeight == 103) {
+        $('textarea#topic').removeClass('border-rigth-top')
+    }
+});
+
+$('textarea#description').on('scroll', function() {
+    var offsetDesc = 500;
+    console.log(this.scrollHeight);
+
+    if (this.scrollHeight <= (this.scrollTop+offsetDesc)) {
+        $('textarea#description').addClass('border-rigth-top')
+    } if (this.scrollHeight == 149) {
+        $('textarea#description').removeClass('border-rigth-top')
+    }
+});
+
+$('textarea#descriptionteacher').on('scroll', function() {
+    var offsetDescT = 500;
+
+    if (this.scrollHeight <= (this.scrollTop+offsetDescT)) {
+        $('textarea#descriptionteacher').addClass('border-rigth-top')
+    } if (this.scrollHeight == 149) {
+        $('textarea#descriptionteacher').removeClass('border-rigth-top')
+    }
+});
