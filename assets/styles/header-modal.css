@@ -735,6 +735,7 @@ textarea#topic::-webkit-scrollbar,
 textarea#description::-webkit-scrollbar,
 textarea#descriptionteacher::-webkit-scrollbar {
     width: 1em;
+    height: 3em;
 }
 
 textarea#topic::-webkit-scrollbar-track,
@@ -1108,21 +1109,21 @@ textarea#topic {
     border-top-left-radius: 30px;
     border-top-right-radius: 0;
     border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
+    /* border-bottom-right-radius: 0; */
 }
 
 textarea#description {
     border-top-left-radius: 30px;
     border-top-right-radius: 0;
     border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
+    /* border-bottom-right-radius: 0; */
 }
 
 textarea#descriptionteacher {
     border-top-left-radius: 30px;
     border-top-right-radius: 0;
     border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
+    border-bottom-right-radius: 0;
 }
 
 @media (max-width: 1100px) {
@@ -1383,6 +1384,18 @@ textarea#descriptionteacher {
 }
 
 @media (max-width: 745px) {
+    textarea#topic {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    textarea#description {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    textarea#descriptionteacher {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
     #label-teacher {
         margin-right: 161px;
         margin-top: 10px;
