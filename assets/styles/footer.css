@@ -225,21 +225,14 @@
                     }
                     /* Media */
                     
-                    @media (max-width: 767px) {
+                    @media (max-width: 768px) {
                         .footer__wrapper {
                             display: flex;
                             flex-direction: row-reverse;
-                            width: 80% !important;
+                            /* width: 80% !important; */
                         }
                         .footer__payment {
-                            width: 38%;
-                        }
-                        .footer__payment--title {
-                            text-align: right;
-                            margin-bottom: 20px;
-                            width: 120px;
-                            margin-left: 10px;
-                            /*margin-right:50px;*/
+                            width: 30%;
                         }
                         .footer__payment--body {
                             display: block !important;
@@ -252,13 +245,30 @@
                             width: 100% !important;
                         }
                         .footer .fields {
-                            width: 60%;
+                            width: 70%;
                         }
                         .footer__connect {
                             padding-top: 25px;
                         }
                     }
-                    
+                    @media (max-width: 767px) {
+                        .footer__payment--title {
+                            text-align: right;
+                            margin-bottom: 20px;
+                            width: 120px;
+                            margin-left: 10px;
+                            margin-right:50px;
+                        }
+                        .footer__wrapper  {
+                            width: 80% !important;
+                        }
+                        .footer .fields {
+                            width: 60%;
+                        }
+                        .footer__payment {
+                            width: 40%;
+                        }
+                    }
                     @media (max-width: 550px) {
                         .footer__wrapper {
                             width: 90% !important;
