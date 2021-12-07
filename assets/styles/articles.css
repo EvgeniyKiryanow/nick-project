@@ -282,8 +282,9 @@
     }
 }
 
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
     .articles__title {
-        color:rgba(0, 209, 255, 0.8)
+        color: rgba(0, 209, 255, 0.8)
     }
 }

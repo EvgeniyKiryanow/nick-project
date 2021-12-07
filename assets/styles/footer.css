@@ -398,7 +398,8 @@
                         position: absolute;
                         bottom: 32px;
                         z-index: 22;
-                        width: 280px;
+                        max-width: 280px;
+                        width: 100%;
                         padding: 15px 18px 11px;
                         background: rgba(0, 155, 194, 0.31);
                         border-radius: 10px;
