@@ -28,8 +28,6 @@
 
 #exampleModal .modal-content {
     background: unset;
-    /* width: 50%;
-    /* margin: 0 auto;  */
 }
 
 #exampleModal .modal-dialog {
@@ -342,14 +340,11 @@ body.windows.mozilla {
     font-family: 'Russo One';
     font-size: 24px;
     line-height: 112.4%;
-    /* or 27px */
     letter-spacing: 0.13em;
     color: #45FA41;
     text-shadow: unset;
     text-transform: unset;
     -webkit-text-stroke: unset;
-    /* margin-top: 45px; */
-    /* margin-bottom: 28px; */
     position: absolute;
     top: -107px;
 }
@@ -461,11 +456,6 @@ body.windows.mozilla {
     color: rgba(17, 7, 7, 0.6);
 }
 
-.modal-body.consultation li:hover {
-    /* color: white; */
-    /* cursor: pointer; */
-}
-
 .modal-form-input {
     border-radius: 30px;
     background: white;
@@ -486,7 +476,6 @@ body.windows.mozilla {
     line-height: 27px;
     color: #FFFFFF;
     margin-left: 22px;
-    /* margin-top: 10px; */
 }
 
 .modal-body.consultation .modal-label-subtitle {
@@ -504,7 +493,6 @@ fieldset {
     align-items: center;
     box-shadow: -1px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 0px 0px 25px 9px #f700ff;
     padding: 14px;
-    margin-left: 13px;
     border: 3px solid #FFECEF;
 }
 
@@ -564,11 +552,6 @@ fieldset {
 .modal-body.consultation li.active-tab {
     color: #fff;
 }
-
-
-/* .active {
-    color: #fff;
-} */
 
 
 /* Second part of modal */
@@ -703,8 +686,6 @@ span.arrow-left {
     background: #FFFFFF;
     border-radius: 30px;
     resize: none;
-    /* border: 1px solid transparent; */
-    /*overflow-y: scroll;*/
     font-size: 16px;
     padding: 8px 15px 0 15px;
 }
@@ -790,7 +771,6 @@ textarea#descriptionteacher::-webkit-scrollbar {
 
 textarea#description {
     height: 189px;
-    /* border-bottom: 30px solid transparent; */
 }
 
 textarea#descriptionteacher {
@@ -831,7 +811,6 @@ textarea#descriptionteacher {
 .learning__input-price {
     display: flex;
     flex-direction: column;
-    /* margin-left: 25%; */
     margin-bottom: 18px;
     margin-top: 8px;
 }
@@ -842,11 +821,6 @@ textarea#descriptionteacher {
     justify-content: center;
     margin-top: 34px;
 }
-
-
-/* .label-topic {
-    margin-top: 23px;
-} */
 
 .learning__input-wrapper {
     background-color: #fff;
@@ -1109,14 +1083,12 @@ textarea#topic {
     border-top-left-radius: 30px;
     border-top-right-radius: 0;
     border-bottom-left-radius: 30px;
-    /* border-bottom-right-radius: 0; */
 }
 
 textarea#description {
     border-top-left-radius: 30px;
     border-top-right-radius: 0;
     border-bottom-left-radius: 30px;
-    /* border-bottom-right-radius: 0; */
 }
 
 textarea#descriptionteacher {
@@ -1207,7 +1179,7 @@ textarea#descriptionteacher {
         align-items: center;
         box-shadow: -1px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 0px 0px 25px 9px #f700ff;
         padding: 14px;
-        margin-left: 18px;
+        /* margin-left: 18px; */
         border: 3px solid #FFECEF;
     }
     .learning__form textarea {
@@ -1246,12 +1218,6 @@ textarea#descriptionteacher {
     .learning__form label.label-topic {
         margin-top: 14px;
     }
-    /* textarea#topic {
-        padding-bottom: 48px;
-    }
-    textarea#description {
-        padding-bottom: 110px;
-    } */
     .learning__form label.label-description {
         margin-right: auto;
         margin-top: 20px;
@@ -1319,7 +1285,6 @@ textarea#descriptionteacher {
         margin-top: 10px;
     }
     textarea#topic {
-        /* height: 124px; */
         height: 113px;
     }
     .learning__subtitle.teacher {
@@ -1417,7 +1382,6 @@ textarea#descriptionteacher {
         align-items: center;
         box-shadow: -1px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 0px 0px 25px 9px #f700ff;
         padding: 14px;
-        margin-left: 18px;
         border: 3px solid #FFECEF;
         width: 371px;
     }
@@ -1449,7 +1413,6 @@ textarea#descriptionteacher {
     .modal-body.consultation label.label-topic,
     .modal-body.consultation label.label-description {
         margin-left: 28px;
-        /* margin-top: 13px; */
     }
     .learning__select#subject-teacher {
         margin-left: 0;
@@ -1667,12 +1630,9 @@ textarea#descriptionteacher {
     .price-expectation {
         margin-right: 0;
     }
-    /* textarea#topic {
-        padding-bottom: 116px;
+    fieldset {
+        margin-left: 17px;
     }
-    textarea#description {
-        padding-bottom: 1px;
-    } */
 }
 
 .learning__select#subject {
@@ -1681,12 +1641,6 @@ textarea#descriptionteacher {
 
 .learning__select select#work {
     margin-right: 10px;
-}
-
-@media (max-width: 550px) {
-    .learning__form fieldset {
-        /* margin-right: 31px */
-    }
 }
 
 @media (max-width: 403px) {
@@ -1760,35 +1714,6 @@ textarea#descriptionteacher {
         height: 174%;
     }
 }
-
-
-/* @media (max-width: 566px) {
-    #leftCharsTeach,
-    #leftChars {
-        left: 135px;
-    }
-}
-
-@media (max-width: 575px) {
-    #leftCharsTeach,
-    #leftChars {
-        left: 128px;
-    }
-}
-
-@media (max-width: 573px) {
-    #leftCharsTeach,
-    #leftChars {
-        left: 16px;
-    }
-}
-
-@media (max-width: 488) {
-    #leftCharsTeach,
-    #leftChars {
-        left: 110px;
-    }
-} */
 
 .burger-menu-wr {
     display: flex;
@@ -1992,12 +1917,12 @@ textarea#descriptionteacher {
     top: calc(50% - 15px);
     width: 37px;
     height: 30px;
-    background: url('../img/footer/mail.svg') 50% / 35px no-repeat;
+    background: url('../img/footer/mail.svg') 50% / 48px no-repeat;
 }
 
 @media all and (max-width: 768px) {
     .burger-contact-wr .burger-mail:before {
-        width: 25px;
+        width: 31px;
         height: 25px;
         top: calc(50% - 12px);
     }

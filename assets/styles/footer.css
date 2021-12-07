@@ -398,8 +398,7 @@
                         position: absolute;
                         bottom: 32px;
                         z-index: 22;
-                        max-width: 280px;
-                        width: 100%;
+                        width: 280px;
                         padding: 15px 18px 11px;
                         background: rgba(0, 155, 194, 0.31);
                         border-radius: 10px;
@@ -594,7 +593,7 @@
                         margin-top: 0;
                     }
                     
-                    @media (max-width: 768px) {
+                    @media (max-width: 769px) {
                         .burger-modal-wp:hover .popup-modal {
                             display: none;
                         }
