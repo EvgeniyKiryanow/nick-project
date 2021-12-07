@@ -1,69 +1,37 @@
-# app
+Must have add global =>
 
-## Build Setup
+<link
+href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@500;800&family=Montserrat:wght@600&family=Russo+One&display=swap"
+rel="stylesheet">
+<link 
+href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:ital,wght@1,900&display=swap"
+rel="stylesheet">
+<link  href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+crossorigin="anonymous">
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+crossorigin="anonymous"></script>
 
-```bash
-# install dependencies
-$ yarn install
+Add styles =>
 
-# serve with hot reload at localhost:3000
-$ yarn dev
+<link rel="stylesheet" type="text/css" href="assets/styles/global.css">   => global must
+<link rel="stylesheet" type="text/css" href="assets/styles/header-modal.css"> => header-modal
+<link rel="stylesheet" type="text/css" href="assets/styles/header.css">   => header must
+<link rel="stylesheet" type="text/css" href="assets/styles/articles.css"> => only for articles page
+<link rel="stylesheet" type="text/css" href="assets/styles/footer.css">   => footer musthave
 
-# build for production and launch server
-$ yarn build
-$ yarn start
+If Slick => 
+ <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> => articles page
 
-# generate static project
-$ yarn generate
-```
+If use JQuery and Slick =>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> => articles page
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> => articles page
+<script src="assets//js/headerModal.js"></script> => header modal 
+<script src="assets//js/headerMenuToggle.js"></script> => header menu toggle 
+<script src="assets//js/supportWebp.js"></script> => support webp  
 
-For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
+Articles Page =>
 
-## Special Directories
-
-You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
-
-### `assets`
-
-The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
-
-### `components`
-
-The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
-
-### `layouts`
-
-Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
-
-
-### `pages`
-
-This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
-
-### `plugins`
-
-The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
-
-### `static`
-
-This directory contains your static files. Each file inside this directory is mapped to `/`.
-
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
-
-### `store`
-
-This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+<link rel="stylesheet" type="text/css" href="assets/styles/articles.css">   => articles  
+<script src="assets//js/articlesPageSlick.js"></script> => articles page
