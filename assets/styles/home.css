@@ -1,0 +1,119 @@
+.home {
+    background: #01000F;
+    height: 100vh;
+    position: relative;
+}
+
+.home__title {
+    font-family: "Russo One", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 112.4%;
+    letter-spacing: 0.095em;
+    text-transform: uppercase;
+    z-index: 100;
+    margin-top: 135px;
+    max-width: 481px;
+}
+
+.big-logo-section h1:first-child {
+    -webkit-text-stroke: 3px #00D1FF;
+    color: transparent;
+}
+
+.big-logo-section {
+    display: flex;
+    justify-content: center;
+    height: 850px;
+}
+
+.title-elipce {
+    background: radial-gradient(70.15% 65.91% at 26.67% 57.75%, rgba(182, 27, 255, 0.6) 0%, rgba(2, 1, 24, 0.6) 100%);
+    filter: blur(113px);
+    transform: rotate(77.17deg);
+    width: 652px;
+    position: absolute;
+    z-index: 3;
+    height: 749px;
+    left: 420px;
+    top: -127px;
+}
+
+.title-elipce-pink {
+    background: radial-gradient(58.98% 58.98% at 49.94% 56.41%, rgba(255, 0, 229, 0.42) 14.59%, rgba(2, 1, 27, 0.6) 100%);
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    filter: blur(100px);
+    transform: rotate(56.94deg);
+    position: absolute;
+    width: 469.93px;
+    height: 478.09px;
+    left: 1404.7px;
+    top: 320px;
+}
+
+.bid-logo-subtitle {
+    font-weight: 800;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #C3F0FB;
+    font-family: "M PLUS 1p", sans-serif;
+    text-align: right;
+    width: 308px;
+    position: relative;
+    top: 550px;
+    right: -121px;
+    z-index: 10;
+}
+
+.big-logo-photo {
+    position: absolute;
+    top: 200px;
+    z-index: 100;
+}
+
+
+/* WHY US */
+
+.why-us {
+    width: 769px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2.why-us__title {
+    -webkit-text-stroke: 3px #FF00E5;
+    color: transparent;
+    color: #01000F;
+    font-size: 66px;
+    width: 200px;
+    font-family: 'Russo One';
+    line-height: 0.9;
+    text-shadow: -2px 2px 7px rgba(255, 0, 168, 0.5), 2px -2px 7px rgba(255, 0, 168, 0.5), -2px -2px 7px rgba(255, 0, 168, 0.5), -2px 2px 7px rgba(255, 0, 168, 0.5);
+}
+
+.reason-inner {
+    display: inline-flex;
+    border: 1px solid #fff;
+    box-shadow: 0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 2rem #bc13fe, 0 0 0.8rem #bc13fe, 0 0 2.8rem #bc13fe, inset 0 0 1.3rem #bc13fe;
+    border-radius: 10px;
+    width: 88px;
+    height: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.reason {
+    display: flex;
+    font-family: "M PLUS 1p", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.reason-text {
+    margin-left: 30px;
+}
