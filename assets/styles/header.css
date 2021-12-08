@@ -1,3 +1,7 @@
+html {
+    touch-action: manipulation;
+}
+
 .header {
     position: fixed;
     z-index: 10;

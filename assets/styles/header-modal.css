@@ -1,5 +1,9 @@
 /* Modal menu */
 
+html {
+    touch-action: manipulation;
+}
+
 .modal-backdrop {
     top: 90px;
 }
