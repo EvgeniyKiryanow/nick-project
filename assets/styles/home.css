@@ -40,6 +40,19 @@
     top: -127px;
 }
 
+.title-elipce-studies {
+    background: radial-gradient(70.15% 65.91% at 26.67% 57.75%, rgba(182, 27, 255, 0.6) 0%, rgba(2, 1, 24, 0.6) 100%);
+    filter: blur(113px);
+    transform: rotate(77.17deg);
+    width: 500px;
+    position: absolute;
+    z-index: -1;
+    height: 500px;
+    /* left: 420px; */
+    top: 1800px;
+    margin-left: 180px;
+}
+
 .title-elipce-pink {
     background: radial-gradient(58.98% 58.98% at 49.94% 56.41%, rgba(255, 0, 229, 0.42) 14.59%, rgba(2, 1, 27, 0.6) 100%);
     border: 1px solid #000000;
@@ -73,18 +86,24 @@
     z-index: 100;
 }
 
+.studies-stwork {
+    background: radial-gradient(70.15% 65.91% at 26.67% 57.75%, rgba(182, 27, 255, 0.6) 0%, rgba(2, 1, 24, 0.6) 100%);
+    filter: blur(95px);
+    transform: rotate( 77.17deg);
+}
+
 
 /* WHY US */
 
 .why-us {
-    width: 769px;
+    /* width: 769px; */
+    width: 927px;
     margin-left: auto;
     margin-right: auto;
 }
 
 h2.why-us__title {
     -webkit-text-stroke: 3px #FF00E5;
-    color: transparent;
     color: #01000F;
     font-size: 66px;
     width: 200px;
@@ -107,13 +126,173 @@ h2.why-us__title {
 }
 
 .reason {
-    display: flex;
     font-family: "M PLUS 1p", sans-serif;
     font-weight: 500;
     font-size: 24px;
     color: #FFFFFF;
+    margin-top: 37px;
+    display: flex;
+    align-items: self-end;
 }
 
 .reason-text {
     margin-left: 30px;
+    line-height: 1.3;
+}
+
+.reason-right-block {
+    margin-left: auto;
+    width: 521px;
+    max-width: 544px;
+}
+
+.reason-left-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Studies help */
+
+.studies-help {
+    width: 968px;
+    margin: 200px auto 0 auto;
+}
+
+h2.studies-help__title {
+    -webkit-text-stroke: 3px #00D1FF;
+    font-weight: normal;
+    font-size: 48px;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: rgba(5, 19, 22, 0.877);
+    font-family: 'Russo One';
+    text-shadow: -2px 2px 7px rgba(0, 209, 255, 0.5), 2px -2px 7px rgba(0, 209, 255, 0.5), -2px -2px 7px rgba(0, 209, 255, 0.5), -2px 2px 7px rgba(0, 209, 255, 0.5);
+}
+
+.studies-aside {
+    display: flex;
+}
+
+.studies-description {
+    width: 370px;
+    font-weight: 500;
+    font-size: 24px;
+    color: #FFFFFF;
+    line-height: 1.1;
+    margin-top: 32px;
+    font-family: "M PLUS 1p", sans-serif;
+}
+
+.studies__details-inner {
+    margin-top: 53px;
+}
+
+.studies__details-inner button {
+    font-family: "M PLUS 1p", sans-serif;
+    padding: 17px 9px 17px 25px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    position: relative;
+    background: #010714;
+    border: 1px solid #F6E3FF;
+    box-shadow: -2px -2px 10px rgba(182, 27, 255, 0.8), 2px 2px 10px rgba(182, 27, 255, 0.8), 2px -2px 10px rgba(172, 0, 253, 0.8), -2px 2px 10px rgba(182, 27, 255, 0.8);
+    border-radius: 40px;
+    color: white;
+    font-size: 2.25em;
+    font-weight: bold;
+}
+
+.studies__details-inner button .circle {
+    position: relative;
+    right: -21px;
+    width: 64px;
+    height: 64px;
+    background: #b61bff;
+    border-radius: 50%;
+    box-shadow: -2px 2px 10px rgba(182, 27, 255, 0.6), 2px -2px 10px rgba(182, 27, 255, 0.6), -2px -2px 10px rgba(182, 27, 255, 0.6), -2px 2px 10px rgba(182, 27, 255, 0.6);
+}
+
+.studies__details-inner button .circle img {
+    position: absolute;
+    top: 40%;
+    right: 32%;
+}
+
+.studies__details-inner button:after {
+    position: absolute;
+    right: 0;
+    width: 62px;
+    height: 62px;
+    background: #b61bff;
+    box-shadow: -2px 2px 10px rgba(182, 27, 255, 0.6), 2px -2px 10px rgba(182, 27, 255, 0.6), -2px -2px 10px rgba(182, 27, 255, 0.6), -2px 2px 10px rgba(182, 27, 255, 0.6);
+}
+
+
+/* How it work  */
+
+.how-it-work {
+    width: 968px;
+    margin: 120px auto 0 auto;
+}
+
+h2.how-it-work__title {
+    -webkit-text-stroke: 3px #FF00E5;
+    font-weight: normal;
+    font-size: 48px;
+    letter-spacing: 0.13em;
+    max-width: 350px;
+    text-transform: uppercase;
+    font-family: 'Russo One';
+    color: #01000F;
+    text-shadow: -2px 2px 7px rgba(255, 0, 168, 0.5), 2px -2px 7px rgba(255, 0, 168, 0.5), -2px -2px 7px rgba(255, 0, 168, 0.5), -2px 2px 7px rgba(255, 0, 168, 0.5);
+}
+
+.how-it-work__plan {
+    margin-top: 90px;
+    position: relative;
+}
+
+.plan-subtitle {
+    font-weight: 800;
+    font-size: 3em;
+    font-family: "M PLUS 1p", sans-serif;
+    color: #00D1FF;
+}
+
+.plan-text {
+    color: #fff;
+    font-size: 3em;
+    max-width: 444px;
+    margin: 0;
+    line-height: 1.1;
+    font-family: "M PLUS 1p", sans-serif;
+}
+
+.how-it-work-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.how-it-work-photo-bg {
+    background-image: url("../img/home/mans.svg");
+    width: 519px;
+    height: 699px;
+    background-position: -207px -123px;
+    background-repeat: no-repeat;
+}
+
+.plan-count {
+    position: absolute;
+    -webkit-text-stroke: 1px #00D1FF;
+    color: transparent;
+    font-weight: normal;
+    top: -94px;
+    letter-spacing: 0.13em;
+    max-width: 350px;
+    left: -28px;
+    text-transform: uppercase;
+    font-size: 18em;
+    font-family: "Russo One", sans-serif;
 }
