@@ -1,7 +1,9 @@
 .home {
     background: #01000F;
-    height: 100vh;
     position: relative;
+    width: 1081px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .home__title {
@@ -15,6 +17,8 @@
     z-index: 100;
     margin-top: 135px;
     max-width: 481px;
+    -webkit-text-stroke: 3px #00D1FF;
+    color: transparent;
 }
 
 .big-logo-section h1:first-child {
@@ -22,10 +26,30 @@
     color: transparent;
 }
 
+.big-logo-photo-line {
+    left: -35px;
+    position: relative;
+    z-index: 100;
+    bottom: 212px;
+}
+
+.logo-section {
+    position: relative;
+    z-index: 2;
+}
+
+.fewwef {
+    position: absolute;
+    z-index: 11111;
+    left: 247px;
+    top: -23px;
+}
+
 .big-logo-section {
     display: flex;
     justify-content: center;
     height: 850px;
+    width: 927px;
 }
 
 .title-elipce {
@@ -36,11 +60,19 @@
     position: absolute;
     z-index: 3;
     height: 749px;
-    left: 420px;
+    left: 92px;
     top: -127px;
 }
 
-.title-elipce-studies {
+.title-elipce-studies,
+.title-elipce-how-it-work,
+.title-elipce-articles,
+.elipce-cool-man,
+.title-elipce-hwitwrk-second,
+.title-elipce-articles-second,
+.title-elipce-student-help,
+.elipce-answer-question,
+.elipce-subject-support {
     background: radial-gradient(70.15% 65.91% at 26.67% 57.75%, rgba(182, 27, 255, 0.6) 0%, rgba(2, 1, 24, 0.6) 100%);
     filter: blur(113px);
     transform: rotate(77.17deg);
@@ -48,9 +80,52 @@
     position: absolute;
     z-index: -1;
     height: 500px;
-    /* left: 420px; */
-    top: 1800px;
-    margin-left: 180px;
+    margin-left: 240px;
+}
+
+.elipce-subject-support {
+    top: -162px;
+    left: 684px;
+    background: radial-gradient(70.15% 65.91% at 26.67% 57.75%, rgba(105, 105, 224, 0.6) 0%, rgba(2, 1, 24, 0.6) 100%);
+}
+
+.elipce-answer-question {
+    top: 17px;
+    left: -661px;
+    background: radial-gradient(58.98% 58.98% at 49.94% 56.41%, rgba(255, 0, 229, 0.42) 14.59%, rgba(2, 1, 27, 0.6) 100%);
+}
+
+.title-elipce-articles-second {
+    left: -537px;
+    top: -364px;
+    background: radial-gradient(58.98% 58.98% at 49.94% 56.41%, rgba(255, 0, 229, 0.42) 14.59%, rgba(2, 1, 27, 0.6) 100%);
+}
+
+.title-elipce-hwitwrk-second {
+    top: 5150px;
+    left: 106px;
+    background: radial-gradient(58.98% 58.98% at 49.94% 56.41%, rgba(255, 0, 229, 0.42) 14.59%, rgba(2, 1, 27, 0.6) 100%);
+}
+
+.elipce-cool-man {
+    left: 655px;
+    z-index: -1;
+    bottom: -317px;
+}
+
+.title-elipce-articles {
+    background: radial-gradient(58.98% 58.98% at 49.94% 56.41%, rgba(0, 209, 255, 0.6) 14.59%, rgba(2, 34, 40, 0.6) 100%);
+    filter: blur(100px);
+    top: -415px;
+    left: 686px;
+}
+
+.title-elipce-how-it-work {
+    position: absolute;
+    top: -78px;
+    left: -495px;
+    filter: blur(100px);
+    background: radial-gradient(58.98% 58.98% at 49.94% 56.41%, rgba(101, 101, 243, 0.6) 14.59%, rgba(2, 1, 27, 0.6) 100%);
 }
 
 .title-elipce-pink {
@@ -61,8 +136,8 @@
     transform: rotate(56.94deg);
     position: absolute;
     width: 469.93px;
-    height: 478.09px;
-    left: 1404.7px;
+    height: 478px;
+    left: 995px;
     top: 320px;
 }
 
@@ -81,9 +156,9 @@
 }
 
 .big-logo-photo {
-    position: absolute;
-    top: 200px;
-    z-index: 100;
+    position: relative;
+    top: 217px;
+    z-index: 989898989898;
 }
 
 .studies-stwork {
@@ -137,7 +212,7 @@ h2.why-us__title {
 
 .reason-text {
     margin-left: 30px;
-    line-height: 1.3;
+    line-height: 1.2;
 }
 
 .reason-right-block {
@@ -159,7 +234,8 @@ h2.why-us__title {
     margin: 200px auto 0 auto;
 }
 
-h2.studies-help__title {
+h2.studies-help__title,
+h2.subject-support-title {
     -webkit-text-stroke: 3px #00D1FF;
     font-weight: normal;
     font-size: 48px;
@@ -172,6 +248,8 @@ h2.studies-help__title {
 
 .studies-aside {
     display: flex;
+    position: relative;
+    z-index: 2;
 }
 
 .studies-description {
@@ -188,7 +266,8 @@ h2.studies-help__title {
     margin-top: 53px;
 }
 
-.studies__details-inner button {
+.studies__details-inner button,
+.repetitors__details-inner button {
     font-family: "M PLUS 1p", sans-serif;
     padding: 17px 9px 17px 25px;
     display: flex;
@@ -204,7 +283,8 @@ h2.studies-help__title {
     font-weight: bold;
 }
 
-.studies__details-inner button .circle {
+.studies__details-inner button .circle,
+.repetitors__details-inner button .circle {
     position: relative;
     right: -21px;
     width: 64px;
@@ -214,7 +294,8 @@ h2.studies-help__title {
     box-shadow: -2px 2px 10px rgba(182, 27, 255, 0.6), 2px -2px 10px rgba(182, 27, 255, 0.6), -2px -2px 10px rgba(182, 27, 255, 0.6), -2px 2px 10px rgba(182, 27, 255, 0.6);
 }
 
-.studies__details-inner button .circle img {
+.studies__details-inner button .circle img,
+.repetitors__details-inner button .circle img {
     position: absolute;
     top: 40%;
     right: 32%;
@@ -237,7 +318,8 @@ h2.studies-help__title {
     margin: 120px auto 0 auto;
 }
 
-h2.how-it-work__title {
+h2.how-it-work__title,
+h2.asnwer-question-title {
     -webkit-text-stroke: 3px #FF00E5;
     font-weight: normal;
     font-size: 48px;
@@ -271,8 +353,10 @@ h2.how-it-work__title {
 }
 
 .how-it-work-inner {
+    position: relative;
     display: flex;
     justify-content: space-between;
+    z-index: 2;
 }
 
 .how-it-work-photo-bg {
@@ -295,4 +379,494 @@ h2.how-it-work__title {
     text-transform: uppercase;
     font-size: 18em;
     font-family: "Russo One", sans-serif;
+}
+
+
+/* Articles */
+
+.useful-articles-title {
+    font-size: 3.75em;
+    color: #fff;
+    text-align: center;
+    font-family: "M PLUS 1p", sans-serif;
+    margin-top: 100px;
+}
+
+.article-subtitle {
+    color: #fff;
+    font-size: 2em;
+    text-align: center;
+    line-height: 1.1;
+    margin-top: 32px;
+}
+
+.home-body-wrapper {
+    max-width: 1006px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.home__body-slider {
+    padding-top: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.article-card {
+    font-family: "M PLUS 1p", sans-serif;
+}
+
+.home__body-slider .slick-prev {
+    position: absolute;
+    bottom: 11.5%;
+    z-index: 9;
+    background: transparent;
+    border: unset;
+    font-size: 0;
+}
+
+.home__body-slider .slick-prev::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/home/left-arrow.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: -190px;
+    width: 31px;
+    height: 63px;
+    left: -74px;
+}
+
+.home__body-slider .slick-next {
+    position: absolute;
+    top: 88%;
+    right: 0%;
+    background: transparent;
+    border: unset;
+    font-size: 0;
+}
+
+.home__body-slider .slick-next::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/home/right-arrow.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 31px;
+    height: 63px;
+    right: -49px;
+    top: -190px;
+}
+
+.data-art {
+    color: #fff;
+    background: #A11BDF;
+    font-size: 12px;
+    display: inline-block;
+    padding: 4px 24px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    position: absolute;
+    z-index: 999;
+    bottom: 0;
+    left: 130px;
+}
+
+
+/* Repetitors  */
+
+.repetitors {
+    width: 968px;
+    margin: 220px auto 0 auto;
+}
+
+.repetitors-title,
+.student-help-title {
+    -webkit-text-stroke: 3px #00D1FF;
+    font-weight: normal;
+    font-size: 48px;
+    letter-spacing: 0.13em;
+    max-width: 350px;
+    text-transform: uppercase;
+    font-family: 'Russo One';
+    color: #01000F;
+    font-weight: 500;
+    font-size: 48px;
+    margin-bottom: 38px;
+    text-shadow: -2px 2px 7px rgba(0, 209, 255, 0.5), 2px -2px 7px rgba(0, 209, 255, 0.5), -2px -2px 7px rgba(0, 209, 255, 0.5), -2px 2px 7px rgba(0, 209, 255, 0.5);
+}
+
+.repetitors-text {
+    font-weight: 500;
+    font-size: 3.5em;
+    line-height: 1.2;
+    max-width: 650px;
+    letter-spacing: 2px;
+    font-family: "M PLUS 1p", sans-serif;
+    color: #FFFFFF;
+}
+
+.repetitors__details-inner button {
+    font-family: "M PLUS 1p", sans-serif;
+    padding: 30px 0 30px 25px;
+    margin-top: 50px;
+}
+
+.repetitors-inner {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+}
+
+.more-subjects {
+    background-color: transparent;
+    margin-top: 10px;
+}
+
+.more-subjects span {
+    -webkit-text-stroke: 1px #D9F3F9;
+    color: #000;
+    text-shadow: -2px 2px 7px rgba(0, 209, 255, 0.5), 2px -2px 7px rgba(0, 209, 255, 0.5), -2px -2px 7px rgba(0, 209, 255, 0.5), -2px 2px 7px rgba(0, 209, 255, 0.5);
+    font-size: 2.5em;
+    font-family: 'Russo One';
+    text-transform: uppercase;
+}
+
+.direction-btn-circle {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    box-shadow: 2px 0px 4px 0px rgba(245, 245, 245);
+}
+
+.directions-wrapper {
+    align-self: end;
+    margin-bottom: 18px;
+}
+
+.directions-btn-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cool-man-wrapper {
+    display: flex;
+    justify-content: right;
+    position: relative;
+    z-index: 2;
+}
+
+.how-it-work-second {
+    width: 968px;
+    margin: -200px auto 0 auto;
+}
+
+.how-it-work-second .plan-text {
+    width: 400px;
+}
+
+.how-it-work-second .plan-text:nth-child(2) {
+    width: 341px;
+}
+
+.how-it-work-second p.plan-text.plan-text-second {
+    width: 400px;
+    line-height: 1.2;
+    margin-top: 10px;
+}
+
+.how-it-work-sec-block {
+    display: flex;
+}
+
+.how-it-work-sec-block:last-child {
+    justify-content: end;
+}
+
+.how-it-work__plan:last-child {
+    margin-left: 50px;
+}
+
+.how-it-work__plan:last-child p.plan-text.plan-text-second {
+    width: 330px;
+}
+
+
+/* Student help */
+
+.student-help {
+    width: 968px;
+    margin: 280px auto 0 auto;
+    height: 850px;
+    position: relative;
+    z-index: 2;
+}
+
+.title-elipce-student-help {
+    right: -450px;
+    top: 251px;
+    background: radial-gradient(58.98% 58.98% at 49.94% 56.41%, rgba(0, 209, 255, 0.6) 14.59%, rgba(2, 1, 27, 0.6) 100%);
+}
+
+h2.student-help-title {
+    max-width: 500px;
+}
+
+.student-help-block {
+    position: relative;
+}
+
+.student-help-direction {
+    text-align: center;
+    font-family: "M PLUS 1p", sans-serif;
+    font-size: 3em;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.student-help-description {
+    font-family: "M PLUS 1p", sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 2em;
+    text-align: center;
+    color: #FFFFFF;
+    width: 300px;
+}
+
+.student-help-inner {
+    display: flex;
+}
+
+.student-help-info {
+    position: relative;
+    top: 114px;
+    left: 42px;
+}
+
+.student-help-block:first-child {
+    left: -50px;
+}
+
+.student-help-block:nth-child(2) .student-help-description {
+    width: 300px;
+}
+
+.student-help-block:nth-child(2) {
+    left: 40px;
+}
+
+.student-help-block:nth-child(2) .student-help-count,
+.student-help-block:nth-child(3) .student-help-count {
+    left: -10px;
+}
+
+.student-help-block:nth-child(3) .student-help-description {
+    width: 290px;
+}
+
+.student-help-block:nth-child(3) {
+    left: 100px;
+}
+
+.border-student {}
+
+.border-fuck {
+    border: 3px solid purple;
+}
+
+.student-help-count {
+    font-family: 'Russo One';
+    color: #FF00E5;
+    font-size: 38em;
+    opacity: 0.2;
+    position: absolute;
+    left: -31px;
+}
+
+.student-count-border {
+    border: 5px solid #fff;
+    height: 400px;
+    position: absolute;
+    width: 400px;
+    box-shadow: 12px 0px 32px rgb(225 47 241), -10px 0px 35px rgb(225 47 241) inset;
+    border-radius: 50%;
+    border-left: none;
+}
+
+
+/* Answer Question */
+
+.answer-question {
+    width: 968px;
+    margin: 0 auto 200px auto;
+}
+
+h2.asnwer-question-title {
+    max-width: 480px;
+    margin-bottom: 70px;
+}
+
+.asnwer-question-inner {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+}
+
+.asnwer-question-col:last-child {
+    margin-left: 30px;
+}
+
+.question-block,
+.answer-block {
+    width: 521px;
+    height: 90px;
+    background: #010613;
+    border: 3px solid #00D1FF;
+    box-shadow: -2px 2px 10px rgba(0, 209, 255, 0.5), 2px -2px 10px rgba(0, 209, 255, 0.5), -2px -2px 10px rgba(0, 209, 255, 0.5), -2px 2px 10px rgba(0, 209, 255, 0.5);
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 60px;
+    margin-bottom: 35px;
+}
+
+.answer-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.answer-block-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+    margin-bottom: 38px;
+}
+
+.answer-block-inner h3 {
+    margin-top: 23px;
+}
+
+.answer-block {
+    height: 253px;
+    padding-left: 49px;
+}
+
+.question-block h3,
+.answer-block h3 {
+    font-size: 2.5em;
+    color: #fff;
+    font-family: "M PLUS 1p", sans-serif;
+}
+
+.plus-element,
+.cross-plus-element {
+    width: 38px;
+    height: 1px;
+    background-color: #00D1FF;
+    position: absolute;
+}
+
+span.plus-element:nth-child(2),
+span.cross-plus-element:nth-child(2) {
+    transform: rotate(90deg);
+}
+
+.plus-elem-wrapper {
+    position: relative;
+    left: -72px;
+}
+
+.cross-elem-wrapper {
+    position: relative;
+    transform: rotate(135deg);
+    right: 38px;
+    bottom: 15px;
+}
+
+.answer-block-text {
+    font-size: 2.5em;
+    font-family: "M PLUS 1p", sans-serif;
+    color: #fff;
+    max-width: 411px;
+    line-height: 1.1;
+    padding-bottom: 38px;
+}
+
+.low-height {
+    height: 226px;
+    margin-bottom: 61px;
+}
+
+.answer-block {
+    display: none;
+}
+
+.show-answer {
+    display: block;
+}
+
+.hidden-answer {
+    display: none;
+}
+
+
+/* Subject support */
+
+.subject-support {
+    /* width: 968px; */
+    /* width: 1145px; */
+    width: 961px;
+    margin: 0 auto 150px auto;
+}
+
+.subject-support-info {
+    display: flex;
+    align-items: center;
+}
+
+.subject-support-info:nth-child(1),
+.subject-support-info:nth-child(3) {
+    margin-left: 50px;
+}
+
+.subject-support-info:nth-child(2) {
+    margin: 30px 0 30px 0;
+}
+
+h2.subject-support-title {
+    width: 300px;
+    margin-bottom: 40px;
+}
+
+.support-text {
+    font-weight: 500;
+    font-size: 3em;
+    line-height: 1.1;
+    font-family: "M PLUS 1p", sans-serif;
+    color: #FFFFFF;
+    width: 640px;
+    margin-left: 90px;
+}
+
+.subject-support-inner {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.photoman-photo img {
+    max-width: 375px;
 }
