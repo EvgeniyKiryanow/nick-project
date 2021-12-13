@@ -1,13 +1,13 @@
 .home {
     background: #01000F;
     position: relative;
-    width: 1081px;
-    margin-left: auto;
-    margin-right: auto;
+    z-index: -1;
 }
 
 .container-home {
-    width: 1080px;
+    width: 1081px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .home__title {
@@ -40,6 +40,7 @@
 .logo-section {
     position: relative;
     z-index: 2;
+    height: 100px;
 }
 
 .big-photo-inner {
@@ -52,12 +53,13 @@
 .big-logo-section {
     display: flex;
     justify-content: center;
-    height: 600px;
+    /* height: 116px; */
     width: 927px;
     padding-top: 76px;
 }
 
 .title-elipce {
+    display: none;
     background: radial-gradient(70.15% 65.91% at 26.67% 57.75%, rgba(182, 27, 255, 0.6) 0%, rgba(2, 1, 24, 0.6) 100%);
     filter: blur(113px);
     transform: rotate(77.17deg);
@@ -134,6 +136,7 @@
 }
 
 .title-elipce-pink {
+    display: none;
     background: radial-gradient(58.98% 58.98% at 49.94% 56.41%, rgba(255, 0, 229, 0.42) 14.59%, rgba(2, 1, 27, 0.6) 100%);
     border: 1px solid #000000;
     box-sizing: border-box;
@@ -174,7 +177,6 @@
 /* WHY US */
 
 .why-us {
-    /* width: 769px; */
     width: 927px;
     margin-left: auto;
     margin-right: auto;
@@ -221,7 +223,6 @@ h2.why-us__title {
 
 .reason-right-block {
     margin-left: auto;
-    /* width: 521px; */
     width: 449px;
     max-width: 544px;
 }
@@ -928,7 +929,74 @@ img.lessons-direction-img {
     background-image: url("../img/home/arrow-left-md.png");
 }
 
+.big-logo-mb-block {
+    display: none;
+}
+
+.big-logo-gif {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 11px 42px 19px rgba(0, 0, 0, 0.2);
+}
+
 @media (max-width: 1010px) {
+    .elipce-subject-support {
+        top: -162px;
+        left: 386px;
+    }
+    .title-elipce-student-help {
+        right: -41px;
+        top: 448px;
+        height: 250px;
+    }
+    .elipce-cool-man {
+        left: 306px;
+        z-index: -1;
+        bottom: -254px;
+        height: 286px;
+    }
+    .title-elipce-articles {
+        top: -323px;
+        left: 362px;
+        height: 343px;
+        width: 273px;
+    }
+    .cool-man-wrapper img {
+        margin-top: 50px;
+    }
+    .title-elipce-how-it-work {
+        top: -304px;
+        height: 263px;
+        filter: blur(93px);
+    }
+    .how-it-work {
+        width: 968px;
+        margin: 300px auto 200px auto;
+    }
+    .title-elipce {
+        display: block;
+        height: 599px;
+        left: -150px;
+        top: -154px;
+        z-index: -1;
+    }
+    .title-elipce-studies {
+        position: absolute;
+        z-index: -1;
+        height: 359px;
+        margin-left: 88px;
+        top: 125px;
+    }
+    .title-elipce-pink {
+        display: block;
+        position: absolute;
+        left: 552px;
+        z-index: -1;
+        top: 501px;
+    }
+    .logo-section {
+        height: 850px;
+    }
     .big-logo-mb-block {
         display: flex;
     }
@@ -1002,6 +1070,8 @@ img.lessons-direction-img {
     h2.how-it-work__title,
     h2.asnwer-question-title {
         font-size: 40px;
+        z-index: 3;
+        position: relative;
     }
     .plan-count {
         font-size: 15em;
@@ -1084,9 +1154,6 @@ img.lessons-direction-img {
     .repetitors-inner {
         flex-direction: column;
     }
-    /* .directions-wrapper-md {
-        display: block;
-    } */
     .repetitors-text {
         font-size: 18px;
         width: 310px;
@@ -1201,15 +1268,47 @@ img.lessons-direction-img {
     img.lessons-direction-img {
         width: 265px;
     }
+    .elipce-cool-man {
+        left: -83px;
+        z-index: -1;
+        bottom: -565px;
+        height: 208px;
+    }
+    .title-elipce-articles-second {
+        display: none;
+    }
+    .title-elipce-hwitwrk-second {
+        display: none;
+    }
 }
 
 @media (max-width: 769px) {
+    .title-elipce-hwitwrk-second {
+        display: none;
+    }
+    .title-elipce-how-it-work,
+    .elipce-subject-support,
+    .title-elipce-student-help {
+        display: none;
+    }
+    .title-elipce-articles {
+        top: 3px;
+        left: 3px;
+        height: 343px;
+        width: 176px;
+    }
     .reason-left-block {
         flex-direction: column;
     }
     .reason-right-block,
     .reason-left-block>div {
         margin-left: 0;
+    }
+    .elipce-cool-man {
+        left: -83px;
+        z-index: -1;
+        bottom: -565px;
+        height: 208px;
     }
     .reason-text {
         font-size: 14px;
@@ -1503,13 +1602,16 @@ img.lessons-direction-img {
     }
     .big-logo-foto img {
         height: 552px;
-        top: 161px;
-        left: -51px;
+        top: 63px;
+        left: -52px;
     }
     .bid-logo-subtitle {
         top: 14px;
     }
     .useful-articles .slick-next::after {
         transform: none;
+    }
+    .logo-section {
+        height: 702px;
     }
 }
