@@ -425,9 +425,10 @@ h2.asnwer-question-title {
 .home-body-wrapper {
     max-width: 1006px;
     width: 100%;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     position: relative;
     z-index: 0;
+    margin-left: auto;
 }
 
 .home__body-slider {
@@ -985,7 +986,7 @@ img.lessons-direction-img {
         filter: blur(93px);
     }
     .how-it-work {
-        width: 968px;
+        width: 960px;
         margin: 300px auto 200px auto;
     }
     .title-elipce {
@@ -1337,7 +1338,8 @@ img.lessons-direction-img {
         height: 35px;
     }
     .container-home {
-        width: 980px;
+        /* width: 980px; */
+        width: 960px;
     }
     .reason {
         margin-left: 43px;
@@ -1386,6 +1388,7 @@ img.lessons-direction-img {
     h2.how-it-work__title {
         -webkit-text-stroke: 3px #00D1FF;
         text-shadow: -2px 2px 7px rgba(0, 209, 255, 0.5), 2px -2px 7px rgba(0, 209, 255, 0.5), -2px -2px 7px rgba(0, 209, 255, 0.5), -2px 2px 7px rgba(0, 209, 255, 0.5);
+        margin-left: 16px;
     }
     .plan-count {
         font-size: 88px;
@@ -1525,9 +1528,11 @@ img.lessons-direction-img {
     }
     h2.student-help-title {
         width: 378px;
+        margin-left: 18px;
     }
     h2.asnwer-question-title {
         font-size: 36px;
+        margin-left: 13px;
     }
     .question-block {
         width: 357px;
@@ -1617,7 +1622,7 @@ img.lessons-direction-img {
     }
     .big-logo-foto img {
         height: 552px;
-        top: 63px;
+        top: 160px;
         left: -52px;
     }
     .bid-logo-subtitle {
@@ -1628,5 +1633,21 @@ img.lessons-direction-img {
     }
     .logo-section {
         height: 702px;
+    }
+    .reason:last-child {
+        align-items: flex-start;
+    }
+    .reason-text:last-child {
+        margin-top: 0 !important;
+    }
+    .big-logo-section {
+        padding-top: 0;
+    }
+    .studies-description {
+        margin-top: 53px;
+    }
+    .repetitors,
+    .how-it-work-second {
+        width: 923px;
     }
 }
