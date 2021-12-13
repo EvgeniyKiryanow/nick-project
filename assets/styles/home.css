@@ -955,6 +955,28 @@ img.lessons-direction-img {
     color: #A151C7;
 }
 
+.more-subjects span:hover {
+    color: #054553;
+    text-shadow: -2px 2px 7px rgba(0, 209, 255, 0.5), 2px -2px 7px rgba(0, 209, 255, 0.5), -2px -2px 7px rgba(0, 209, 255, 0.5), -2px 2px 7px rgba(0, 209, 255, 0.5);
+}
+
+.more-subjects span:active {
+    opacity: 0.6;
+}
+
+.directions-btn-wrapper:hover .direction-btn-circle {
+    cursor: pointer;
+    border-right: 1px solid white;
+    box-shadow: -11px 2px 19px -8px rgb(5 232 255) inset;
+}
+
+.directions-btn-wrapper:active .direction-btn-circle {
+    cursor: pointer;
+    border-right: 1px solid white;
+    box-shadow: -11px 2px 19px -8px rgb(5 232 255) inset;
+    opacity: 0.6;
+}
+
 @media (max-width: 1010px) {
     .elipce-subject-support {
         top: -162px;
