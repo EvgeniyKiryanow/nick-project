@@ -1162,7 +1162,7 @@ img.lessons-direction-img {
     }
     .home__body-slider .slick-next::after {
         top: -95px;
-        left: -15px;
+        left: 18px;
     }
     .home__body-slider .slick-prev::after {
         top: -95px;
@@ -1338,7 +1338,7 @@ img.lessons-direction-img {
         margin-right: auto;
         max-width: 802px;
     }
-    .reason-items-wrapper {
+    .why-us {
         max-width: 640px;
         margin-left: auto;
         margin-right: auto;
@@ -1362,7 +1362,7 @@ img.lessons-direction-img {
         margin-right: auto;
     }
     .home-body-wrapper {
-        max-width: 681px;
+        max-width: 654px;
     }
     .repetitors {
         max-width: 681px;
@@ -1371,7 +1371,7 @@ img.lessons-direction-img {
         max-width: 681px;
     }
     .data-art-sec {
-        padding: 2px 23px;
+        padding: 2px 16px;
     }
     .student-help {
         max-width: 681px;
@@ -1384,11 +1384,11 @@ img.lessons-direction-img {
     }
 }
 
-@media (max-width: 769px) {
+@media (max-width: 767px) {
     .asnwer-question-inner {
         left: 0;
     }
-    .reason-items-wrapper {
+    .why-us {
         max-width: 397px;
         margin-left: auto;
         margin-right: auto;
