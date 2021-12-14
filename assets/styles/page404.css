@@ -1,0 +1,54 @@
+.not-found {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo {
+    background-image: url("../img/page404/not-found-img.svg");
+    height: 400px;
+    width: 400px;
+}
+
+.not-found-title {
+    font-family: 'Russo One';
+    font-weight: normal;
+    font-size: 288px;
+    color: #000;
+    letter-spacing: 0.13em;
+    text-shadow: 0px 0px 3px rgb(0 207 255), 0px 0px 12px rgb(0 209 255 / 96%), 0px 0px 11px rgb(0 209 255), -1px 0px 1px rgb(0 209 255 / 50%)
+}
+
+.not-found-photo img {
+    z-index: 0;
+    top: -7px;
+    position: relative;
+    left: -504px;
+}
+
+.not-found-line-photo {
+    position: absolute;
+    left: 48px;
+}
+
+.not-found-line-photo-sec {
+    position: absolute;
+    left: 205px;
+}
+
+.not-found-error {
+    font-family: "M PLUS 1p", sans-serif;
+    font-weight: 800;
+    font-size: 36px;
+    color: #FFFFFF;
+}
+
+.not-found-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
