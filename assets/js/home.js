@@ -12,7 +12,7 @@ $('.home__body-slider').slick({
             }
         },
         {
-            breakpoint: 769,
+            breakpoint: 757,
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 1
