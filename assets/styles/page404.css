@@ -82,6 +82,18 @@
     margin-top: 30px;
 }
 
+.not-found-inner-btn button:hover {
+    background: #01576A;
+    border: 1px solid #F6E3FF;
+    box-shadow: -2px -2px 10px rgba(0, 209, 255, 0.8), 2px 2px 10px rgba(0, 209, 255, 0.8), 2px -2px 10px rgba(0, 209, 255, 0.8), -2px 2px 10px rgba(0, 209, 255, 0.8);
+}
+
+.not-found-inner-btn button:active {
+    background: #003945;
+    border: 1px solid #F6E3FF;
+    box-shadow: -2px -2px 10px rgba(0, 209, 255, 0.8), 2px 2px 10px rgba(0, 209, 255, 0.8), 2px -2px 10px rgba(0, 209, 255, 0.8), -2px 2px 10px rgba(0, 209, 255, 0.8);
+}
+
 .not-found-inner-btn button .circle {
     position: relative;
     right: -21px;
