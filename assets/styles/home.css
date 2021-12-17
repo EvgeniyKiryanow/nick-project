@@ -1524,11 +1524,30 @@ img.lessons-direction-img {
         left: -36px;
     }
     .home-body-wrapper {
-        max-width: 604px;
+        max-width: 600px;
+    }
+    .student-help {
+        margin-top: 100px;
+    }
+    .asnwer-question-inner {
+        left: 60px;
     }
 }
 
 @media (max-width: 620px) {
+    h2.how-it-work__title {
+        text-shadow: -2px 2px 7px rgba(255, 0, 168, 0.5), 2px -2px 7px rgba(255, 0, 168, 0.5), -2px -2px 7px rgba(255, 0, 168, 0.5), -2px 2px 7px rgba(255, 0, 168, 0.5);
+    }
+    .asnwer-question-inner {
+        left: 0px;
+    }
+    .home__body-slider.slick-initialized.slick-slider {
+        padding-left: 10px;
+    }
+    .home__body-slider .slick-prev::after {
+        top: -304px;
+        left: -205px;
+    }
     div.article-card.slick-slide.slick-active {
         max-width: 240px;
     }
@@ -1541,9 +1560,6 @@ img.lessons-direction-img {
     .studies-stwork img {
         top: 120px;
         left: -33px;
-    }
-    .asnwer-question-inner {
-        left: 60px;
     }
     .why-us {
         max-width: 397px;
@@ -1688,7 +1704,8 @@ img.lessons-direction-img {
     }
     div.slick-list.draggable {
         margin-left: 9px;
-        width: 375px;
+        /* width: 375px; */
+        width: 164px;
     }
     .useful-articles-title {
         margin-left: -606px;
@@ -1918,11 +1935,12 @@ img.lessons-direction-img {
         width: 357px;
     }
     .home-body-wrapper {
-        width: 360px;
+        /* width: 360px; */
+        width: 195px;
     }
     .home__body-slider .slick-next::after {
-        top: -123px;
-        left: 300px;
+        top: -315px;
+        left: 458px;
     }
     .home__body-slider .slick-next:active::after {
         opacity: 0.6;
@@ -1950,5 +1968,21 @@ img.lessons-direction-img {
     }
     .subject-support {
         width: 346px;
+    }
+    .article-card.slick-slide.slick-current.slick-active {
+        margin-bottom: 1px;
+    }
+    h2.how-it-work__title {
+        -webkit-text-stroke: 3px #FF00E5;
+        color: #01000F;
+        text-shadow: -2px 2px 7px rgba(255, 0, 168, 0.5), 2px -2px 7px rgba(255, 0, 168, 0.5), -2px -2px 7px rgba(255, 0, 168, 0.5), -2px 2px 7px rgba(255, 0, 168, 0.5);
+    }
+    .how-it-work h2.how-it-work__title {
+        -webkit-text-stroke: 3px #00D1FF;
+        text-shadow: -2px 2px 7px rgba(0, 209, 255, 0.5), 2px -2px 7px rgba(0, 209, 255, 0.5), -2px -2px 7px rgba(0, 209, 255, 0.5), -2px 2px 7px rgba(0, 209, 255, 0.5);
+    }
+    .how-it-work {
+        margin-bottom: 100px;
+        margin-top: 200px;
     }
 }
