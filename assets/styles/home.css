@@ -987,6 +987,9 @@ img.lessons-direction-img {
 }
 
 @media (max-width: 1010px) {
+    h2.subject-support-title {
+        margin-left: 65px;
+    }
     .asnwer-question-inner {
         left: 70px;
     }
@@ -1535,6 +1538,11 @@ img.lessons-direction-img {
 }
 
 @media (max-width: 620px) {
+    h2.subject-support-title {
+        width: 300px;
+        margin-bottom: 40px;
+        margin-left: 0;
+    }
     h2.how-it-work__title {
         text-shadow: -2px 2px 7px rgba(255, 0, 168, 0.5), 2px -2px 7px rgba(255, 0, 168, 0.5), -2px -2px 7px rgba(255, 0, 168, 0.5), -2px 2px 7px rgba(255, 0, 168, 0.5);
     }
@@ -1622,7 +1630,7 @@ img.lessons-direction-img {
     }
     h2.studies-help__title,
     h2.subject-support-title {
-        font-size: 36px;
+        font-size: 34px;
     }
     .stwork-img-wrapper {
         display: none;
