@@ -30,15 +30,44 @@
 // });
 
 $(document).ready(function() {
-    $('.reviews-item-wr').slick({
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        responsive: [{
-            breakpoint: 600,
-            settings: {
+    if ($(window).width() < 600) {
+        $('.reviews-item-wr').addClass("slick");
+        $('.slick').slick({
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            dots: true,
+            mobileFirst: true,
+        });
+    } else {
+        $('.slick').slick('unslick')
+        $('.reviews-item-wr').removeClass("slick");
+    }
+    $(window).resize(function() {
+        if ($(window).width() < 600) {
+            $('.reviews-item-wr').addClass("slick");
+            $('.slick').slick({
                 slidesToShow: 2,
-                slidesToScroll: 1
-            }
-        }]
+                slidesToScroll: 2,
+                dots: true,
+                mobileFirst: true,
+            });
+        } else {
+            $('.slick').slick('unslick')
+            $('.reviews-item-wr').removeClass("slick");
+        }
     });
 });
+
+// $(document).ready(function() {
+//     $('.reviews-item-wr').slick({
+//         slidesToShow: 2,
+//         slidesToScroll: 1,
+//         responsive: [{
+//             breakpoint: 600,
+//             settings: {
+//                 slidesToShow: 2,
+//                 slidesToScroll: 1
+//             }
+//         }]
+//     });
+// });
