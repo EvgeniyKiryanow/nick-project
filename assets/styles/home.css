@@ -149,12 +149,12 @@
 
 .bid-logo-subtitle {
     font-weight: 800;
-    font-size: 24px;
+    font-size: 22px;
     text-transform: uppercase;
     color: #C3F0FB;
     font-family: "M PLUS 1p", sans-serif;
     text-align: right;
-    width: 308px;
+    width: 208px;
     position: relative;
     z-index: 10;
 }
@@ -503,7 +503,7 @@ h2.asnwer-question-title {
     position: absolute;
     z-index: 0;
     bottom: 0;
-    left: 130px;
+    left: 118px;
 }
 
 
@@ -1065,7 +1065,7 @@ img.lessons-direction-img {
     }
     .logo-section-inner-md {
         display: block;
-        width: 345px;
+        width: 335px;
         position: relative;
         top: 95px;
         left: 61px;
@@ -1076,7 +1076,7 @@ img.lessons-direction-img {
     }
     .big-logo-foto img {
         position: relative;
-        left: -144px;
+        left: -139px;
         height: 803px;
     }
     h2.why-us__title {
@@ -1609,7 +1609,6 @@ img.lessons-direction-img {
         height: 35px;
     }
     .container-home {
-        /* width: 980px; */
         width: 960px;
     }
     .reason {
@@ -1882,7 +1881,7 @@ img.lessons-direction-img {
         font-size: 48px;
     }
     .bid-logo-subtitle {
-        font-size: 16px;
+        font-size: 14px;
     }
     .big-logo-foto img {
         height: 500px;
@@ -1898,7 +1897,7 @@ img.lessons-direction-img {
     .big-logo-foto img {
         height: 552px;
         top: 160px;
-        left: -52px;
+        left: -44px;
     }
     .bid-logo-subtitle {
         top: 14px;
@@ -1976,10 +1975,6 @@ img.lessons-direction-img {
         -webkit-text-stroke: 3px #FF00E5;
         color: #01000F;
         text-shadow: -2px 2px 7px rgba(255, 0, 168, 0.5), 2px -2px 7px rgba(255, 0, 168, 0.5), -2px -2px 7px rgba(255, 0, 168, 0.5), -2px 2px 7px rgba(255, 0, 168, 0.5);
-    }
-    .how-it-work h2.how-it-work__title {
-        -webkit-text-stroke: 3px #00D1FF;
-        text-shadow: -2px 2px 7px rgba(0, 209, 255, 0.5), 2px -2px 7px rgba(0, 209, 255, 0.5), -2px -2px 7px rgba(0, 209, 255, 0.5), -2px 2px 7px rgba(0, 209, 255, 0.5);
     }
     .how-it-work {
         margin-bottom: 100px;
