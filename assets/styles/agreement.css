@@ -91,6 +91,22 @@
     .offer-agreement span {
         font-size: 16px;
     }
+    .agreement-elipce-blue {
+        filter: blur(86px);
+        width: 231px;
+        height: 500px;
+        margin-left: 560px;
+        top: 301px;
+    }
+    .agreement-elipce-blue-sec {
+        display: none;
+    }
+    .agreement-elipce-pink-sec {
+        top: 6246px;
+        filter: blur(80px);
+        margin-left: 492px;
+        width: 340px;
+    }
 }
 
 @media (max-width: 501px) {
