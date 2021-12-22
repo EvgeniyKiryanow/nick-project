@@ -150,3 +150,10 @@
         display: block;
     }
 }
+
+@media (max-width: 377px) {
+    .privacy-policy-title-mb {
+        font-size: 20px;
+        width: 328px;
+    }
+}
