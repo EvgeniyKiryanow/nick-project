@@ -1,5 +1,5 @@
 .offer-agreement {
-    padding: 200px 82px;
+    padding: 150px 82px 400px;
     max-width: 1044px;
     margin: 0 auto;
     position: relative;
@@ -11,7 +11,7 @@
     font-weight: 300;
     font-size: 18px;
     margin-bottom: 15px;
-    line-height: 1.1;
+    line-height: 1.2;
 }
 
 .offer-agreement span {
@@ -115,7 +115,7 @@
         width: 275px;
     }
     .offer-agreement {
-        padding: 200px 56px;
+        padding: 100px 82px 300px;
     }
     .offer-agreement p {
         font-size: 14px;
