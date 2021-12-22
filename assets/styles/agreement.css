@@ -1,5 +1,5 @@
 .offer-agreement {
-    padding: 150px 82px 400px;
+    padding: 100px 82px 400px;
     max-width: 1044px;
     margin: 0 auto;
     position: relative;
@@ -24,6 +24,10 @@
 }
 
 .offer-agreement-title {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
     max-width: 671px;
     text-align: left;
     margin-bottom: 30px;
@@ -113,9 +117,10 @@
     .offer-agreement-title {
         font-size: 36px;
         width: 275px;
+        text-align: center;
     }
     .offer-agreement {
-        padding: 100px 82px 300px;
+        padding: 0 50px;
     }
     .offer-agreement p {
         font-size: 14px;
