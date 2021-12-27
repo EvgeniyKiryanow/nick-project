@@ -331,8 +331,7 @@
     }
     
     .preload-articles-elipce,
-    .preload-articles-elipce-pink,
-    .preload-articles-elipce-sec {
+    .preload-articles-elipce-pink {
         background: radial-gradient(58.98% 58.98% at 49.94% 56.41%, rgba(0, 209, 255, 0.6) 14.59%, rgba(2, 1, 27, 0.6) 100%);
         filter: blur(111px);
         transform: rotate( 77.17deg);
@@ -340,17 +339,12 @@
         position: absolute;
         z-index: -1;
         height: 749px;
-        left: 1038px;
-        top: 688px;
+        left: 1538px;
+        top: 188px;
     }
     
     .preload-articles-elipce-pink {
-        top: 180px;
-        left: 2902px;
+        top: 860px;
+        left: 3902px;
         background: radial-gradient(58.98% 58.98% at 49.94% 56.41%, rgba(255, 0, 229, 0.42) 14.59%, rgba(2, 1, 27, 0.6) 100%);
-    }
-    
-    .preload-articles-elipce-sec {
-        top: 1350px;
-        left: 2902px;
     }
