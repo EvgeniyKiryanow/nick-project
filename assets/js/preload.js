@@ -1,3 +1,7 @@
-$(window).on('load', function() {
+function preloader() {
     $('#loading').hide();
+   }
+$(window).on('load', function() {
+    setTimeout(preloader, 2000);
+    // $('#loading').hide();
 })
