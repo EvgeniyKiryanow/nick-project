@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "gulp-cli": "^2.3.0"
+  },
+  "name": "nick-project",
+  "description": "Must have add global =>",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "browser-sync": "^2.27.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EvgeniyKiryanow/nick-project.git"
+  },
+  "author": "Evgeniy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EvgeniyKiryanow/nick-project/issues"
+  },
+  "homepage": "https://github.com/EvgeniyKiryanow/nick-project#readme"
+}
