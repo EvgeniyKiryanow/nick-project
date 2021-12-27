@@ -3,5 +3,4 @@ function preloader() {
    }
 $(window).on('load', function() {
     setTimeout(preloader, 2000);
-    // $('#loading').hide();
 })
