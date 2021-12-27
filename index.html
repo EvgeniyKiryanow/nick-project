@@ -23,10 +23,21 @@
     <link rel="stylesheet" type="text/css" href="assets/styles/articles.css">
     <link rel="stylesheet" type="text/css" href="assets/styles/footer.css">
     <link rel="stylesheet" type="text/css" href="assets/styles/home.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/preload.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 </head>
 
 <body>
+    <div id="loading">
+        <div class="container-preload">
+            <div class="dash uno"></div>
+            <div class="dash dos"></div>
+            <span class="preload-articles-elipce"></span>
+            <div class="dash tres"></div>
+            <div class="dash cuatro"></div>
+            <span class="preload-articles-elipce-pink"></span>
+        </div>
+    </div>
     <div id="__nuxt">
         <div id="__layout">
             <div>
@@ -771,8 +782,8 @@
                                                 </a>
                                                 <a href="#" class="feedback-social-link">
                                                     <picture>
-                                                        <source srcset="assets/img/footer/иконка.png" alt="chat" type="image/svg+xml">
-                                                        <img src="assets/img/footer/иконка.svg" alt="enter icon">
+                                                        <source srcset="assets/img/footer/icon.png" alt="chat" type="image/svg+xml">
+                                                        <img src="assets/img/footer/icon.svg" alt="enter icon">
                                                     </picture>
                                                     <span class="text">Online-ЧАТ</span>
                                                 </a>
@@ -1109,5 +1120,6 @@
 <script src="assets/js/articlesPageSlick.js"></script>
 <script src="assets/js/headerModal.js "></script>
 <script src="assets/js/home.js"></script>
+<script src="assets/js/preload.js"></script>
 
 </html>
