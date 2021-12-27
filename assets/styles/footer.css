@@ -414,7 +414,8 @@
                                                     .popup {
                                                         display: none;
                                                         position: absolute;
-                                                        bottom: 42px;
+                                                        bottom: 33px;
+                                                        left: 18px;
                                                         z-index: 22;
                                                         max-width: 280px;
                                                         width: 100%;
