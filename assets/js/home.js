@@ -11,13 +11,7 @@ $('.home__body-slider').slick({
                 infinite: true,
             }
         },
-        {
-            breakpoint: 757,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1
-            }
-        },
+
         {
             breakpoint: 620,
             settings: {
