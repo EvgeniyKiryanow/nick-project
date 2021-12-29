@@ -177,7 +177,7 @@
                                                     }
                                                     
                                                     .footer .title {
-                                                        font-size: 2.4em;
+                                                        font-size: 2.5em;
                                                     }
                                                     
                                                     .footer__copyrighting {
@@ -414,8 +414,8 @@
                                                     .popup {
                                                         display: none;
                                                         position: absolute;
-                                                        bottom: 33px;
-                                                        left: 18px;
+                                                        bottom: 30px;
+                                                        left: 13px;
                                                         z-index: 22;
                                                         max-width: 280px;
                                                         width: 100%;
@@ -693,6 +693,10 @@
                                                                 width: 123px;
                                                                 margin-left: 25px;
                                                             } */
+                                                    }
+                                                    
+                                                    .footer__about--body {
+                                                        font-size: 9px;
                                                     }
                                                     
                                                     @media (max-width: 550px) {

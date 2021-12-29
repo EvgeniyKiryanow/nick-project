@@ -167,7 +167,6 @@
 
 .studies-stwork {
     background: radial-gradient(70.15% 65.91% at 26.67% 57.75%, rgba(182, 27, 255, 0.6) 0%, rgba(2, 1, 24, 0.6) 100%);
-    filter: blur(95px);
     transform: rotate( 77.17deg);
 }
 
@@ -460,7 +459,7 @@ h2.asnwer-question-title {
     top: -190px;
     width: 31px;
     height: 63px;
-    left: -74px;
+    left: -65px;
 }
 
 .home__body-slider .slick-prev:active::after {
@@ -756,6 +755,7 @@ h2.asnwer-question-title {
     justify-content: space-between;
     position: relative;
     z-index: 0;
+    right: 50px;
 }
 
 .asnwer-question-col:last-child {
@@ -775,6 +775,10 @@ h2.asnwer-question-title {
     align-items: center;
     padding-left: 60px;
     margin-bottom: 35px;
+}
+
+.question-block {
+    cursor: pointer;
 }
 
 .answer-block {
@@ -1226,7 +1230,7 @@ img.lessons-direction-img {
         align-self: center;
         position: relative;
         bottom: 245px;
-        left: 188px;
+        left: 218px;
     }
     .repetitors {
         height: 404px;
@@ -1251,7 +1255,7 @@ img.lessons-direction-img {
         font-size: 18px;
     }
     .how-it-work-sec-block .how-it-work__plan:nth-child(2) {
-        margin-left: 80px;
+        margin-left: 100px;
     }
     .how-it-work__plan p.plan-text.plan-text-second {
         width: 290px;
@@ -1268,7 +1272,8 @@ img.lessons-direction-img {
     }
     .student-help-inner {
         display: flex;
-        margin-left: 77px;
+        /* margin-left: 77px; */
+        margin-left: 44px;
     }
     .student-help-count {
         font-size: 32em;
@@ -1376,10 +1381,10 @@ img.lessons-direction-img {
         max-width: 654px;
     }
     .repetitors {
-        max-width: 681px;
+        max-width: 640px;
     }
     .how-it-work-second {
-        max-width: 681px;
+        max-width: 641px;
     }
     .data-art-sec {
         padding: 2px 16px;
@@ -1396,6 +1401,15 @@ img.lessons-direction-img {
 }
 
 @media (max-width: 757px) {
+    .studies-help {
+        width: 606px;
+    }
+    .how-it-work-second {
+        max-width: 579px;
+    }
+    .student-help {
+        max-width: 561px;
+    }
     .home__title {
         font-size: 65px;
     }
@@ -1442,7 +1456,7 @@ img.lessons-direction-img {
         font-size: 2.1em;
     }
     .directions-wrapper {
-        left: 110px;
+        left: 177px;
     }
     .cool-man-wrapper {
         right: 105px;
@@ -1475,6 +1489,7 @@ img.lessons-direction-img {
     }
     .student-help-count {
         top: 40px;
+        top: -28px;
     }
     .asnwer-question-inner {
         left: 0;
@@ -1544,6 +1559,10 @@ img.lessons-direction-img {
     .asnwer-question-inner {
         left: 60px;
     }
+    h2.asnwer-question-title {
+        font-size: 36px;
+        margin-left: 23px;
+    }
 }
 
 @media (max-width: 620px) {
@@ -1565,6 +1584,9 @@ img.lessons-direction-img {
         top: -357px;
         left: -205px;
     }
+    h2.why-us__title {
+        font-size: 47px;
+    }
     div.article-card.slick-slide.slick-active {
         max-width: 240px;
     }
@@ -1579,7 +1601,7 @@ img.lessons-direction-img {
         left: -33px;
     }
     .why-us {
-        max-width: 397px;
+        max-width: 346px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -1675,15 +1697,17 @@ img.lessons-direction-img {
     h2.how-it-work__title {
         -webkit-text-stroke: 3px #00D1FF;
         text-shadow: -2px 2px 7px rgba(0, 209, 255, 0.5), 2px -2px 7px rgba(0, 209, 255, 0.5), -2px -2px 7px rgba(0, 209, 255, 0.5), -2px 2px 7px rgba(0, 209, 255, 0.5);
-        margin-left: 16px;
+        margin-left: 0px;
     }
     .plan-count {
-        font-size: 88px;
-        top: -59px;
+        font-size: 81px;
+        top: -55px;
     }
     .plan-subtitle,
     .plan-text {
         font-size: 14px;
+        position: relative;
+        right: 10px;
     }
     .how-it-work__plan p.plan-text {
         width: 250px;
@@ -1696,6 +1720,8 @@ img.lessons-direction-img {
     }
     .how-it-work__plan p.plan-text.plan-text-sm {
         width: 200px;
+        position: relative;
+        right: 10px;
     }
     .acticles-wrapper {
         position: relative;
@@ -1996,5 +2022,24 @@ img.lessons-direction-img {
     .how-it-work {
         margin-bottom: 100px;
         margin-top: 200px;
+    }
+    .student-help-inner {
+        margin-left: 76px;
+    }
+    h2.how-it-work__title {
+        margin-left: 13px;
+    }
+    .how-it-work-second h2.how-it-work__title {
+        margin-left: 0;
+    }
+    .repetitors {
+        width: 324px;
+        margin: 153px auto 0 auto;
+    }
+    .repetitors {
+        max-width: 576px;
+    }
+    .how-it-work {
+        width: 354px;
     }
 }
