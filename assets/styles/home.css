@@ -1030,8 +1030,7 @@ img.lessons-direction-img {
         filter: blur(93px);
     }
     .how-it-work {
-        /* width: 960px; */
-        width: 674px;
+        width: 692px;
         margin: 300px auto 200px auto;
     }
     .title-elipce {
@@ -1142,7 +1141,7 @@ img.lessons-direction-img {
     .plan-subtitle,
     .plan-text {
         font-size: 18px;
-        width: 323px;
+        width: 315px;
     }
     .how-it-work-photo-bg {
         display: none;
@@ -1401,6 +1400,9 @@ img.lessons-direction-img {
 }
 
 @media (max-width: 757px) {
+    .how-it-work {
+        width: 591px;
+    }
     .studies-help {
         width: 606px;
     }
@@ -1700,12 +1702,12 @@ img.lessons-direction-img {
         margin-left: 0px;
     }
     .plan-count {
-        font-size: 81px;
-        top: -55px;
+        font-size: 75px;
+        top: -49px;
     }
     .plan-subtitle,
     .plan-text {
-        font-size: 14px;
+        font-size: 12px;
         position: relative;
         right: 10px;
     }
@@ -1713,13 +1715,13 @@ img.lessons-direction-img {
         width: 250px;
     }
     .how-it-work__plan:last-child p.plan-text {
-        width: 250px;
+        width: 198px
     }
     .how-it-work__plan:last-child p.plan-text:nth-child(2) {
         width: 200px
     }
     .how-it-work__plan p.plan-text.plan-text-sm {
-        width: 200px;
+        width: 150px;
         position: relative;
         right: 10px;
     }
@@ -2040,6 +2042,6 @@ img.lessons-direction-img {
         max-width: 576px;
     }
     .how-it-work {
-        width: 354px;
+        width: 384px;
     }
 }

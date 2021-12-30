@@ -415,11 +415,11 @@
                                                         display: none;
                                                         position: absolute;
                                                         bottom: 30px;
-                                                        left: 13px;
+                                                        left: -4px;
                                                         z-index: 22;
                                                         max-width: 280px;
                                                         width: 100%;
-                                                        padding: 5px 18px 11px;
+                                                        padding: 8px 16px 18px;
                                                         background: rgba(0, 155, 194, 0.31);
                                                         border-radius: 10px;
                                                         background: url("data:image/svg+xml,%3Csvg width='279' height='126' viewBox='0 0 279 126' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M263.821 116.723H263.224L262.941 117.249L259.278 124.051L253.001 117.056L252.703 116.723H252.256H10C5.02944 116.723 1 112.694 1 107.723V9.99951C1 5.02895 5.02944 0.999512 10 0.999512L269 0.999512C273.971 0.999512 278 5.02895 278 9.99951V107.723C278 112.694 273.971 116.723 269 116.723H263.821Z' fill='%23013349' fill-opacity='1' stroke='white' stroke-width='2'/%3E%3C/svg%3E%0A")0 0 / contain no-repeat;
@@ -635,9 +635,9 @@
                                                             line-height: 2;
                                                         }
                                                         .popup {
-                                                            padding: 3px 18px 9px 12px;
+                                                            padding: 12px 13px 13px;
                                                             width: 342px;
-                                                            left: 23px;
+                                                            left: 5px;
                                                         }
                                                     }
                                                     
@@ -689,10 +689,6 @@
                                                         .footer__connect--title.title {
                                                             width: 270px;
                                                         }
-                                                        /* .footer__payment--title {
-                                                                width: 123px;
-                                                                margin-left: 25px;
-                                                            } */
                                                     }
                                                     
                                                     .footer__about--body {
@@ -701,9 +697,10 @@
                                                     
                                                     @media (max-width: 550px) {
                                                         .popup {
-                                                            padding: 3px 18px 9px 12px;
+                                                            padding: 12px 13px 13px;
                                                             width: 342px;
-                                                            left: -23px;
+                                                            left: -44px;
+                                                            bottom: 37px;
                                                         }
                                                     }
                                                     
@@ -752,8 +749,8 @@
                                                             margin-right: auto;
                                                         }
                                                         .popup {
-                                                            padding: 3px 18px 9px 12px;
+                                                            padding: 12px 13px 13px;
                                                             width: 342px;
-                                                            left: 23px;
+                                                            left: 0;
                                                         }
                                                     }
