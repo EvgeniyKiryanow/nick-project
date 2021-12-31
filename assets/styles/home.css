@@ -1628,6 +1628,11 @@ img.lessons-direction-img {
     .reason-left-block {
         flex-direction: column;
     }
+    .student-help-block:nth-child(2) .student-help-count,
+    .student-help-block:nth-child(3) .student-help-count {
+        left: -12px;
+        top: 40px;
+    }
     .reason-right-block,
     .reason-left-block>div {
         margin-left: 0;
@@ -1838,7 +1843,8 @@ img.lessons-direction-img {
         top: 96px;
     }
     .student-help-count {
-        left: -19px;
+        left: -10px;
+        top: 24px;
     }
     .student-help-block:first-child {
         left: -61px;
