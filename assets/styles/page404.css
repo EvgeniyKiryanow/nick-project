@@ -91,7 +91,6 @@
 .not-found-inner-btn button:active {
     background: #003945;
     border: 1px solid #F6E3FF;
-    color: rgba(255, 255, 255, 0.58);
     box-shadow: -2px -2px 10px rgba(0, 209, 255, 0.8), 2px 2px 10px rgba(0, 209, 255, 0.8), 2px -2px 10px rgba(0, 209, 255, 0.8), -2px 2px 10px rgba(0, 209, 255, 0.8);
 }
 
@@ -121,8 +120,9 @@
 }
 
 .not-found {
-    padding-top: 310px;
-    padding-bottom: 299px;
+    padding-top: 185px;
+    padding-bottom: 59px;
+    height: 1200px;
 }
 
 .title-elipce-pink-not-found {
