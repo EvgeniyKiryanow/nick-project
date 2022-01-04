@@ -177,7 +177,7 @@
 }
 
 .footer .title {
-    font-size: 2.4em;
+    font-size: 2.5em;
 }
 
 .footer__copyrighting {
@@ -274,6 +274,9 @@
 }
 
 @media (max-width: 550px) {
+    .feedback-link:hover .popup {
+        display: block;
+    }
     .footer__wrapper {
         width: 90% !important;
     }
@@ -413,11 +416,12 @@
 .popup {
     display: none;
     position: absolute;
-    bottom: 32px;
+    bottom: 30px;
+    left: -4px;
     z-index: 22;
     max-width: 280px;
     width: 100%;
-    padding: 15px 18px 11px;
+    padding: 8px 16px 18px;
     background: rgba(0, 155, 194, 0.31);
     border-radius: 10px;
     background: url("data:image/svg+xml,%3Csvg width='279' height='126' viewBox='0 0 279 126' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M263.821 116.723H263.224L262.941 117.249L259.278 124.051L253.001 117.056L252.703 116.723H252.256H10C5.02944 116.723 1 112.694 1 107.723V9.99951C1 5.02895 5.02944 0.999512 10 0.999512L269 0.999512C273.971 0.999512 278 5.02895 278 9.99951V107.723C278 112.694 273.971 116.723 269 116.723H263.821Z' fill='%23013349' fill-opacity='1' stroke='white' stroke-width='2'/%3E%3C/svg%3E%0A")0 0 / contain no-repeat;
@@ -518,7 +522,7 @@
         font-size: 2em;
     }
     .feedback-link {
-        font-size: 1.25em;
+        font-size: 1.15em;
     }
     .popup-modal {
         display: none;
@@ -533,6 +537,13 @@
         bottom: 33%;
         right: 38%;
         right: 41%;
+    }
+}
+
+@media (max-width: 858px) {
+    .popup {
+        bottom: 56px;
+        left: -2px;
     }
 }
 
@@ -604,6 +615,9 @@
         .mail-link {
             font-size: 2.50em;
         }
+        .popup {
+            left: 26px;
+        }
     }
 }
 
@@ -621,6 +635,11 @@
     .footer__about--body .other-links {
         padding: 0;
         line-height: 2;
+    }
+    .popup {
+        padding: 12px 13px 13px;
+        width: 342px;
+        left: 5px;
     }
 }
 
@@ -672,10 +691,19 @@
     .footer__connect--title.title {
         width: 270px;
     }
-    /* .footer__payment--title {
-        width: 123px;
-        margin-left: 25px;
-    } */
+}
+
+.footer__about--body {
+    font-size: 9px;
+}
+
+@media (max-width: 550px) {
+    .popup {
+        padding: 12px 13px 13px;
+        width: 342px;
+        left: -44px;
+        bottom: 37px;
+    }
 }
 
 @media (max-width: 375px) {
@@ -721,5 +749,10 @@
         width: 270px;
         margin-left: auto;
         margin-right: auto;
+    }
+    .popup {
+        padding: 12px 13px 13px;
+        width: 342px;
+        left: 0;
     }
 }
