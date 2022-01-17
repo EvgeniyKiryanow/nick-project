@@ -4,6 +4,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 120px;
+    position: relative;
 }
 
 .teachers-work,
@@ -274,6 +275,25 @@ input[type="radio"]:focus {
     color: rgba(10, 0, 112, 0.22);
 }
 
+.thesis-elipce-blue,
+.thesis-elipce-pink {
+    background: radial-gradient(58.98% 58.98% at 49.94% 56.41%, rgba(0, 209, 255, 0.6) 14.59%, rgba(2, 1, 27, 0.6) 100%);
+    filter: blur(113px);
+    transform: rotate(77.17deg);
+    width: 500px;
+    position: absolute;
+    z-index: 1;
+    height: 500px;
+    margin-left: 826px;
+}
+
+.thesis-elipce-pink {
+    margin-top: 592px;
+    background: radial-gradient(58.98% 58.98% at 49.94% 56.41%, rgba(255, 0, 229, 0.42) 14.59%, rgba(2, 1, 27, 0.6) 100%);
+    margin-left: -491px;
+    z-index: -1;
+}
+
 @media (max-width: 768px) {
     .thesis-teachers-subtitle,
     .thesis-repetitors-subtitle {
@@ -302,6 +322,10 @@ input[type="radio"]:focus {
     }
     #name-of-diplom {
         width: 112%;
+    }
+    .thesis-elipce-blue,
+    .thesis-elipce-pink {
+        display: none;
     }
 }
 
