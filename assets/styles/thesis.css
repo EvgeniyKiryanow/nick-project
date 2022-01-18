@@ -1,12 +1,3 @@
-.thesis {
-    padding-top: 160px;
-    max-width: 983px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 120px;
-    position: relative;
-}
-
 .teachers-work,
 .repetitors {
     display: flex;
