@@ -249,8 +249,8 @@
 
 @media (max-width: 508px) {
     .videoPoster {
-        width: 344px;
-        height: 200px;
+        width: 347px;
+        height: 201px;
     }
     .video_wrapper {
         width: 347px;
@@ -285,12 +285,15 @@
     .criminal-low {
         padding-top: 145px;
     }
+    .video_wrapper.video_wrapper_full.js-videoWrapper {
+        height: 261px;
+    }
 }
 
 .top-remove-margin {
     margin-top: 60px;
 }
 
-#sub-frame-error {
-    display: none;
+iframe {
+    background-color: #000;
 }
