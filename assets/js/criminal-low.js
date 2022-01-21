@@ -3,6 +3,7 @@ $(document).on('click', '.js-videoPoster', function(e) {
     var poster = $(this);
     var wrapper = poster.closest('.js-videoWrapper');
     videoPlay(wrapper);
+    $('.low-desc-sec').addClass('top-remove-margin')
 });
 
 function videoPlay(wrapper) {

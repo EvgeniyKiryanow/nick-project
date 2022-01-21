@@ -170,6 +170,14 @@
     z-index: -1;
 }
 
+.low-desc-sec {
+    margin-top: 180px;
+}
+
+.top-remove-margin {
+    margin-top: 60px;
+}
+
 @media (max-width: 768px) {
     .criminal-low-title {
         font-size: 30px;
@@ -197,6 +205,9 @@
         font-weight: bold;
         cursor: pointer;
     }
+    /* .low-desc-sec {
+        margin-top: 130px;
+    } */
 }
 
 @media (max-width: 660px) {
