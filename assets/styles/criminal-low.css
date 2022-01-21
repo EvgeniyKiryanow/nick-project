@@ -53,6 +53,7 @@
     text-decoration: underline;
     color: rgb(1, 217, 255);
     font-weight: bold;
+    cursor: pointer;
 }
 
 .video_wrapper {
@@ -194,6 +195,7 @@
         text-decoration: underline;
         color: rgb(1, 217, 255);
         font-weight: bold;
+        cursor: pointer;
     }
 }
 
@@ -209,7 +211,7 @@
         margin: 43px 39px 64px 51px;
     }
     .low-desc-sec {
-        margin-top: -30px;
+        margin-top: 30px;
     }
 }
 
@@ -226,6 +228,9 @@
     }
     .video_wrapper {
         height: 314px;
+    }
+    .low-desc-sec {
+        margin-top: -30px;
     }
 }
 
