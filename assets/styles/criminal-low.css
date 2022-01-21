@@ -59,7 +59,7 @@
 .video_wrapper {
     width: 747px;
     margin: 0 auto;
-    height: 377px;
+    height: 274px;
     position: relative;
 }
 
@@ -185,8 +185,8 @@
         font-size: 16px;
     }
     .videoPoster {
-        width: 638px;
-        height: 369px;
+        width: 648px;
+        height: 377px;
     }
     .video_wrapper {
         width: 641px;
@@ -202,7 +202,7 @@
 @media (max-width: 660px) {
     .videoPoster {
         width: 529px;
-        height: 307px;
+        height: 308px;
     }
     .video_wrapper {
         width: 524px;
