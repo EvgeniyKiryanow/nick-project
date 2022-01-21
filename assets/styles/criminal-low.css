@@ -292,5 +292,5 @@
 }
 
 #sub-frame-error {
-    background-color: #000 !important;
+    display: none;
 }
