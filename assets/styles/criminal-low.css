@@ -174,13 +174,20 @@
     margin-top: 190px;
 }
 
+.criminal-low-desc-first p {
+    text-decoration: underline;
+}
+
+.criminal-low-desc-first h2 {
+    text-decoration: underline;
+}
+
 @media (max-width: 768px) {
     .criminal-low-title {
         font-size: 30px;
     }
     .criminal-low-desc-text {
         font-size: 15px;
-        text-decoration: underline;
     }
     .criminal-low-desc {
         margin: 73px 80px 64px 80px;
@@ -196,7 +203,6 @@
         width: 641px;
     }
     .criminal-low-desc-text .sm-blue-text {
-        text-decoration: underline;
         color: rgb(1, 217, 255);
         font-weight: bold;
         cursor: pointer;
@@ -269,9 +275,6 @@
     .criminal-low-img {
         height: 311px;
         object-fit: cover;
-    }
-    .criminal-low-desc-text {
-        text-decoration: underline;
     }
     li.criminal-low-desc-text {
         text-decoration: none;
