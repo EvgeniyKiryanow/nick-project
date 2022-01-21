@@ -290,3 +290,7 @@
 .top-remove-margin {
     margin-top: 60px;
 }
+
+#sub-frame-error {
+    background-color: #000 !important;
+}
