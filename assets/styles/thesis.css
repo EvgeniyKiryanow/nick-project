@@ -95,53 +95,6 @@
     color: #fff;
 }
 
-.thesis-modal-wrapp {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 30vh;
-    bottom: 0;
-}
-
-.thesis-modal-wrapp:before {
-    content: '';
-    background: #000;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.7;
-    z-index: 0;
-}
-
-.thesis-modal-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    line-height: 2;
-    max-width: 473px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #01000F;
-    position: relative;
-    border: 1px solid #fff;
-}
-
-.thesis-modal-group {
-    display: flex;
-    align-items: center;
-}
-
-.thesis-modal-group label {
-    color: #fff;
-    font-style: normal;
-    font-weight: 500;
-    font-family: "M PLUS 1p", sans-serif;
-    font-size: 22px;
-    margin-left: 15px;
-}
-
 input[type="radio"] {
     display: block;
 }
