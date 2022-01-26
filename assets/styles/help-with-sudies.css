@@ -330,6 +330,12 @@
         height: 63px;
         left: 64px;
     }
+    .slick-prev:active::after {
+        opacity: 0.6;
+    }
+    .slick-next:active::after {
+        opacity: 0.6;
+    }
     .slick-next {
         position: absolute;
         top: 88%;
