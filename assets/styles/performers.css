@@ -50,6 +50,10 @@
     height: 55px;
 }
 
+.rules-performens-container:last-of-type {
+    margin-bottom: 150px;
+}
+
 .rules-table td {
     color: #000;
     padding-left: 20px;
@@ -62,7 +66,6 @@
 
 .rules-performens-container:nth-of-type(2) {
     line-height: 1.5;
-    margin-bottom: 100px;
 }
 
 .rules-performens-container:nth-of-type(2) h2 {
