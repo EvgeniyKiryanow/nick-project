@@ -1,3 +1,17 @@
+.modal-body.consultation .partners-title {
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    width: 1000px;
+    margin-bottom: 20px;
+}
+
+
 /* Modal menu */
 
 .modal-backdrop {
@@ -399,7 +413,7 @@ body.windows.mozilla {
 }
 
 .top {
-    margin-top: 123px;
+    margin-top: 60px;
 }
 
 #desc-title {
@@ -421,19 +435,6 @@ body.windows.mozilla {
     flex-direction: column;
     width: 100%;
     align-items: center;
-}
-
-.modal-body.consultation h3 {
-    font-family: 'Russo One';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 112.4%;
-    text-align: center;
-    letter-spacing: 0.13em;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    max-width: 350px;
 }
 
 .modal-body.consultation ul {
@@ -475,6 +476,7 @@ body.windows.mozilla {
     font-size: 18px;
     line-height: 27px;
     color: #FFFFFF;
+    margin-top: 17px;
     margin-left: 22px;
 }
 
@@ -527,6 +529,7 @@ fieldset {
     color: #FFFFFF;
     margin-bottom: 100px;
     min-width: 300px;
+    margin-bottom: 20px;
 }
 
 .modal-form-group {
@@ -681,8 +684,8 @@ span.arrow-left {
 }
 
 .learning__form textarea {
-    width: 994px;
-    height: 124px;
+    width: 750px;
+    height: 184px;
     background: #FFFFFF;
     border-radius: 30px;
     resize: none;
@@ -739,6 +742,9 @@ textarea#descriptionteacher::-webkit-scrollbar {
 .learning__form {
     font-family: "M PLUS 1p", sans-serif;
     padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .learning__form input {
@@ -897,7 +903,7 @@ label>input[type="radio"]:checked+*::before {
     display: block;
 }
 
-.create-order-btn {
+.partners-register {
     background: rgba(0, 209, 255, 0.23);
     border: 1px solid #F6E3FF;
     box-shadow: -2px -2px 10px rgba(0, 209, 255, 0.5), 2px 2px 15px rgba(0, 209, 255, 0.5), 2px -2px 15px rgba(0, 209, 255, 0.5), -2px 2px 15px rgba(0, 209, 255, 0.5);
@@ -905,7 +911,7 @@ label>input[type="radio"]:checked+*::before {
     color: #fff;
     font-weight: bold;
     font-size: 2.25em;
-    padding: 15px 73px;
+    padding: 15px 40px;
     display: flex;
     margin: 34px auto 30px auto;
 }
@@ -916,11 +922,11 @@ label>input[type="radio"]:checked+*::before {
     justify-content: center;
 }
 
-.create-order-btn:hover {
+.partners-register:hover {
     background: rgba(0, 209, 255, 0.57);
 }
 
-.create-order-btn:active {
+.partners-register:active {
     background: rgba(2, 76, 92, 0.57);
     color: rgba(255, 255, 255, 0.58);
 }
@@ -958,10 +964,11 @@ select {
     display: none;
 }
 
-.modal-body.consultation label.label-topic,
+
+/* .modal-body.consultation label.label-topic,
 .modal-body.consultation label.label-description {
     margin-left: -531px;
-}
+} */
 
 .learning pre.learning__subtitle-formated {
     display: none;
@@ -1061,6 +1068,19 @@ span#leftCharsDesc {
     left: 19px;
 }
 
+@media (max-width: 768px) {
+    .modal-body.consultation .partners-title {
+        width: 500px;
+    }
+}
+
+@media (max-width: 528px) {
+    .modal-body.consultation .partners-title {
+        width: 300px;
+        font-size: 20px;
+    }
+}
+
 @media (min-width: 746px) {
     .learning__form .learning__textarea {
         height: 60px;
@@ -1073,6 +1093,9 @@ span#leftCharsDesc {
         white-space: normal;
         padding-left: 0;
     }
+    /* .modal-body.consultation .partners-title {
+        width: 500px;
+    } */
 }
 
 label.label-description.desc-title {
@@ -1683,6 +1706,9 @@ textarea#descriptionteacher {
     .header__languages-wrapper {
         padding-right: 70px;
     }
+    /* .modal-body.consultation .partners-title {
+        width: 500px;
+    } */
 }
 
 .panel-decor-wr::after {
@@ -1730,6 +1756,10 @@ textarea#descriptionteacher {
         max-width: 100%;
         margin: 0 auto 42px;
     }
+    /* .modal-body.consultation .partners-title {
+        width: 300px;
+        font-size: 20px;
+    } */
 }
 
 .burger-menu-wr li {
@@ -1888,6 +1918,13 @@ textarea#descriptionteacher {
         justify-content: center;
         flex-direction: column;
         align-items: flex-start;
+    }
+    .modal-body.consultation .check.check-last {
+        width: 200px;
+        min-width: 200px;
+    }
+    .modal-body.consultation label:last-of-type span {
+        width: 14px;
     }
 }
 
@@ -2127,4 +2164,41 @@ textarea.border-rigth-top {
 
 .overflow-h {
     overflow-y: hidden;
+}
+
+button.choose-theme-of-subject {
+    padding: 18px 100px;
+    color: #ccc;
+}
+
+.modal-form-input::placeholder {
+    font-size: 18px;
+    color: rgba(76, 50, 119, 0.623);
+}
+
+.partners-desc-info {
+    width: 312px;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 16px;
+}
+
+.partners-studies-work-popup {
+    background-color: #1B83A4;
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    width: calc(200px + 40vw);
+    margin-bottom: 100px;
+    justify-content: space-around;
+}
+
+.work-popup-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.partners-popup-subject {
+    color: #fff;
+    font-size: 16px;
 }

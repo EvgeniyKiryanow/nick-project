@@ -56,7 +56,7 @@ $(document).ready(function() {
     var mySecObject = 'textarea#description'
     var myThirdObject = 'textarea#descriptionteacher'
 
-    var max = 250;
+    var max = 1000;
     var descMax = 1000;
     var descTeacherMax = 1000;
 
