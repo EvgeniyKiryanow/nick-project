@@ -53,19 +53,15 @@ function limitChars(myObject, max, leftChars) {
 
 $(document).ready(function() {
     var myObject = 'textarea#topic';
-    var mySecObject = 'textarea#description'
-    var myThirdObject = 'textarea#descriptionteacher'
+    var myThirdObject = 'textarea#infoaboutyorself'
 
     var max = 1000;
-    var descMax = 1000;
     var descTeacherMax = 1000;
 
     var leftChars = '#leftChars';
-    var leftCharsDesc = '#leftCharsDesc';
     var leftCharsDescTeachet = '#leftCharsTeach';
 
     limitChars(myObject, max, leftChars);
-    limitChars(mySecObject, descMax, leftCharsDesc);
     limitChars(myThirdObject, descTeacherMax, leftCharsDescTeachet);
 });
 
@@ -114,12 +110,12 @@ $(function() {
         }
     })
 
-    $('textarea#descriptionteacher').keyup(function() {
-        $('textarea#descriptionteacher').addClass('textarea-border-t-teacher')
+    $('textarea#infoaboutyorself').keyup(function() {
+        $('textarea#infoaboutyorself').addClass('textarea-border-t-teacher')
         if ($('#leftCharsTeach').text() === 'Достигнут лимит символов') {
-            $('#descriptionteacher').addClass('textarea-border')
+            $('#infoaboutyorself').addClass('textarea-border')
         } else {
-            $('textarea#descriptionteacher').removeClass('textarea-border')
+            $('textarea#infoaboutyorself').removeClass('textarea-border')
         }
     })
 })
