@@ -1,6 +1,5 @@
 $('.partners-popup-subject').on('click', function() {
     $(this).toggleClass('choosen choosen-img');
-    // $(this).toggle('<img src= />')
 });
 
 $('.choose-theme-of-subject').on('click', () => {
@@ -14,11 +13,11 @@ $('.close-work-popup').on('click', () => {
 })
 
 $('.choose-teacher-subject').on('click', () => {
-    $('.partners-work-popup-teacher').addClass('show-popup')
+    $('.partners-work-popup-teacher').addClass('show-popup-teacher')
     $('.partners-work-popup-teacher').removeClass('hide-popup')
 })
 
 $('.close-work-popup').on('click', () => {
     $('.partners-work-popup-teacher').addClass('hide-popup')
-    $('.partners-work-popup-teacher').removeClass('show-popup')
+    $('.partners-work-popup-teacher').removeClass('show-popup-teacher')
 })

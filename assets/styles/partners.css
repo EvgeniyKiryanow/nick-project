@@ -11,6 +11,10 @@
     margin-bottom: 20px;
 }
 
+.empty-space {
+    height: 80vh;
+}
+
 
 /* Modal menu */
 
@@ -1936,7 +1940,6 @@ button.choose-teacher-subject {
     z-index: 1;
     width: calc(200px + 50vw);
     max-width: 608px;
-    padding-bottom: 136px;
 }
 
 .partners-work-popup-teacher {
@@ -1945,7 +1948,7 @@ button.choose-teacher-subject {
     width: calc(300px + 12vw);
     margin-bottom: 100px;
     max-width: 800px;
-    padding-bottom: 30px;
+    padding-bottom: 5px;
     background-color: #1B83A4;
 }
 
@@ -2029,6 +2032,12 @@ a:visited {
 
 .show-popup {
     display: block;
+    padding-bottom: 100px;
+}
+
+.show-popup-teacher {
+    display: block;
+    padding-bottom: 20px;
 }
 
 @media all and (max-width: 400px) {
