@@ -527,9 +527,8 @@ fieldset {
     font-size: 14px;
     line-height: 21px;
     color: #FFFFFF;
-    margin-bottom: 100px;
+    margin-bottom: 5px;
     min-width: 300px;
-    margin-bottom: 20px;
 }
 
 .modal-form-group {
@@ -1936,19 +1935,18 @@ button.choose-teacher-subject {
     position: absolute;
     z-index: 1;
     width: calc(200px + 50vw);
-    margin-bottom: 100px;
-    max-width: 800px;
-    padding-bottom: 30px;
+    max-width: 608px;
+    padding-bottom: 136px;
 }
 
 .partners-work-popup-teacher {
-    background-color: #1B83A4;
     position: absolute;
     z-index: 1;
     width: calc(300px + 12vw);
     margin-bottom: 100px;
     max-width: 800px;
     padding-bottom: 30px;
+    background-color: #1B83A4;
 }
 
 .work-popup-inner {
@@ -1977,7 +1975,8 @@ a:visited {
     font-size: 14px;
     color: #fff;
     text-align: center;
-    margin: 20px;
+    padding: 20px;
+    background-color: #1B83A4;
 }
 
 .choosen {
@@ -2061,4 +2060,17 @@ textarea#infoaboutyorself {
     textarea#infoaboutyorself {
         height: 260px;
     }
+}
+
+.learning__label {
+    margin-top: 30px;
+}
+
+.shadow-bg {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0px;
+    height: 200vh;
+    width: 100vw;
+    z-index: -1;
 }
